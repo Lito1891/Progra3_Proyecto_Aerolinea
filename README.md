@@ -7,6 +7,7 @@ El objetivo es desarrollar una página web para una aerolinea ficticia utilizand
 Clonar el repositorio
 
 git clone https://github.com/Lito1891/Progra3_Proyecto_Aerolinea.git
+
 Entrar en la carpeta del proyecto
 
 cd Progra3_Proyecto_Aerolinea
