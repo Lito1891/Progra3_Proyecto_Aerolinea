@@ -1,4 +1,4 @@
-Proyecto Hotel aerolinea
+Proyecto aerolinea
 Este repositorio contiene el proyecto final del curso de Programación 3.
 El objetivo es desarrollar una página web para una aerolinea ficticia utilizando HTML, CSS y Bootstrap.
 
