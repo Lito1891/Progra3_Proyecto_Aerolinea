@@ -4,7 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+<style>
+footer{background-color: lightgray;}
+
+    .footerDeIndex {background-color: lightgray;
+        border: 1px solid black;}
+
+    .divContenedorDeFooterIndex {background-color: lightgreen;
+        border: 1px solid black;
+        display: flex;
+        width: 60%;
+        height: 250px;
+        margin: 0 auto;
+        justify-content: center;
+        gap: 50px;}
+
+    .divDeFooterIndex {background-color: lightblue;
+        border: 1px solid black;
+        width: 200px;
+        text-align: center;
+    }
+
+    .listasDeFooter {list-style: none;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;}
+
+</style>
+
 </head>
+
 <body>
     <h1>Apex Fly</h1>
 
@@ -18,6 +51,7 @@
         <a href="#destinos"><button>Ver Destinos</button></a>
 
     </div>
+
 <!--sección de buscador de vuelos-->
 <section id="buscador">
     <h2>Buscador de Vuelos</h2>
@@ -51,5 +85,53 @@
         <li>Tokio, Japón</li>
         <li>Río de Janeiro, Brasil</li>
         <li>Sídney, Australia</li>
+    </ul>
+</section>
+
+    <footer class="footerDeIndex">
+    <div class="divContenedorDeFooterIndex">
+
+        <div class="divDeFooterIndex">
+            <h4>Acerca de nosotros</h4> <!-- pendiente de ponerle nombre a la aerolinea-->
+            <ul class="listasDeFooter">
+                <li>Nuestra historia</li>
+                <li>Trayectoria</li>
+                <li>Organigrama</li>
+                <li>Documentos de interés</li>
+            </ul>
+        </div>
+
+        <div class="divDeFooterIndex">
+            <h4>Información legal</h4>
+            <ul class="listasDeFooter">
+                <li>Términos y condiciones</li>
+                <li>Reclamos de servicios</li>
+                <li>Requisitos por país</li>
+                <li>Asesoría sobre destinos especificos</li>
+            </ul>
+        </div>
+
+        <div class="divDeFooterIndex">
+            <h4>Datos de contacto</h4>
+            <ul class="listasDeFooter">
+                <li>Centro de atención al cliente</li>
+                <li>CorreoDePrueba@uvirtual.com</li>
+                <li>Contacto de ventas empresariales</li>
+                <li>Formulario de reclamos</li>
+            </ul>
+        </div>
+
+        <div class="divDeFooterIndex">
+            <h4>Siguenos en redes sociales</h4>
+            <ul class="listasDeFooter">
+                <li>Facebook</li>
+                <li>Instagram</li>
+                <li>WhatsApp</li>
+                <li>TikTok</li>
+            </ul>
+        </div>
+
+    </div>
+</footer>
 </body>
 </html>
