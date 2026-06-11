@@ -1,19 +1,24 @@
-/*Estilos de la sección de destinos del index*/
+/*Estilos de títulos generales para pruebas*/
 
+h2{text-align: center;
+}
+
+
+/*Estilos de la sección de destinos del index*/
 
 .divContenedorDeDestinosPrincipalesIndex{background-color: lightgreen;
     border: 1px solid black;
     display: flex;
     width: 100%;
-    height: 400px;
-    margin: 25px auto;
+    height: 350px;
+    margin: 25px 0px 0px 0px;
     justify-content: center;
-    gap: 100px;
+    gap: 40px;
 }
 
 .divDentroDeContendorDeDestinosPrincipalesIndex{background-color: lightblue;
     border: 1px solid black;
-    width: 300px;
+    width: 280px;
     text-align: center;
     align-items: center;}
 
@@ -25,6 +30,13 @@ object-fit: cover;
 .textoDestinoIndex{margin-top: 10px;
 }
 
+.footerDeDestinosIndex{ background-color: green;
+    text-align: center;
+    margin: 0px 0px 40px 0px;
+    padding: 5px;
+}
+
+
 /*Estilos de la sección de footer del index*/
 footer{background-color: lightgray;}
 
@@ -34,15 +46,15 @@ footer{background-color: lightgray;}
 .divContenedorDeFooterIndex {background-color: lightgreen;
     border: 1px solid black;
     display: flex;
-    width: 60%;
+    width: 90%;
     height: 250px;
     margin: 0 auto;
     justify-content: center;
-    gap: 50px;}
+    gap: 10px;}
 
 .divDeFooterIndex {background-color: lightblue;
     border: 1px solid black;
-    width: 200px;
+    width: 250px;
     text-align: center;
 }
 
