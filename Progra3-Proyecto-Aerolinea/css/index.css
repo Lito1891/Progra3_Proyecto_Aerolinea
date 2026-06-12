@@ -1,7 +1,29 @@
 /*Estilos de títulos generales para pruebas*/
 
+body{font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;}
+
 h2{text-align: center;
 }
+
+/*Estilos de la barra de navegación del index*/
+
+.barraDeNavegacionIndex{list-style: none;
+    padding: 0;
+    background: darkblue;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;}
+
+.barraDeNavegacionIndex li{text-decoration: none;
+    color: white;
+    padding: 20px;}
+
+.barraDeNavegacionIndex li:hover{background: darkorange;}
 
 
 /*Estilos de la sección de destinos del index*/
