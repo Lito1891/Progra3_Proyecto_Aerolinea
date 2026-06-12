@@ -10,20 +10,26 @@ h2{text-align: center;
 /*Estilos de la barra de navegación del index*/
 
 .barraDeNavegacionIndex{list-style: none;
-    padding: 0;
+    padding: 0px;
     background: darkblue;
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
     text-align: center;
-    align-items: center;
-    display: flex;
-    justify-content: center;}
+    display: flex;}
 
-.barraDeNavegacionIndex li{text-decoration: none;
+.barraDeNavegacionIndex li {width: 100%;
+    
+}
+
+.barraDeNavegacionIndex li a{
+    text-decoration: none;
     color: white;
-    padding: 20px;}
+    padding: 20px;
+    }
 
-.barraDeNavegacionIndex li:hover{background: darkorange;}
+
+.barraDeNavegacionIndex li:hover{background: darkorange;
+cursor: pointer;}
 
 
 /*Estilos de la sección de destinos del index*/
@@ -60,9 +66,9 @@ object-fit: cover;
 
 
 /*Estilos de la sección de footer del index*/
-footer{background-color: lightgray;}
+footer{background-color: darkblue;}
 
-.footerDeIndex {background-color: lightgray;
+.footerDeIndex {background-color: darkblue;
     border: 1px solid black;}
 
 .divContenedorDeFooterIndex {background-color: lightgreen;
