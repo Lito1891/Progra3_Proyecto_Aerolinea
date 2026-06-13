@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Búsqueda de Vuelos</title>
+    <link rel="stylesheet" href="css/index.css">
+    <!--los styles de abajo son para identificar yo poder ubicarme mejor en la pagina-->
+    <style>
+        div{
+        background-color: lightblue; 
+        }
+        header{
+        background-color: lightgreen; 
+        }
+        main{
+        background-color: lightgoldenrodyellow;
+        }
+    </style>
+</head>
+<body>
+    <!--Header para navegacion rapida entre las diferentes ventanas de la pagina web-->
+    <header>
+        <ul class="barraDeNavegacionIndex">
+        <li ><p><a href="index.html">Inicio</a></p></li>
+        <li ><p><a href="destinos.html">Destinos</a></p></li><!--se modifico esto para que redirija a la pestaña correcta-->
+        <li ><p><a href="vuelos.html">Búsqueda de vuelos</a></p></li>
+        <li ><p><a href="destinos.html">Nuestras sucursales</a></p></li>
+        <li ><p><a href="destinos.html">Contacto</a></p></li>
+    </ul>
+        <!--solo es infomativo-visual-->
+        <h2>Buscas a donde viajar</h2>
+    </header>
+    <div>
+    <form >
+        <!--campo para el origen-->
+    <label for="origen">Origen:</label>
+    <input type="text" id="origen" name="origen" placeholder="Ciudad de origen" required>
+    <br><br>
+    <!--campo para el destino, se hace con select para tener mas control de los destinos que se pueden escoger-->
+    <label for="destino">Destino:</label>
+    <select name="destino" id="destino" required>
+        <option value=""></option>
+        <option value="PAFA">París, Francia</option>
+        <option value="TOJA">Tokio, Japón</option>
+        <option value="RIBR">Río de Janeiro, Brasil</option>
+        <option value="SIAU">Sídney, Autralia</option>
+    </select>
+    <br><br>
+    <!--campo para la fecha de viaje (IDA)-->
+    <label for="fecha">Fecha de Ida:</label>
+    <input type="date" id="fecha" name="fecha" required>
+    <br><br>
+    <!--campo para la fecha de viaje (VUELTA)-->
+    <label for="fecha">Fecha de Regreso:</label>
+    <input type="date" id="fecha" name="fecha" required>
+    <br><br>
+    <!--campo para ingresar la cantidad de pasajeros-->
+    <label for="cantidad_pasajeros">Cantidad de Pasajeros:</label>
+    <input type="number" id="cantidad_pasajeros" name="cantidad_pasajeros" placeholder="" min="1" max="9" required>
+    <br><br>
+    <!--botón para para ver destinos, tengo que definir como es que se va a cargar la informacion a darle click-->
+    <button type="submit">Ver Destino</button>
+    </form>
+    <main>
+    <h1>AQUI VA "Tabla o tarjetas que muestren resultados con precios ficticios y datos de vuelo."</h1>
+    </main>
+    </div>
+</body>
+</html>
