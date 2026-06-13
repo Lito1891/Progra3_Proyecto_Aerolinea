@@ -1,0 +1,29 @@
+/*Estilos de títulos generales para pruebas*/
+body{font-family: Arial, sans-serif; /*COPIAR ESTA LINEA EN TODAS LAS PÁGINAS*/
+    margin: 0;                       /*COPIAR ESTA LINEA EN TODAS LAS PÁGINAS*/
+    padding: 0;}
+
+    
+/*Estilos de la barra de navegación del index*/
+
+.CambiarClase1{list-style: none;
+    padding: 0px;
+    background: darkblue;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;}
+
+.CambiarClase1 li {width: 100%;
+    
+}
+
+.CambiarClase1 li a{
+    text-decoration: none;
+    color: white;
+    padding: 25px 20px;
+    }
+
+
+.CambiarClase1 li:hover{background: darkorange;
+cursor: pointer;}
