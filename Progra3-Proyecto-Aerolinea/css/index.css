@@ -73,23 +73,22 @@ footer{background-color: darkblue;}
 
 .divContenedorDeFooterIndex {background-color: lightgreen;
     border: 1px solid black;
-    display: flex;
+    display: grid;                               /*Esto es lo que vimos sobre generar una cuadricula que se repite lo que uno le indique*/
+    grid-template-columns: repeat(4, 1fr);       /*Aquí es donde se indica que se repita lo que uno le diga, cuántas veces en este caso 4 y repita 1fr que es un fracción de la cuadricula*/
     width: 90%;
     height: 250px;
     margin: 0 auto;
     justify-content: center;
+    text-align: center;
     gap: 10px;}
 
 .divDeFooterIndex {background-color: lightblue;
     border: 1px solid black;
-    width: 250px;
-    text-align: center;
-}
+    width: 250px;}
 
-.listasDeFooter {list-style: none;
+.divDeFooterIndex ul{list-style: none;
     text-align: center;
     padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;}
+    text-align: center;} /*Modifica las listas desordenadas del footer*/
+
+.divDeFooterIndex li{margin: 15px 0px;} /*Modifica los elementos de las listas del footer*/
