@@ -5,7 +5,8 @@
 body{font-family: Arial, sans-serif; /*Modifica la fuente centtral del body, el color de fondo, el margen y el padding*/
     margin: 0;
     padding: 0;
-    background-color: #FFFFFF;}
+    background-color: #ffffff;
+}
 
 h2{text-align: center;
 }
@@ -13,36 +14,43 @@ h2{text-align: center;
 a{color: black; /*Modifica el color del texto general del cuerpo (este logra cambiarse en cada caso según el modelo cascada pero es el color base si no se modiica a pie)*/
     text-decoration: none;}
 
+/*-----------------------------------------------------------------------------------------------------*/
+/*Estilos de la parte superior del index*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+
+
 
 /*-----------------------------------------------------------------------------------------------------*/
 /*Estilos de la barra de navegación del index*/
 /*-----------------------------------------------------------------------------------------------------*/
 
-.barraDeNavegacionIndex{list-style: none; /*Modifica el estilo general de la barra de navegación*/
-    padding: 0px;
-    background: #58b6b3;
-    width: 70%;
-    margin: 0 auto;
-    text-align: center;
+.divDeBarraDeNavegacionIndex{background: #58b6b3; /*Modifica el div contenedor de la barra de navegación del index*/
     display: flex;
-    border-radius: 3px;
+    justify-content: center;
+    align-items:center;
+    height: auto;
+    gap: 50px;
 }
 
-.barraDeNavegacionIndex li {width: 100%; /*Modifica el tamaño del ancho de la barra de navegación de destinos index*/
-    
-}
+.divDeBarraDeNavegacionIndex img{width: 50px;
+height: auto;}
 
-.barraDeNavegacionIndex li a{ /*Modifica el comportamiento de los enlaces de la barra de navegación*/
-    text-decoration: none;
+.divDeBarraDeNavegacionIndex a{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 80px;
+    width: 200px;
+    display: flex;
     color: white;
-    padding: 25px 20px;
-    }
+    font-size: 19px;
+}
 
-
-.barraDeNavegacionIndex li:hover{background: rgb(255, 158, 41); /*Modifica el comportamiento de la barra de navegación*/
+.divDeBarraDeNavegacionIndex a:hover{background: rgb(255, 158, 41); /*Modifica el comportamiento de la barra de navegación*/
 cursor: pointer;
-transition: background-color 0.3s}
-
+transition: background-color 0.3s;
+transform: scaleY(1.1);}
 
 /*-----------------------------------------------------------------------------------------------------*/
 /*Estilos de la sección de destinos del index*/
@@ -63,17 +71,31 @@ transition: background-color 0.3s}
 .divDentroDeContendorDeDestinosPrincipalesIndex{background-color: #eff5de; /*Modifica cada div individual dentro del contenedor div general de destinos index*/
     border: 1px solid grey;
     width: 400px;
+    height: 350px;
     text-align: center;
     align-items: center;
     border-radius: 10px;
-    overflow: hidden;}
+    overflow: hidden;
+    box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.15);
+    transition: 0.3s ease;
+    position: relative}
+
+.divDentroDeContendorDeDestinosPrincipalesIndex:hover{transform: translateY(-5px);}
 
 .imagenDestinosIndex{width: 100%; /*Modifica el tamaño y comportamiento de las imágenes dentro de cada div de destinos index sobre el texto*/
-height: 200px;
+height: 100%;
+width: 100%;
 object-fit: cover;}
 
-.textoDestinoIndex{margin-top: 10px; /*Modifica el texto debajo de cada foto de destinos en cada div de destinos index*/
-}
+.capaDeTexto{position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    padding: 15px;
+    font-size: 18px;}
+
 
 .divInferiorDeDestinosIndex{ background-color: #58b6b3; /*Modifica el div inferior de destinos en el index, donde redirige a destinos*/
     justify-content: center;
@@ -82,6 +104,7 @@ object-fit: cover;}
     margin: 40px auto;
     width: 30%;
     border-radius: 10px;
+    font-size: 18px;
 }
 
 .divInferiorDeDestinosIndex:hover{background-color: rgb(255, 158, 41); /*Modifica el efecto del div inferior de destinos en el index, donde redirige a destinos*/
