@@ -1,0 +1,82 @@
+/*-----------------------------------------------------------------------------------------------------*/
+/*Estilos de la barra de navegación del index*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+.divDeBarraDeNavegacionIndex{background: #58b6b3; /*Modifica el div contenedor de la barra de navegación del index*/
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 70px;}
+
+.divDeBarraDeNavegacionIndex img{width: 50px; /*Modifica la imagen/logo de la aerolinea en la barra de navegación*/
+height: auto;}
+
+.divDeBarraDeNavegacionIndex p{font-size: 30px; /*Modifica el texto para la marca de la aerolinea en la barra de navegación*/
+    font-family: sans-serif;
+    color: white;
+    margin-right: 7px;}
+
+.divDeBarraDeNavegacionIndex a{ /*Modifica los enlaces de la barra de navegación*/
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 200px;
+    display: flex;
+    color: white;
+    font-size: 19px;
+}
+
+.divDeBarraDeNavegacionIndex a:hover{background: rgb(255, 158, 41); /*Modifica el comportamiento de la barra de navegación*/
+cursor: pointer;
+transition: background-color 0.3s;
+transform: scaleY(1.03);}
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*Estilos del header buscador de vuelos*/
+/*-----------------------------------------------------------------------------------------------------*/
+.buscadorDeVuelos{
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    height: 250px;}
+
+.titulo{
+    display: flex;
+    justify-content: center;}
+
+form{
+    padding: 50px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 60%;}
+
+.formVuelos{
+    width: 100%;
+    height: 20vh;}
+
+.origen{
+    width: 19%;
+    height: 100%;}
+
+.botonViajar{
+    width: 19%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.btnViajar{
+    background: rgb(220, 150, 66);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    transform: scaleY(1.03);
+}
+
+.inputBuscador{width: 50%;}
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*Estilos del header buscador de vuelos*/
+/*-----------------------------------------------------------------------------------------------------*/
