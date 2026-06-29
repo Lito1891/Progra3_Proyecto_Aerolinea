@@ -7,7 +7,18 @@
     <link rel="stylesheet" href="../Assets/css/vuelos.css">
     <!--los styles de abajo son para identificar yo poder ubicarme mejor en la pagina-->
     <style>
-        main{background-color: lightgoldenrodyellow;}
+        .divMain1{border: solid red; height: 200vh; display: flex;}
+        .asideDestinos{border: solid green; width: 30%; height: 200vh; display: flex;
+        flex-direction: column;}
+        .asidePais{border: solid black; height: 33vh; display: flex; flex-direction: column;
+        align-items: center;}
+        .imgPais{width: 70px; height: 40px;}
+        .divHorarios{border: solid yellow; width: 100%; height: 26vh;}
+
+        .divMain2{border: solid orange; width: 70%;}
+        .divPais{border: solid blue; height: 32.78vh; display: flex; flex-direction: column;
+        align-items: center;}
+        .divPrecios{border: solid purple; width: 100%; height: 26vh;}
     </style>
 </head>
 <body>
@@ -23,8 +34,6 @@
         </div>
         
     </header>
-
-
     <div class="buscadorDeVuelos">
         <div class="titulo" ><h2>¿Cuál será nuestra próxima aventura juntos?</h2></div>
             <div class="formVuelos" >
@@ -70,7 +79,103 @@
             </div>
     </div>
     <main>
-    <h1>AQUI VA "Tabla o tarjetas que muestren resultados con precios ficticios y datos de vuelo."</h1>
+        <!--Caja principal para agrupar elementos-->
+    <div class="divMain1">
+        <!--aside para montar pais con horarios, aun por definir como mostrarlos-->
+        <aside class="asideDestinos">
+            <div class="asidePais">
+                <span>Francia</span>
+                <img class="imgPais" src="../Assets/img/fotosVuelos/francia.webp" alt="Francia">
+                <div class="divHorarios">
+                    <h2>Aqui van los horarios de los vuelos</h2>
+                </div>
+            </div>
+            <div class="asidePais">
+                <span>Japón</span>
+                <img class="imgPais" src="../Assets/img/fotosVuelos/japon.webp" alt="Japón">
+                <div class="divHorarios">
+                    <h2>Aqui van los horarios de los vuelos</h2>
+                </div>
+            </div>
+            <div class="asidePais">
+                <span>Brasil</span>
+                <img class="imgPais" src="../Assets/img/fotosVuelos/brasil.webp" alt="Brasil">
+                <div class="divHorarios">
+                    <h2>Aqui van los horarios de los vuelos</h2>
+                </div>
+            </div>
+            <div class="asidePais">
+                <span>Costa Rica</span>
+                <img class="imgPais" src="../Assets/img/fotosVuelos/costarica.webp" alt="Costa Rica">
+                <div class="divHorarios">
+                    <h2>Aqui van los horarios de los vuelos</h2>
+                </div>
+            </div>
+            <div class="asidePais">
+                <span>Perú</span>
+                <img class="imgPais" src="../Assets/img/fotosVuelos/peru.webp" alt="Perú">
+                <div class="divHorarios">
+                    <h2>Aqui van los horarios de los vuelos</h2>
+                </div>
+            </div>
+            <div class="asidePais">
+                <span>Groenlandia</span>
+                <img class="imgPais" src="../Assets/img/fotosVuelos/groenlandia.webp" alt="Groenlandia">
+                <div class="divHorarios">
+                    <h2>Aqui van los horarios de los vuelos</h2>
+                </div>
+            </div>
+        </aside>
+        <!--caja que va a la par del aside-->
+
+        <!--Inicia div main 2-->
+        <div class="divMain2">
+            
+            <div class="divPais">
+                <span>Francia</span>
+                <img class="imgPais" src="../Assets/img/fotosVuelos/francia.webp" alt="Francia">
+                <div class="divPrecios">
+                    <h2>Aqui van los precios/datos de los vuelos</h2>
+                </div>
+            </div>
+            <div class="divPais">
+                <span>Japón</span>
+                <img class="imgPais" src="../Assets/img/fotosVuelos/japon.webp" alt="Japón">
+                <div class="divPrecios">
+                    <h2>Aqui van los precios/datos de los vuelos</h2>
+                </div>
+            </div>
+            <div class="divPais">
+                <span>Brasil</span>
+                <img class="imgPais" src="../Assets/img/fotosVuelos/brasil.webp" alt="Brasil">
+                <div class="divPrecios">
+                    <h2>Aqui van los precios/datos de los vuelos</h2>
+                </div>
+            </div>
+            <div class="divPais">
+                <span>Costa Rica</span>
+                <img class="imgPais" src="../Assets/img/fotosVuelos/costarica.webp" alt="Costa Rica">
+                <div class="divPrecios">
+                    <h2>Aqui van los precios/datos de los vuelos</h2>
+                </div>
+            </div>
+            <div class="divPais">
+                <span>Perú</span>
+                <img class="imgPais" src="../Assets/img/fotosVuelos/peru.webp" alt="Perú">
+                <div class="divPrecios">
+                    <h2>Aqui van los precios/datos de los vuelos</h2>
+                </div>
+            </div>
+            <div class="divPais">
+                <span>Groenlandia</span>
+                <img class="imgPais" src="../Assets/img/fotosVuelos/groenlandia.webp" alt="Groenlandia">
+                <div class="divPrecios">
+                    <h2>Aqui van los precios/datos de los vuelos</h2>
+                </div>
+            </div><!--termina div main 2-->
+
+        </div>
+    </div><!--termina div caja principal-->
     </main>
 </body>
 </html>
