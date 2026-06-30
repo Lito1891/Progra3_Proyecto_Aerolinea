@@ -1,0 +1,16 @@
+{
+  "HTML-002": {
+    "occurrences": 3,
+    "confidence": 1,
+    "mastered_explicitly": false,
+    "first_seen": "2026-06-30T05:16:26.398Z",
+    "last_seen": "2026-06-30T05:16:33.504Z"
+  },
+  "CSS-002": {
+    "occurrences": 3,
+    "confidence": 1,
+    "mastered_explicitly": false,
+    "first_seen": "2026-06-30T05:17:46.578Z",
+    "last_seen": "2026-06-30T05:17:46.579Z"
+  }
+}

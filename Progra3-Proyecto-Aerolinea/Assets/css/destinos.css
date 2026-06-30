@@ -1,29 +1,72 @@
-/*Estilos de títulos generales para pruebas*/
-body{font-family: Arial, sans-serif; /*COPIAR ESTA LINEA EN TODAS LAS PÁGINAS*/
-    margin: 0;                       /*COPIAR ESTA LINEA EN TODAS LAS PÁGINAS*/
-    padding: 0;}
 
-    
-/*Estilos de la barra de navegación del index*/
+/*-----------------------------------------------------------------------------------------------------*/
+/*Estilos */
+/*-----------------------------------------------------------------------------------------------------*/
 
-.CambiarClase1{list-style: none;
-    padding: 0px;
-    background: darkblue;
-    width: 70%;
-    margin: 0 auto;
-    text-align: center;
-    display: flex;}
-
-.CambiarClase1 li {width: 100%;
-    
+body{font-family: Arial, sans-serif; /*Modifica la fuente central del body, el color de fondo, el margen y el padding*/
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
 }
 
-.CambiarClase1 li a{
-    text-decoration: none;
+h2{text-align: center; /*Modifica el comportamiento por defecto de los títulos h2 del body*/
+}
+
+a{color: black; /*Modifica el color del texto general del cuerpo (este logra cambiarse en cada caso según el modelo cascada pero es el color base si no se modiica a pie)*/
+    text-decoration: none;}
+/*-----------------------------------------------------------------------------------------------------*/
+/*Estilos de la barra de navegación*/
+/*-----------------------------------------------------------------------------------------------------*/
+.divBarradenavegacionDestinos{
+    background: #58b6b3; /*Modifica el div contenedor de la barra de navegación*/
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 70px;
+}
+.divBarradenavegacionDestinos img{
+width: 50px; /*Modifica la imagen/logo de la aerolinea en la barra de navegación*/
+height: auto;
+}
+
+.divBarradenavegacionDestinos .logo {
+    font-size: 30px; /*Modifica el texto para la marca de la aerolinea en la barra de navegación*/
+    font-family: sans-serif;
     color: white;
-    padding: 25px 20px;
-    }
+    margin-right: 7px;
+   
+}
 
+.divBarradenavegacionDestinos ul{ /*Modifica los enlaces de la barra de navegación*/
+   display: flex;
+   list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.divBarradenavegacionDestinos li {
+    height: 100%;
+}
+.divBarradenavegacionDestinos a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 180px;
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+    font-family: sans-serif;
+    transition: background-color 0.3s ease;
+}
+.divBarradenavegacionDestinos a:hover{
+background: rgb(255, 158, 41); /*Modifica el comportamiento de la barra de navegación*/
+cursor: pointer;
+transform: scaleY(1.03);}
 
-.CambiarClase1 li:hover{background: darkorange;
-cursor: pointer;}
+.divBarradenavegacionDestinos p{
+    font-size: 30px; /*Modifica el texto para la marca de la aerolinea en la barra de navegación*/
+    font-family: sans-serif;
+    color: white;
+    margin-right: 7px;}
