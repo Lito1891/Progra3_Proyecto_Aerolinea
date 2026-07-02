@@ -11,14 +11,20 @@
         .asideDestinos{border: solid green; width: 30%; height: 200vh; display: flex;
         flex-direction: column;}
         .asidePais{border: solid black; height: 33vh; display: flex; flex-direction: column;
-        align-items: center;}
+        align-items: center; width: 100%;}
         .imgPais{width: 70px; height: 40px;}
-        .divHorarios{border: solid yellow; width: 100%; height: 26vh;}
+        .divHorarios{ width: 100%; height: 26vh; display: flex;
+        flex-direction: column;  align-items: center; gap: 15px; padding: 15px 0px;}
 
         .divMain2{border: solid orange; width: 70%;}
         .divPais{border: solid blue; height: 32.78vh; display: flex; flex-direction: column;
         align-items: center;}
         .divPrecios{border: solid purple; width: 100%; height: 26vh;}
+
+        .madrugada{ display: flex; flex-direction: row; }
+        .spanHorario{align-content: center;background-color: antiquewhite; width: 200px;
+        justify-content: center;}
+        img{ width: 40px}
     </style>
 </head>
 <body>
@@ -83,46 +89,123 @@
     <div class="divMain1">
         <!--aside para montar pais con horarios, aun por definir como mostrarlos-->
         <aside class="asideDestinos">
+            <!--Se agregan iconos y sus respectivas horas por definir como funcionara el boton-->
             <div class="asidePais">
                 <span>Francia</span>
                 <img class="imgPais" src="../Assets/img/fotosVuelos/francia.webp" alt="Francia">
                 <div class="divHorarios">
-                    <h2>Aqui van los horarios de los vuelos</h2>
+                    <div class="madrugada">
+                        <div><img src="../Assets/img/fotosVuelos/madrugada.png" alt="madrugada"></div>
+                        <span class="spanHorario">Madrugada 00:00  -  05:59</span></div>
+                    <div class="madrugada">
+                        <div><img src="../Assets/img/fotosVuelos/mañana.png" alt="mañana"></div>
+                        <span class="spanHorario">Mañana 06:00 - 11:59</span></div>
+                    <div class="madrugada">
+                        <div><img src="../Assets/img/fotosVuelos/tarde.png" alt="tarde"></div>
+                        <span class="spanHorario">Tarde 12:00 - 17:59</span></div>
+                    <div class="madrugada">
+                        <div><img src="../Assets/img/fotosVuelos/noche.png" alt="noche"></div>
+                        <span class="spanHorario">Noche 18:00 - 23:59</span></div>
+                    
                 </div>
             </div>
+            <!--Se agregan iconos y sus respectivas horas por definir como funcionara el boton-->
             <div class="asidePais">
                 <span>Japón</span>
                 <img class="imgPais" src="../Assets/img/fotosVuelos/japon.webp" alt="Japón">
                 <div class="divHorarios">
-                    <h2>Aqui van los horarios de los vuelos</h2>
+                    <div class="madrugada">
+                        <div><img src="../Assets/img/fotosVuelos/madrugada.png" alt="madrugada"></div>
+                        <span class="spanHorario">Madrugada 00:00  -  05:59</span></div>
+                    <div class="madrugada">
+                        <div><img src="../Assets/img/fotosVuelos/mañana.png" alt="mañana"></div>
+                        <span class="spanHorario">Mañana 06:00 - 11:59</span></div>
+                    <div class="madrugada">
+                        <div><img src="../Assets/img/fotosVuelos/tarde.png" alt="tarde"></div>
+                        <span class="spanHorario">Tarde 12:00 - 17:59</span></div>
+                    <div class="madrugada">
+                        <div><img src="../Assets/img/fotosVuelos/noche.png" alt="noche"></div>
+                        <span class="spanHorario">Noche 18:00 - 23:59</span></div>
+                    
                 </div>
             </div>
+            <!--Se agregan iconos y sus respectivas horas por definir como funcionara el boton-->
             <div class="asidePais">
                 <span>Brasil</span>
                 <img class="imgPais" src="../Assets/img/fotosVuelos/brasil.webp" alt="Brasil">
                 <div class="divHorarios">
-                    <h2>Aqui van los horarios de los vuelos</h2>
+                    <div class="madrugada">
+                        <div><img src="../Assets/img/fotosVuelos/madrugada.png" alt="madrugada"></div>
+                        <span class="spanHorario">Madrugada 00:00  -  05:59</span></div>
+                    <div class="madrugada">
+                        <div><img src="../Assets/img/fotosVuelos/mañana.png" alt="mañana"></div>
+                        <span class="spanHorario">Mañana 06:00 - 11:59</span></div>
+                    <div class="madrugada">
+                        <div><img src="../Assets/img/fotosVuelos/tarde.png" alt="tarde"></div>
+                        <span class="spanHorario">Tarde 12:00 - 17:59</span></div>
+                    <div class="madrugada">
+                        <div><img src="../Assets/img/fotosVuelos/noche.png" alt="noche"></div>
+                        <span class="spanHorario">Noche 18:00 - 23:59</span></div>
+                    
                 </div>
             </div>
+            <!--Se agregan iconos y sus respectivas horas por definir como funcionara el boton-->
             <div class="asidePais">
                 <span>Costa Rica</span>
                 <img class="imgPais" src="../Assets/img/fotosVuelos/costarica.webp" alt="Costa Rica">
                 <div class="divHorarios">
-                    <h2>Aqui van los horarios de los vuelos</h2>
+                    <div class="madrugada">
+                        <div><img src="../Assets/img/fotosVuelos/madrugada.png" alt="madrugada"></div>
+                        <span class="spanHorario">Madrugada 00:00  -  05:59</span></div>
+                    <div class="madrugada">
+                        <div><img src="../Assets/img/fotosVuelos/mañana.png" alt="mañana"></div>
+                        <span class="spanHorario">Mañana 06:00 - 11:59</span></div>
+                    <div class="madrugada">
+                        <div><img src="../Assets/img/fotosVuelos/tarde.png" alt="tarde"></div>
+                        <span class="spanHorario">Tarde 12:00 - 17:59</span></div>
+                    <div class="madrugada">
+                        <div><img src="../Assets/img/fotosVuelos/noche.png" alt="noche"></div>
+                        <span class="spanHorario">Noche 18:00 - 23:59</span></div>
+                    
                 </div>
             </div>
-            <div class="asidePais">
-                <span>Perú</span>
-                <img class="imgPais" src="../Assets/img/fotosVuelos/peru.webp" alt="Perú">
-                <div class="divHorarios">
-                    <h2>Aqui van los horarios de los vuelos</h2>
+            <!--Se agregan iconos y sus respectivas horas por definir como funcionara el boton-->
+                <div class="asidePais">
+                    <span>Perú</span>
+                    <img class="imgPais" src="../Assets/img/fotosVuelos/peru.webp" alt="Perú">
+                    <div class="divHorarios">
+                    <div class="madrugada">
+                        <div><img src="../Assets/img/fotosVuelos/madrugada.png" alt="madrugada"></div>
+                        <span class="spanHorario">Madrugada 00:00  -  05:59</span></div>
+                    <div class="madrugada">
+                        <div><img src="../Assets/img/fotosVuelos/mañana.png" alt="mañana"></div>
+                        <span class="spanHorario">Mañana 06:00 - 11:59</span></div>
+                    <div class="madrugada">
+                        <div><img src="../Assets/img/fotosVuelos/tarde.png" alt="tarde"></div>
+                        <span class="spanHorario">Tarde 12:00 - 17:59</span></div>
+                    <div class="madrugada">
+                        <div><img src="../Assets/img/fotosVuelos/noche.png" alt="noche"></div>
+                        <span class="spanHorario">Noche 18:00 - 23:59</span></div>
+                    
                 </div>
             </div>
             <div class="asidePais">
                 <span>Groenlandia</span>
                 <img class="imgPais" src="../Assets/img/fotosVuelos/groenlandia.webp" alt="Groenlandia">
                 <div class="divHorarios">
-                    <h2>Aqui van los horarios de los vuelos</h2>
+                    <div class="madrugada">
+                        <div><img src="../Assets/img/fotosVuelos/madrugada.png" alt="madrugada"></div>
+                        <span class="spanHorario">Madrugada 00:00  -  05:59</span></div>
+                    <div class="madrugada">
+                        <div><img src="../Assets/img/fotosVuelos/mañana.png" alt="mañana"></div>
+                        <span class="spanHorario">Mañana 06:00 - 11:59</span></div>
+                    <div class="madrugada">
+                        <div><img src="../Assets/img/fotosVuelos/tarde.png" alt="tarde"></div>
+                        <span class="spanHorario">Tarde 12:00 - 17:59</span></div>
+                    <div class="madrugada">
+                        <div><img src="../Assets/img/fotosVuelos/noche.png" alt="noche"></div>
+                        <span class="spanHorario">Noche 18:00 - 23:59</span></div>
+                    
                 </div>
             </div>
         </aside>
