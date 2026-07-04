@@ -12,7 +12,7 @@ body{font-family: Arial, sans-serif; /*Modifica la fuente central del body, el c
 h2{text-align: center; /*Modifica el comportamiento por defecto de los títulos h2 del body*/
 }
 
-a{color: black; /*Modifica el color del texto general del cuerpo (este logra cambiarse en cada caso según el modelo cascada pero es el color base si no se modiica a pie)*/
+a{color: rgb(0, 0, 0); /*Modifica el color del texto general del cuerpo (este logra cambiarse en cada caso según el modelo cascada pero es el color base si no se modiica a pie)*/
     text-decoration: none;}
 /*-----------------------------------------------------------------------------------------------------*/
 /*Estilos de la barra de navegación*/
@@ -34,12 +34,11 @@ height: auto;
     font-family: sans-serif;
     color: white;
     margin-right: 7px;
-   
 }
 
 .divBarradenavegacionDestinos ul{ /*Modifica los enlaces de la barra de navegación*/
-   display: flex;
-   list-style: none;
+    display: flex;
+    list-style: none;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -70,3 +69,33 @@ transform: scaleY(1.03);}
     font-family: sans-serif;
     color: white;
     margin-right: 7px;}
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*Estilos de la sección de footer*/ 
+/*-----------------------------------------------------------------------------------------------------*/
+
+.divContenedorDeFooterDestinos {background-color: #FFFFFF; /*Modifica el contenedor del footer del ubicaciones y contacto general donde está todo guardado*/ 
+    display: flex;
+    width: 90%;
+    height: 200px;
+    margin-top: 20px;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;}
+
+.divDeFooterDestinos {background-color: #FFFFFF; /*Modifica cada div individual dentro del div general ubicaciones y contacto*/
+    width: 250px;}
+
+.divDeFooterDestinos ul{list-style: none; /*Modifica las listas desordenadas del footer*/
+    text-align: center;
+    padding: 0;
+    text-align: center;} 
+
+.divDeFooterDestinos li{margin: 15px 0px;} /*Modifica los elementos de las listas del footer*/
+
+.footerDestinos p{background-color: #e2e2e2; /*Modifica el texto de derechos reservados del footer*/
+    border: 1px solid grey;
+    text-align: center;
+    padding: 10px 0px;
+    margin: 0px;} 
