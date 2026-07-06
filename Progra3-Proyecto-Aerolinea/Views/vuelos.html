@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Búsqueda de Vuelos</title>
     <link rel="stylesheet" href="../Assets/css/vuelos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
     <!--los styles de abajo son para identificar yo poder ubicarme mejor en la pagina-->
     <style>
         .divMain1{border: solid red; height: 200vh; display: flex;}
@@ -25,16 +27,99 @@
         .spanHorario{align-content: center;background-color: antiquewhite; width: 200px;
         justify-content: center;}
         img{ width: 40px}
+        /**/
+        /*-----------------------------------------------------------------------------------------------------*/
+/*Estilos de la barra de navegación del vuelos*/
+/*-----------------------------------------------------------------------------------------------------*/
+.divVuelos{
+    background: #58b6b3; /*Modifica el div contenedor de la barra de navegación*/
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 70px;}
+.divVuelos img{
+width: 50px; /*Modifica la imagen/logo de la aerolinea en la barra de navegación*/
+height: auto;}
+
+.divVuelos .logo {
+    font-size: 30px; /*Modifica el texto para la marca de la aerolinea en la barra de navegación*/
+    font-family: sans-serif;
+    color: white;
+    margin-right: 7px;}
+
+.divVuelos ul{ /*Modifica los enlaces de la barra de navegación*/
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;}
+.divVuelos li {
+    height: 100%;}
+.divVuelos a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 180px;
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+    font-family: sans-serif;
+    transition: background-color 0.3s ease;}
+.divVuelos a:hover{
+background: rgb(255, 158, 41); /*Modifica el comportamiento de la barra de navegación*/
+cursor: pointer;
+transform: scaleY(1.03);}
+
+.divVuelos p{
+    font-size: 30px; /*Modifica el texto para la marca de la aerolinea en la barra de navegación*/
+    font-family: sans-serif;
+    color: white;
+    margin-right: 7px;}
+
+    /**/
+    /*-----------------------------------------------------------------------------------------------------*/
+/*Estilos de la sección de footer*/
+/*-----------------------------------------------------------------------------------------------------*/
+.divContenedorDeFooterVuelos {
+    background-color: #FFFFFF; 
+    display: flex;
+    width: 90%;
+    height: 200px;
+    margin-top: 20px;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;}
+
+.divDeFooterVuelos {
+    background-color: #FFFFFF; 
+    width: 250px;}
+
+.divDeFooterVuelos ul{
+    list-style: none; 
+    text-align: center;
+    padding: 0;
+    text-align: center;} 
+
+.divDeFooterVuelos li{margin: 15px 0px;} 
+
+.footerDeSucursales p{
+    background-color: #e2e2e2; 
+    border: 1px solid grey;
+    text-align: center;
+    padding: 10px 0px;
+    margin: 0px;} 
     </style>
 </head>
 <body>
     <!--Header para navegacion rapida entre las diferentes ventanas de la pagina web-->
     <header>
-        <div class="divDeBarraDeNavegacionIndex">
+        <div class="divVuelos">
         <p><strong><em>Apex Fly</em></strong></p>
         <img src="../Assets/img/fotosIndex/avionBarra.png">
         <a href="../Views/index.html">Página de inicio</a>
-        <a href="destinos.html">Página de destinos</a>
+        <a href="../Views/destinos.html">Página de destinos</a>
         <a href="../Views/vuelos.html">Búsqueda de vuelos</a>
         <a href="../Views/sucursalesContacto.html">Sucursales y contacto</a>
         </div>
@@ -256,9 +341,55 @@
                     <h2>Aqui van los precios/datos de los vuelos</h2>
                 </div>
             </div><!--termina div main 2-->
-
         </div>
     </div><!--termina div caja principal-->
     </main>
+
+    <!--sección de footer-->
+    <div class="divContenedorDeFooterVuelos">
+
+        <div class="divDeFooterVuelos">
+            <h4>Acerca de nosotros</h4> <!-- pendiente de ponerle nombre a la aerolinea-->
+            <ul>
+                <li>Nuestra historia</li>
+                <li>Trayectoria</li>
+                <li>Organigrama</li>
+                <li>Documentos de interés</li>
+            </ul>
+        </div>
+
+        <div class="divDeFooterVuelos">
+            <h4>Información legal</h4>
+            <ul>
+                <li>Términos y condiciones</li>
+                <li>Reclamos de servicios</li>
+                <li>Requisitos por país</li>
+                <li>Obligaciones a bordo</li>
+            </ul>
+        </div>
+
+        <div class="divDeFooterVuelos">
+            <h4>Datos de contacto</h4>
+            <ul>
+                <li>Centro de atención al cliente</li>
+                <li>CorreoDePrueba@uvirtual.com</li>
+                <li>Contacto para empresas</li>
+                <li>Formulario de reclamos</li>
+            </ul>
+        </div>
+
+        <div class="divDeFooterVuelos">
+            <h4>Siguenos en redes sociales</h4>
+            <ul>
+                <li>Facebook</li>
+                <li>Instagram</li>
+                <li>WhatsApp <br>(canal de difusión)</li>
+            </ul>
+        </div>
+
+    </div>
+    <footer class="footerDeVuelos">
+        <p>© 2026 Todos los derechos reservados</p>
+    </footer>
 </body>
 </html>
