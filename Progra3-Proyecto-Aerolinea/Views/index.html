@@ -4,18 +4,74 @@
     <meta charset="UTF-8" lang="es">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="../Assets/css/index.css">
 </head>
 
 <body>
-    <div class="divDeBarraDeNavegacionIndex">
-        <p><strong><em>Apex Fly</em></strong></p>
-        <img src="../Assets/img/fotosIndex/avionBarra.png">
-        <a href="../Views/index.html">Página de inicio</a>
-        <a href="../Views/destinos.html">Página de destinos</a>
-        <a href="../Views/vuelos.html">Búsqueda de vuelos</a>
-        <a href="../Views/sucursalesContacto.html">Sucursales y contacto</a>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark navbarApex">
+        <!--navbar para indicar que es la barra de navegación-->
+        <!--navbar-expand-lg mantiene la barra expandida en pantallas lg o superiores-->
+        <!--navbar-light para cambiar el estilo de la barra de navegación a un tono oscuro (light para hacerlo oscuro jaja)-->
+        <!--navbarApex es la clase para editar desde el index.css-->
+
+        <div class="container-fluid px-4">
+            <!--container para tratar el contenido de la barra de navegación-->
+
+            <a class="navbar-brand text-white fw-bold fst-italic ms-3" href="../Views/index.html">
+                <!--nav-brand para tratar el logo de la aerolinea y el nombre como una marca sola de redireccionamiento-->
+                <!--text-white para cambiar el color del texto a blanco-->
+                <!--fw-bold para cambiar el grosor del texto a negrita-->
+                <!--fst-italic para cambiar el estilo del texto a cursiva-->
+                <!--ms-3 para agregar un margen a la izquierda, o sea margin start 3-->
+
+                <img src="../Assets/img/fotosIndex/avionBarra.png" width="45" class="me-2">
+                Apex Fly
+                <!--me-2 para agregar un margen a la derecha, o sea margin end 2-->
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuDelNavbar"> <!--Botón para colapsar la barra de navegación en pantallas pequeñas-->
+                <!--navbar-toggler clases para abrir o cerrar la barra de navegación en dispositivos de pantallas pequeñas-->
+                <!--data-bs-toggle="collapse" para que el botón active el componente llamado collapse que viene de Js-->
+                <!--data-bs-target="#menuDelNavbar" para que busque lo que tenga ese identificador específico-->
+
+                <span class="navbar-toggler-icon"></span>
+                    <!--navbar-toggler-icon para para dibujar el icono del botón para cerrar o abrir la barra de navegación-->
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuDelNavbar">
+                <!--collapse inndica que es parte del nnavbar y colapsa la barra de navegación en pantallas pequeñas-->
+                <!--navbar-nav para tratar los enlaces de navegación-->
+                <!--id="menuDelNavbar" para asignarle el identificador que se usa en el botón-->
+
+                <div class="navbar-nav ms-auto">
+                    <!--navbar-nav para tratar los enlaces de navegación-->
+                    <!--ms-auto para alinear los enlaces a la derecha, o sea margin start auto-->
+
+                    <a class="nav-link text-white rounded-2" href="../Views/index.html"> Página de inicio</a>
+                    <!--nav-link para tratar los enlaces de navegación-->
+                    <!--text-white para cambiar el color del texto a blanco-->
+
+                    <a class="nav-link text-white rounded-2" href="../Views/destinos.html"> Página de destinos</a>
+                    <!--nav-link para tratar los enlaces de navegación-->
+                    <!--text-white para cambiar el color del texto a blanco-->
+                    
+                    <a class="nav-link text-white rounded-2" href="../Views/vuelos.html">Búsqueda de vuelos</a>
+                    <!--nav-link para tratar los enlaces de navegación-->
+                    <!--text-white para cambiar el color del texto a blanco-->
+
+                    <a class="nav-link text-white rounded-2" href="../Views/sucursalesContacto.html">Sucursales y contacto</a>
+                    <!--nav-link para tratar los enlaces de navegación-->
+                    <!--text-white para cambiar el color del texto a blanco-->
+                    
+                    <!--nav-link agrega padding, separación, alineación y comportamiento de barra nav-->
+                    
+                </div>
+            </div>
+        </div>
+    </nav>
 
     <div class="divDeFondoSuperior">
         <img src="../Assets/img/fotosIndex/avionFondo.png">
@@ -143,5 +199,6 @@
     <footer class="footerDeSucursales">
         <p>© 2026 Todos los derechos reservados</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

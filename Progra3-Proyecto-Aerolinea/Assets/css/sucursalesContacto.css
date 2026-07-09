@@ -6,6 +6,7 @@ body{font-family: Arial, sans-serif; /*Modifica la fuente central del body, el c
     margin: 0;
     padding: 0;
     background-color: #ffffff;
+    color: black;
 }
 
 h2{text-align: center; /*Modifica el comportamiento por defecto de los títulos h2 del body*/
@@ -19,35 +20,18 @@ a{color: black; /*Modifica el color del texto general del cuerpo (este logra cam
 /*Estilos de la barra de navegación*/
 /*-----------------------------------------------------------------------------------------------------*/
 
-.divDeBarraDeNavegacionSucursales{background: #58b6b3; /*Modifica el div contenedor de la barra de navegación*/
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    height: 70px;}
+.navbarApex{ /*Modifica aspectos generales de la barra de navegación*/
+    background: #58b6b3; /*Modifica el color del fondo del nav de la barra de navegación*/
+} 
 
-.divDeBarraDeNavegacionSucursales img{width: 50px; /*Modifica la imagen/logo de la aerolinea en la barra de navegación*/
-height: auto;}
-
-.divDeBarraDeNavegacionSucursales p{font-size: 30px; /*Modifica el texto para la marca de la aerolinea en la barra de navegación*/
-    font-family: sans-serif;
-    color: white;
-    margin-right: 7px;}
-
-.divDeBarraDeNavegacionSucursales a{ /*Modifica los enlaces de la barra de navegación*/
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 100%;
-    width: 200px;
-    display: flex;
-    color: white;
-    font-size: 19px;
+.navbarApex .nav-link { /*Modifica los enlaces de la barra de navegación*/
+    font-size: 19px; /*Modifica el tamaño de la letra*/
 }
 
-.divDeBarraDeNavegacionSucursales a:hover{background: rgb(255, 158, 41); /*Modifica el comportamiento de la barra de navegación*/
-cursor: pointer;
-transition: background-color 0.3s;
-transform: scaleY(1.03);}
+.navbarApex .nav-link:hover { /*Modifica como se comporta al posicionarse sobre los enlaces del nav*/
+    background: rgb(255, 158, 41); /*Modifica el color de transición de los enlaces del nav*/
+    transition: background-color 0.3s; /*Modifica el tiempo de trannsición a los parámetros*/
+}
 
 /*-----------------------------------------------------------------------------------------------------*/
 /*Estilos de la parte superior*/
