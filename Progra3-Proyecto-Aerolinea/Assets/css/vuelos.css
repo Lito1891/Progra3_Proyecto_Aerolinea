@@ -124,3 +124,12 @@ form{
     text-align: center;
     padding: 10px 0px;
     margin: 0px;} 
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*Estilos de seccion horarios y precios de los vuelos*/
+/*-----------------------------------------------------------------------------------------------------*/
+    .imgPais{width: 70px; height: 40px;}
+        .imgHorarios{ width: 30px; height: 30px;}
+        .col-3{background-color: beige;}
+        .col-9{border: solid rebeccapurple;}
+        .pais{gap: 10px;}

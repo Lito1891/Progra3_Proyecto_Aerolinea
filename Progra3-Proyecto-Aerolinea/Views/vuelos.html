@@ -4,112 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Búsqueda de Vuelos</title>
-    <link rel="stylesheet" href="../Assets/css/vuelos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="../Assets/css/vuelos.css">
     <!--los styles de abajo son para identificar yo poder ubicarme mejor en la pagina-->
     <style>
-        .divMain1{border: solid red; height: 200vh; display: flex;}
-        .asideDestinos{border: solid green; width: 30%; height: 200vh; display: flex;
-        flex-direction: column;}
-        .asidePais{border: solid black; height: 33vh; display: flex; flex-direction: column;
-        align-items: center; width: 100%;}
         .imgPais{width: 70px; height: 40px;}
-        .divHorarios{ width: 100%; height: 26vh; display: flex;
-        flex-direction: column;  align-items: center; gap: 15px; padding: 15px 0px;}
-
-        .divMain2{border: solid orange; width: 70%;}
-        .divPais{border: solid blue; height: 32.78vh; display: flex; flex-direction: column;
-        align-items: center;}
-        .divPrecios{border: solid purple; width: 100%; height: 26vh;}
-
-        .madrugada{ display: flex; flex-direction: row; }
-        .spanHorario{align-content: center;background-color: antiquewhite; width: 200px;
-        justify-content: center;}
-        img{ width: 40px}
-        /**/
-        /*-----------------------------------------------------------------------------------------------------*/
-/*Estilos de la barra de navegación del vuelos*/
-/*-----------------------------------------------------------------------------------------------------*/
-.divVuelos{
-    background: #58b6b3; /*Modifica el div contenedor de la barra de navegación*/
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    height: 70px;}
-.divVuelos img{
-width: 50px; /*Modifica la imagen/logo de la aerolinea en la barra de navegación*/
-height: auto;}
-
-.divVuelos .logo {
-    font-size: 30px; /*Modifica el texto para la marca de la aerolinea en la barra de navegación*/
-    font-family: sans-serif;
-    color: white;
-    margin-right: 7px;}
-
-.divVuelos ul{ /*Modifica los enlaces de la barra de navegación*/
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    height: 100%;}
-.divVuelos li {
-    height: 100%;}
-.divVuelos a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 100%;
-    width: 180px;
-    color: white;
-    font-size: 17px;
-    text-decoration: none;
-    font-family: sans-serif;
-    transition: background-color 0.3s ease;}
-.divVuelos a:hover{
-background: rgb(255, 158, 41); /*Modifica el comportamiento de la barra de navegación*/
-cursor: pointer;
-transform: scaleY(1.03);}
-
-.divVuelos p{
-    font-size: 30px; /*Modifica el texto para la marca de la aerolinea en la barra de navegación*/
-    font-family: sans-serif;
-    color: white;
-    margin-right: 7px;}
-
-    /**/
-    /*-----------------------------------------------------------------------------------------------------*/
-/*Estilos de la sección de footer*/
-/*-----------------------------------------------------------------------------------------------------*/
-.divContenedorDeFooterVuelos {
-    background-color: #FFFFFF; 
-    display: flex;
-    width: 90%;
-    height: 200px;
-    margin-top: 20px;
-    justify-content: center;
-    text-align: center;
-    gap: 20px;}
-
-.divDeFooterVuelos {
-    background-color: #FFFFFF; 
-    width: 250px;}
-
-.divDeFooterVuelos ul{
-    list-style: none; 
-    text-align: center;
-    padding: 0;
-    text-align: center;} 
-
-.divDeFooterVuelos li{margin: 15px 0px;} 
-
-.footerDeSucursales p{
-    background-color: #e2e2e2; 
-    border: 1px solid grey;
-    text-align: center;
-    padding: 10px 0px;
-    margin: 0px;} 
+        .imgHorarios{ width: 30px; height: 30px;}
+        .col-3{background-color: beige;}
+        .col-9{background-color: aliceblue;}
+        .pais{gap: 10px;}
     </style>
 </head>
 <body>
@@ -170,179 +73,224 @@ transform: scaleY(1.03);}
             </div>
     </div>
     <main>
-        <!--Caja principal para agrupar elementos-->
-    <div class="divMain1">
-        <!--aside para montar pais con horarios, aun por definir como mostrarlos-->
-        <aside class="asideDestinos">
-            <!--Se agregan iconos y sus respectivas horas por definir como funcionara el boton-->
-            <div class="asidePais">
-                <span>Francia</span>
-                <img class="imgPais" src="../Assets/img/fotosVuelos/francia.webp" alt="Francia">
-                <div class="divHorarios">
-                    <div class="madrugada">
-                        <div><img src="../Assets/img/fotosVuelos/madrugada.png" alt="madrugada"></div>
-                        <span class="spanHorario">Madrugada 00:00  -  05:59</span></div>
-                    <div class="madrugada">
-                        <div><img src="../Assets/img/fotosVuelos/mañana.png" alt="mañana"></div>
-                        <span class="spanHorario">Mañana 06:00 - 11:59</span></div>
-                    <div class="madrugada">
-                        <div><img src="../Assets/img/fotosVuelos/tarde.png" alt="tarde"></div>
-                        <span class="spanHorario">Tarde 12:00 - 17:59</span></div>
-                    <div class="madrugada">
-                        <div><img src="../Assets/img/fotosVuelos/noche.png" alt="noche"></div>
-                        <span class="spanHorario">Noche 18:00 - 23:59</span></div>
-                    
+    <div class="allCountries"><!--div de todos los paises-->
+        <!--Francia-->
+        <div class=" text-center">
+        <div class="row justify-content-center">
+            <div class="col-3"><!--col-3 inicio-->
+            <span class="row justify-content-center">París, Francia</span>
+            <img class="col-12 imgPais" src="../Assets/img/fotosVuelos/francia.webp" alt="Francia">
+            <div class="pais row">
+                <div class="row justify-content-center">
+                    <div class="col"><img class="col imgHorarios" src="../Assets/img/fotosVuelos/madrugada.png" alt="madrugada"></div>
+                    <span class="col">Madrugada 00:00 - 05:59</span>
                 </div>
-            </div>
-            <!--Se agregan iconos y sus respectivas horas por definir como funcionara el boton-->
-            <div class="asidePais">
-                <span>Japón</span>
-                <img class="imgPais" src="../Assets/img/fotosVuelos/japon.webp" alt="Japón">
-                <div class="divHorarios">
-                    <div class="madrugada">
-                        <div><img src="../Assets/img/fotosVuelos/madrugada.png" alt="madrugada"></div>
-                        <span class="spanHorario">Madrugada 00:00  -  05:59</span></div>
-                    <div class="madrugada">
-                        <div><img src="../Assets/img/fotosVuelos/mañana.png" alt="mañana"></div>
-                        <span class="spanHorario">Mañana 06:00 - 11:59</span></div>
-                    <div class="madrugada">
-                        <div><img src="../Assets/img/fotosVuelos/tarde.png" alt="tarde"></div>
-                        <span class="spanHorario">Tarde 12:00 - 17:59</span></div>
-                    <div class="madrugada">
-                        <div><img src="../Assets/img/fotosVuelos/noche.png" alt="noche"></div>
-                        <span class="spanHorario">Noche 18:00 - 23:59</span></div>
-                    
-                </div>
-            </div>
-            <!--Se agregan iconos y sus respectivas horas por definir como funcionara el boton-->
-            <div class="asidePais">
-                <span>Brasil</span>
-                <img class="imgPais" src="../Assets/img/fotosVuelos/brasil.webp" alt="Brasil">
-                <div class="divHorarios">
-                    <div class="madrugada">
-                        <div><img src="../Assets/img/fotosVuelos/madrugada.png" alt="madrugada"></div>
-                        <span class="spanHorario">Madrugada 00:00  -  05:59</span></div>
-                    <div class="madrugada">
-                        <div><img src="../Assets/img/fotosVuelos/mañana.png" alt="mañana"></div>
-                        <span class="spanHorario">Mañana 06:00 - 11:59</span></div>
-                    <div class="madrugada">
-                        <div><img src="../Assets/img/fotosVuelos/tarde.png" alt="tarde"></div>
-                        <span class="spanHorario">Tarde 12:00 - 17:59</span></div>
-                    <div class="madrugada">
-                        <div><img src="../Assets/img/fotosVuelos/noche.png" alt="noche"></div>
-                        <span class="spanHorario">Noche 18:00 - 23:59</span></div>
-                    
-                </div>
-            </div>
-            <!--Se agregan iconos y sus respectivas horas por definir como funcionara el boton-->
-            <div class="asidePais">
-                <span>Costa Rica</span>
-                <img class="imgPais" src="../Assets/img/fotosVuelos/costarica.webp" alt="Costa Rica">
-                <div class="divHorarios">
-                    <div class="madrugada">
-                        <div><img src="../Assets/img/fotosVuelos/madrugada.png" alt="madrugada"></div>
-                        <span class="spanHorario">Madrugada 00:00  -  05:59</span></div>
-                    <div class="madrugada">
-                        <div><img src="../Assets/img/fotosVuelos/mañana.png" alt="mañana"></div>
-                        <span class="spanHorario">Mañana 06:00 - 11:59</span></div>
-                    <div class="madrugada">
-                        <div><img src="../Assets/img/fotosVuelos/tarde.png" alt="tarde"></div>
-                        <span class="spanHorario">Tarde 12:00 - 17:59</span></div>
-                    <div class="madrugada">
-                        <div><img src="../Assets/img/fotosVuelos/noche.png" alt="noche"></div>
-                        <span class="spanHorario">Noche 18:00 - 23:59</span></div>
-                    
-                </div>
-            </div>
-            <!--Se agregan iconos y sus respectivas horas por definir como funcionara el boton-->
-                <div class="asidePais">
-                    <span>Perú</span>
-                    <img class="imgPais" src="../Assets/img/fotosVuelos/peru.webp" alt="Perú">
-                    <div class="divHorarios">
-                    <div class="madrugada">
-                        <div><img src="../Assets/img/fotosVuelos/madrugada.png" alt="madrugada"></div>
-                        <span class="spanHorario">Madrugada 00:00  -  05:59</span></div>
-                    <div class="madrugada">
-                        <div><img src="../Assets/img/fotosVuelos/mañana.png" alt="mañana"></div>
-                        <span class="spanHorario">Mañana 06:00 - 11:59</span></div>
-                    <div class="madrugada">
-                        <div><img src="../Assets/img/fotosVuelos/tarde.png" alt="tarde"></div>
-                        <span class="spanHorario">Tarde 12:00 - 17:59</span></div>
-                    <div class="madrugada">
-                        <div><img src="../Assets/img/fotosVuelos/noche.png" alt="noche"></div>
-                        <span class="spanHorario">Noche 18:00 - 23:59</span></div>
-                    
-                </div>
-            </div>
-            <div class="asidePais">
-                <span>Groenlandia</span>
-                <img class="imgPais" src="../Assets/img/fotosVuelos/groenlandia.webp" alt="Groenlandia">
-                <div class="divHorarios">
-                    <div class="madrugada">
-                        <div><img src="../Assets/img/fotosVuelos/madrugada.png" alt="madrugada"></div>
-                        <span class="spanHorario">Madrugada 00:00  -  05:59</span></div>
-                    <div class="madrugada">
-                        <div><img src="../Assets/img/fotosVuelos/mañana.png" alt="mañana"></div>
-                        <span class="spanHorario">Mañana 06:00 - 11:59</span></div>
-                    <div class="madrugada">
-                        <div><img src="../Assets/img/fotosVuelos/tarde.png" alt="tarde"></div>
-                        <span class="spanHorario">Tarde 12:00 - 17:59</span></div>
-                    <div class="madrugada">
-                        <div><img src="../Assets/img/fotosVuelos/noche.png" alt="noche"></div>
-                        <span class="spanHorario">Noche 18:00 - 23:59</span></div>
-                    
-                </div>
-            </div>
-        </aside>
-        <!--caja que va a la par del aside-->
 
-        <!--Inicia div main 2-->
-        <div class="divMain2">
+                <div class="row">
+                    <div class="col"><img class="col imgHorarios" src="../Assets/img/fotosVuelos/mañana.png" alt="mañana"></div>
+                    <span class="col">Mañana 06:00 - 11:59</span>
+                </div>
+
+                <div class="row">
+                    <div class="col"><img class="col imgHorarios" src="../Assets/img/fotosVuelos/tarde.png" alt="tarde"></div>
+                    <span class="col">Tarde 12:00 - 17:59</span>
+                </div>
+
+                <div class="row">
+                    <div class="col"><img class="col imgHorarios" src="../Assets/img/fotosVuelos/noche.png" alt="noche"></div>
+                    <span class="col">Noche 18:00 - 23:59</span>
+                </div>
+            </div>
+                
+            </div><!--col-3 final-->
             
-            <div class="divPais">
-                <span>Francia</span>
-                <img class="imgPais" src="../Assets/img/fotosVuelos/francia.webp" alt="Francia">
-                <div class="divPrecios">
-                    <h2>Aqui van los precios/datos de los vuelos</h2>
-                </div>
+            <div class="col-9">
+            <span class="row justify-content-center">París, Francia</span>
+            <img class="col-12 imgPais" src="../Assets/img/fotosVuelos/francia.webp" alt="Francia">
             </div>
-            <div class="divPais">
-                <span>Japón</span>
-                <img class="imgPais" src="../Assets/img/fotosVuelos/japon.webp" alt="Japón">
-                <div class="divPrecios">
-                    <h2>Aqui van los precios/datos de los vuelos</h2>
-                </div>
-            </div>
-            <div class="divPais">
-                <span>Brasil</span>
-                <img class="imgPais" src="../Assets/img/fotosVuelos/brasil.webp" alt="Brasil">
-                <div class="divPrecios">
-                    <h2>Aqui van los precios/datos de los vuelos</h2>
-                </div>
-            </div>
-            <div class="divPais">
-                <span>Costa Rica</span>
-                <img class="imgPais" src="../Assets/img/fotosVuelos/costarica.webp" alt="Costa Rica">
-                <div class="divPrecios">
-                    <h2>Aqui van los precios/datos de los vuelos</h2>
-                </div>
-            </div>
-            <div class="divPais">
-                <span>Perú</span>
-                <img class="imgPais" src="../Assets/img/fotosVuelos/peru.webp" alt="Perú">
-                <div class="divPrecios">
-                    <h2>Aqui van los precios/datos de los vuelos</h2>
-                </div>
-            </div>
-            <div class="divPais">
-                <span>Groenlandia</span>
-                <img class="imgPais" src="../Assets/img/fotosVuelos/groenlandia.webp" alt="Groenlandia">
-                <div class="divPrecios">
-                    <h2>Aqui van los precios/datos de los vuelos</h2>
-                </div>
-            </div><!--termina div main 2-->
         </div>
-    </div><!--termina div caja principal-->
+        </div><br>
+        <!--Japón-->
+        <div class=" text-center">
+            <div class="row justify-content-center">
+                <div class="col-3"><!--col-3 inicio-->
+                <span class="row justify-content-center">Tokio, Japón</span>
+                <img class="col-12 imgPais" src="../Assets/img/fotosVuelos/japon.webp" alt="Japón">
+                    <div class="pais row">
+                        <div class="row justify-content-center">
+                            <div class="col"><img class="col imgHorarios" src="../Assets/img/fotosVuelos/madrugada.png" alt="madrugada"></div>
+                            <span class="col">Madrugada 00:00 - 05:59</span>
+                        </div>
+
+                            <div class="row">
+                                <div class="col"><img class="col imgHorarios" src="../Assets/img/fotosVuelos/mañana.png" alt="mañana"></div>
+                                <span class="col">Mañana 06:00 - 11:59</span>
+                            </div>
+
+                            <div class="row">
+                                <div class="col"><img class="col imgHorarios" src="../Assets/img/fotosVuelos/tarde.png" alt="tarde"></div>
+                                <span class="col">Tarde 12:00 - 17:59</span>
+                            </div>
+
+                            <div class="row">
+                                <div class="col"><img class="col imgHorarios" src="../Assets/img/fotosVuelos/noche.png" alt="noche"></div>
+                                <span class="col">Noche 18:00 - 23:59</span>
+                            </div>
+                    </div>
+                
+                </div><!--col-3 final-->
+            
+            <div class="col-9">
+                <span class="row justify-content-center">Tokio, Japón</span>
+                <img class="col-12 imgPais" src="../Assets/img/fotosVuelos/japon.webp" alt="Japón">
+            </div>
+        </div>
+        </div><br>
+        <!--Brasil-->
+        <div class=" text-center">
+            <div class="row justify-content-center">
+                <div class="col-3"><!--col-3 inicio-->
+                <span class="row justify-content-center">Río de Janeiro, Brasil</span>
+                <img class="col-12 imgPais" src="../Assets/img/fotosVuelos/brasil.webp" alt="brasil">
+                    <div class="pais row">
+                        <div class="row justify-content-center">
+                            <div class="col"><img class="col imgHorarios" src="../Assets/img/fotosVuelos/madrugada.png" alt="madrugada"></div>
+                            <span class="col">Madrugada 00:00 - 05:59</span>
+                        </div>
+
+                            <div class="row">
+                                <div class="col"><img class="col imgHorarios" src="../Assets/img/fotosVuelos/mañana.png" alt="mañana"></div>
+                                <span class="col">Mañana 06:00 - 11:59</span>
+                            </div>
+
+                            <div class="row">
+                                <div class="col"><img class="col imgHorarios" src="../Assets/img/fotosVuelos/tarde.png" alt="tarde"></div>
+                                <span class="col">Tarde 12:00 - 17:59</span>
+                            </div>
+
+                            <div class="row">
+                                <div class="col"><img class="col imgHorarios" src="../Assets/img/fotosVuelos/noche.png" alt="noche"></div>
+                                <span class="col">Noche 18:00 - 23:59</span>
+                            </div>
+                    </div>
+                
+                </div><!--col-3 final-->
+            
+            <div class="col-9">
+                <span class="row justify-content-center">Río de Janeiro, Brasil</span>
+                <img class="col-12 imgPais" src="../Assets/img/fotosVuelos/brasil.webp" alt="Brasil">
+            </div>
+        </div>
+        </div><br>
+        <!--Costa Rica-->
+        <div class=" text-center">
+            <div class="row justify-content-center">
+                <div class="col-3"><!--col-3 inicio-->
+                <span class="row justify-content-center">San José, Costa Rica</span>
+                <img class="col-12 imgPais" src="../Assets/img/fotosVuelos/costarica.webp" alt="Costa Rica">
+                    <div class="pais row">
+                        <div class="row justify-content-center">
+                            <div class="col"><img class="col imgHorarios" src="../Assets/img/fotosVuelos/madrugada.png" alt="madrugada"></div>
+                            <span class="col">Madrugada 00:00 - 05:59</span>
+                        </div>
+
+                            <div class="row">
+                                <div class="col"><img class="col imgHorarios" src="../Assets/img/fotosVuelos/mañana.png" alt="mañana"></div>
+                                <span class="col">Mañana 06:00 - 11:59</span>
+                            </div>
+
+                            <div class="row">
+                                <div class="col"><img class="col imgHorarios" src="../Assets/img/fotosVuelos/tarde.png" alt="tarde"></div>
+                                <span class="col">Tarde 12:00 - 17:59</span>
+                            </div>
+
+                            <div class="row">
+                                <div class="col"><img class="col imgHorarios" src="../Assets/img/fotosVuelos/noche.png" alt="noche"></div>
+                                <span class="col">Noche 18:00 - 23:59</span>
+                            </div>
+                    </div>
+                
+                </div><!--col-3 final-->
+            
+            <div class="col-9">
+                <span class="row justify-content-center">San José, Costa Rica</span>
+                <img class="col-12 imgPais" src="../Assets/img/fotosVuelos/costarica.webp" alt="costarica">
+            </div>
+        </div>
+        </div><br>
+        <!--Perú-->
+        <div class=" text-center">
+            <div class="row justify-content-center">
+                <div class="col-3"><!--col-3 inicio-->
+                <span class="row justify-content-center">Cusco, Perú</span>
+                <img class="col-12 imgPais" src="../Assets/img/fotosVuelos/peru.webp" alt="Peru">
+                    <div class="pais row">
+                        <div class="row justify-content-center">
+                            <div class="col"><img class="col imgHorarios" src="../Assets/img/fotosVuelos/madrugada.png" alt="madrugada"></div>
+                            <span class="col">Madrugada 00:00 - 05:59</span>
+                        </div>
+
+                            <div class="row">
+                                <div class="col"><img class="col imgHorarios" src="../Assets/img/fotosVuelos/mañana.png" alt="mañana"></div>
+                                <span class="col">Mañana 06:00 - 11:59</span>
+                            </div>
+
+                            <div class="row">
+                                <div class="col"><img class="col imgHorarios" src="../Assets/img/fotosVuelos/tarde.png" alt="tarde"></div>
+                                <span class="col">Tarde 12:00 - 17:59</span>
+                            </div>
+
+                            <div class="row">
+                                <div class="col"><img class="col imgHorarios" src="../Assets/img/fotosVuelos/noche.png" alt="noche"></div>
+                                <span class="col">Noche 18:00 - 23:59</span>
+                            </div>
+                    </div>
+                
+                </div><!--col-3 final-->
+            
+            <div class="col-9">
+                <span class="row justify-content-center">Cusco, Perú</span>
+                <img class="col-12 imgPais" src="../Assets/img/fotosVuelos/peru.webp" alt="peru">
+            </div>
+        </div>
+        </div><br>
+        <!--Groenlandia-->
+        <div class=" text-center">
+            <div class="row justify-content-center">
+                <div class="col-3"><!--col-3 inicio-->
+                <span class="row justify-content-center">Ilulissat, Groenlandia</span>
+                <img class="col-12 imgPais" src="../Assets/img/fotosVuelos/groenlandia.webp" alt="Groenlandia">
+                    <div class="pais row">
+                        <div class="row justify-content-center">
+                            <div class="col"><img class="col imgHorarios" src="../Assets/img/fotosVuelos/madrugada.png" alt="madrugada"></div>
+                            <span class="col">Madrugada 00:00 - 05:59</span>
+                        </div>
+
+                            <div class="row">
+                                <div class="col"><img class="col imgHorarios" src="../Assets/img/fotosVuelos/mañana.png" alt="mañana"></div>
+                                <span class="col">Mañana 06:00 - 11:59</span>
+                            </div>
+
+                            <div class="row">
+                                <div class="col"><img class="col imgHorarios" src="../Assets/img/fotosVuelos/tarde.png" alt="tarde"></div>
+                                <span class="col">Tarde 12:00 - 17:59</span>
+                            </div>
+
+                            <div class="row">
+                                <div class="col"><img class="col imgHorarios" src="../Assets/img/fotosVuelos/noche.png" alt="noche"></div>
+                                <span class="col">Noche 18:00 - 23:59</span>
+                            </div>
+                    </div>
+                
+                </div><!--col-3 final-->
+            
+            <div class="col-9">
+                <span class="row justify-content-center">Ilulissat, Groenlandia</span>
+                <img class="col-12 imgPais" src="../Assets/img/fotosVuelos/groenlandia.webp" alt="groenlandia">
+            </div>
+        </div>
+        </div>
+    </div><!--finaliza div allCountries-->
     </main>
 
     <!--sección de footer-->
