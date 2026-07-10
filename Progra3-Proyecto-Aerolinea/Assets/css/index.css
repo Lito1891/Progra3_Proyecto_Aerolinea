@@ -10,7 +10,7 @@ body{font-family: Arial, sans-serif; /*Modifica la fuente central del body, el c
 }
 
 h2{text-align: center; /*Modifica el comportamiento por defecto de los títulos h2 del body*/
-}
+font-family: Arial, sans-serif;}
 
 a{ color: black; /*Modifica el color del texto general del cuerpo (este logra cambiarse en cada caso según el modelo cascada pero es el color base si no se modiica a pie)*/
     text-decoration: none;}
@@ -59,14 +59,12 @@ object-fit: cover;}
     height: 60px;
     background-color: rgba(187, 205, 195, 0.3);
     color: rgb(110, 110, 110);
-    padding: 1px;
+    padding: 20px;
     font-size: 18px;}
 
 /*-----------------------------------------------------------------------------------------------------*/
 /*Estilos de la sección de destinos del index*/
 /*-----------------------------------------------------------------------------------------------------*/
-
-.tituloDestinos{margin-bottom: 0px;}
 
 .divContenedorDeDestinosPrincipalesIndex{background-color: #FFFFFF; /*Modifica el div contenedor principal que engloba todos los divs de destinos index*/
     display: flex;

@@ -58,14 +58,12 @@ object-fit: cover;}
     height: 60px;
     background-color: rgba(187, 205, 195, 0.3);
     color: rgb(110, 110, 110);
-    padding: 1px;
+    padding: 20px;
     font-size: 18px;}
 
 /*-----------------------------------------------------------------------------------------------------*/
 /*Estilos de la sección de ubicaciones*/
 /*-----------------------------------------------------------------------------------------------------*/
-
-.tituloDestinos{margin-bottom: 0px;}
 
 .divContenedorDeDestinosPrincipalesSucursales{background-color: #FFFFFF; /*Modifica el div contenedor principal que engloba todos los divs de ubicaciones físicas*/
     display: flex;
