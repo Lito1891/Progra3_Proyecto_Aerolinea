@@ -77,7 +77,7 @@ object-fit: cover;}
     flex-wrap: wrap;
 }
 
-.divDentroDeContendorDeDestinosPrincipalesIndex{background-color: #eff5de; /*Modifica cada div individual dentro del contenedor div general de destinos index*/
+.articleDestinosPrincipalesIndex{background-color: #eff5de; /*Modifica cada div individual dentro del contenedor div general de destinos index*/
     border: 1px solid grey;
     width: 400px;
     height: 350px;
@@ -89,7 +89,7 @@ object-fit: cover;}
     transition: 0.3s ease;
     position: relative}
 
-.divDentroDeContendorDeDestinosPrincipalesIndex:hover{transform: translateY(-5px); /*Modifica el comportamiento de los divs de destinos principales al pasar el cursos sobre ellos*/
+.articleDestinosPrincipalesIndex:hover{transform: translateY(-5px); /*Modifica el comportamiento de los divs de destinos principales al pasar el cursos sobre ellos*/
     cursor: pointer;}
 
 .imagenDestinosIndex{width: 100%; /*Modifica el tamaño y comportamiento de las imágenes dentro de cada div de destinos index sobre el texto*/

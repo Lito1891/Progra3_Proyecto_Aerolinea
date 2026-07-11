@@ -65,7 +65,7 @@ object-fit: cover;}
 /*Estilos de la sección de ubicaciones*/
 /*-----------------------------------------------------------------------------------------------------*/
 
-.divContenedorDeDestinosPrincipalesSucursales{background-color: #FFFFFF; /*Modifica el div contenedor principal que engloba todos los divs de ubicaciones físicas*/
+.divContenedorDeSucursales{background-color: #FFFFFF; /*Modifica el div contenedor principal que engloba todos los divs de ubicaciones físicas*/
     display: flex;
     width: 100%;
     height: 350px;
@@ -75,7 +75,7 @@ object-fit: cover;}
     gap: 100px;
 }
 
-.divDentroDeContendorDeDestinosPrincipalesSucursales{background-color: #eff5de; /*Modifica cada div individual dentro del contenedor div general de ubicaciones físicas*/
+.articleDeSucursales{background-color: #eff5de; /*Modifica cada div individual dentro del contenedor div general de ubicaciones físicas*/
     border: 1px solid grey;
     width: 400px;
     height: 350px;
@@ -87,7 +87,7 @@ object-fit: cover;}
     transition: 0.3s ease;
     position: relative}
 
-.divDentroDeContendorDeDestinosPrincipalesSucursales:hover{transform: translateY(-5px); /*Modifica el comportamiento de los divs de las ubicaciones físicas principales al pasar el cursos sobre ellos*/
+.articleDeSucursales:hover{transform: translateY(-5px); /*Modifica el comportamiento de los divs de las ubicaciones físicas principales al pasar el cursos sobre ellos*/
     cursor: pointer;}
 
 .mapaSucursales{width: 100%; /*Modifica el tamaño y comportamiento de las imágenes dentro de cada div de ubicaciones físicas sobre el texto*/
@@ -116,17 +116,17 @@ object-fit: cover;}
     text-align: center;
     gap: 255px;}
 
-.divDeContactoSucursales {background-color: #58b6b3; /*Modifica cada div individual dentro del div general de contacto*/
+.articleDeContactoSucursales {background-color: #58b6b3; /*Modifica cada div individual dentro del div general de contacto*/
     width: 250px;
     border-radius: 7px;}
 
-.divDeContactoSucursales ul{list-style: none; /*Modifica las listas desordenadas de contacto*/
+.articleDeContactoSucursales ul{list-style: none; /*Modifica las listas desordenadas de contacto*/
     text-align: center;
     padding: 0;
     text-align: center;
     font-size: 17px;} 
 
-.divDeContactoSucursales li{margin: 15px 0px;} /*Modifica los elementos de las listas de contacto*/
+.articleDeContactoSucursales li{margin: 15px 0px;} /*Modifica los elementos de las listas de contacto*/
 
 .footerDeSucursales p{background-color: #e2e2e2; /*Modifica el texto de derechos reservados de contacto*/
     border: 1px solid grey;

@@ -11,181 +11,187 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark navbarApex">
-        <!--navbar para indicar que es la barra de navegación-->
-        <!--navbar-expand-lg mantiene la barra expandida en pantallas lg o superiores-->
-        <!--navbar-light para cambiar el estilo de la barra de navegación a un tono oscuro (light para hacerlo oscuro jaja)-->
-        <!--navbarApex es la clase para editar desde el index.css-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark navbarApex">
+            <!--navbar para indicar que es la barra de navegación-->
+            <!--navbar-expand-lg mantiene la barra expandida en pantallas lg o superiores-->
+            <!--navbar-light para cambiar el estilo de la barra de navegación a un tono oscuro (light para hacerlo oscuro jaja)-->
+            <!--navbarApex es la clase para editar desde el index.css-->
 
-        <div class="container-fluid px-4">
-            <!--container para tratar el contenido de la barra de navegación-->
+            <div class="container-fluid px-4">
+                <!--container para tratar el contenido de la barra de navegación-->
 
-            <a class="navbar-brand text-white fw-bold fst-italic ms-3" href="../Views/index.html">
-                <!--nav-brand para tratar el logo de la aerolinea y el nombre como una marca sola de redireccionamiento-->
-                <!--text-white para cambiar el color del texto a blanco-->
-                <!--fw-bold para cambiar el grosor del texto a negrita-->
-                <!--fst-italic para cambiar el estilo del texto a cursiva-->
-                <!--ms-3 para agregar un margen a la izquierda, o sea margin start 3-->
+                <a class="navbar-brand text-white fw-bold fst-italic ms-3" href="../Views/index.html">
+                    <!--nav-brand para tratar el logo de la aerolinea y el nombre como una marca sola de redireccionamiento-->
+                    <!--text-white para cambiar el color del texto a blanco-->
+                    <!--fw-bold para cambiar el grosor del texto a negrita-->
+                    <!--fst-italic para cambiar el estilo del texto a cursiva-->
+                    <!--ms-3 para agregar un margen a la izquierda, o sea margin start 3-->
 
-                <img src="../Assets/img/fotosIndex/avionBarra.png" width="45" class="me-2">
-                Apex Fly
-                <!--me-2 para agregar un margen a la derecha, o sea margin end 2-->
-            </a>
+                    <img src="../Assets/img/fotosIndex/avionBarra.png" width="45" class="me-2">
+                    Apex Fly
+                    <!--me-2 para agregar un margen a la derecha, o sea margin end 2-->
+                </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuDelNavbar"> <!--Botón para colapsar la barra de navegación en pantallas pequeñas-->
-                <!--navbar-toggler clases para abrir o cerrar la barra de navegación en dispositivos de pantallas pequeñas-->
-                <!--data-bs-toggle="collapse" para que el botón active el componente llamado collapse que viene de Js-->
-                <!--data-bs-target="#menuDelNavbar" para que busque lo que tenga ese identificador específico-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuDelNavbar"> <!--Botón para colapsar la barra de navegación en pantallas pequeñas-->
+                    <!--navbar-toggler clases para abrir o cerrar la barra de navegación en dispositivos de pantallas pequeñas-->
+                    <!--data-bs-toggle="collapse" para que el botón active el componente llamado collapse que viene de Js-->
+                    <!--data-bs-target="#menuDelNavbar" para que busque lo que tenga ese identificador específico-->
 
-                <span class="navbar-toggler-icon"></span>
-                    <!--navbar-toggler-icon para para dibujar el icono del botón para cerrar o abrir la barra de navegación-->
-            </button>
+                    <span class="navbar-toggler-icon"></span>
+                        <!--navbar-toggler-icon para para dibujar el icono del botón para cerrar o abrir la barra de navegación-->
+                </button>
 
-            <div class="collapse navbar-collapse" id="menuDelNavbar">
-                <!--collapse inndica que es parte del nnavbar y colapsa la barra de navegación en pantallas pequeñas-->
-                <!--navbar-nav para tratar los enlaces de navegación-->
-                <!--id="menuDelNavbar" para asignarle el identificador que se usa en el botón-->
-
-                <div class="navbar-nav ms-auto">
+                <div class="collapse navbar-collapse" id="menuDelNavbar">
+                    <!--collapse inndica que es parte del nnavbar y colapsa la barra de navegación en pantallas pequeñas-->
                     <!--navbar-nav para tratar los enlaces de navegación-->
-                    <!--ms-auto para alinear los enlaces a la derecha, o sea margin start auto-->
+                    <!--id="menuDelNavbar" para asignarle el identificador que se usa en el botón-->
 
-                    <a class="nav-link text-white rounded-2" href="../Views/index.html"> Página de inicio</a>
-                    <!--nav-link para tratar los enlaces de navegación-->
-                    <!--text-white para cambiar el color del texto a blanco-->
+                    <div class="navbar-nav ms-auto">
+                        <!--navbar-nav para tratar los enlaces de navegación-->
+                        <!--ms-auto para alinear los enlaces a la derecha, o sea margin start auto-->
 
-                    <a class="nav-link text-white rounded-2" href="../Views/destinos.html"> Página de destinos</a>
-                    <!--nav-link para tratar los enlaces de navegación-->
-                    <!--text-white para cambiar el color del texto a blanco-->
-                    
-                    <a class="nav-link text-white rounded-2" href="../Views/vuelos.html">Búsqueda de vuelos</a>
-                    <!--nav-link para tratar los enlaces de navegación-->
-                    <!--text-white para cambiar el color del texto a blanco-->
+                        <a class="nav-link text-white rounded-2" href="../Views/index.html"> Página de inicio</a>
+                        <!--nav-link para tratar los enlaces de navegación-->
+                        <!--text-white para cambiar el color del texto a blanco-->
 
-                    <a class="nav-link text-white rounded-2" href="../Views/sucursalesContacto.html">Sucursales y contacto</a>
-                    <!--nav-link para tratar los enlaces de navegación-->
-                    <!--text-white para cambiar el color del texto a blanco-->
-                    
-                    <!--nav-link agrega padding, separación, alineación y comportamiento de barra nav-->
-                    
+                        <a class="nav-link text-white rounded-2" href="../Views/destinos.html"> Página de destinos</a>
+                        <!--nav-link para tratar los enlaces de navegación-->
+                        <!--text-white para cambiar el color del texto a blanco-->
+                        
+                        <a class="nav-link text-white rounded-2" href="../Views/vuelos.html">Búsqueda de vuelos</a>
+                        <!--nav-link para tratar los enlaces de navegación-->
+                        <!--text-white para cambiar el color del texto a blanco-->
+
+                        <a class="nav-link text-white rounded-2" href="../Views/sucursalesContacto.html">Sucursales y contacto</a>
+                        <!--nav-link para tratar los enlaces de navegación-->
+                        <!--text-white para cambiar el color del texto a blanco-->
+                        
+                        <!--nav-link agrega padding, separación, alineación y comportamiento de barra nav-->
+                        
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <div class="divDeFondoSuperior">
-        <img src="../Assets/img/fotosSucursalesContacto/bannerSucursalesContaco.jpg">
-        <div class="textoDeBannerSucursales">
-            <p><em>“Vive tus sueños, no sueñes tu vida”</em></p>
-        </div>
-    </div>
-
-    <!--sección de ubicaciones físicas-->
-    <h2 class="text-secondary text-center mt-3">Nuestras sucursales físicas</h2>
-        <!--text-secondary para darle el tamaño y formato al texto del título-->
-        <!--text-center para centrar el texto del título-->
-        <!--mt-3 para darle un margen superior al título-->
-
-    <div class="divContenedorDeDestinosPrincipalesSucursales">
-
-        <div class="divDentroDeContendorDeDestinosPrincipalesSucursales">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15717.152115839996!2d-84.20998665649728!3d9.99304975307821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0f9c450507873%3A0xb27b62220e3f31a4!2sAeropuerto%20Juan%20Santamar%C3%ADa-Alajuela!5e0!3m2!1ses!2scr!4v1782358685671!5m2!1ses!2scr" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" class="mapaSucursales"></iframe>
-            <div class="capaDeTexto">
-                <p class="textoDestinoSucursales">Aeropuerto Juan Santamaría, San José</p>
-            </div><p class="textoDestinoSucursales">París, Francia</p>
-        </div>
-
-        <div class="divDentroDeContendorDeDestinosPrincipalesSucursales">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4673.599979596785!2d-84.10717282218359!3d9.932835826693431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fcacdfdb6d97%3A0xf35790826dbd35c9!2sOficentro%20Ejecutivo%20la%20Sabana!5e0!3m2!1ses!2scr!4v1782359175016!5m2!1ses!2scr" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" class="mapaSucursales"></iframe>
-            <div class="capaDeTexto">
-                <p class="textoDestinoSucursales">Oficentro Ejecutivo la Sabana, San José</p>
+    <main>
+        <section>
+            <div class="divDeFondoSuperior">
+                <img src="../Assets/img/fotosSucursalesContacto/bannerSucursalesContaco.jpg">
+                <div class="textoDeBannerSucursales">
+                    <p><em>“Vive tus sueños, no sueñes tu vida”</em></p>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <div class="divDentroDeContendorDeDestinosPrincipalesSucursales">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5557.671444228544!2d-84.15485047917821!3d9.945008539140325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fb698e1ba15b%3A0x781267d196d66afc!2sMultiplaza%20Escaz%C3%BA!5e0!3m2!1ses!2scr!4v1782359328278!5m2!1ses!2scr" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" class="mapaSucursales"></iframe>
-            <div class="capaDeTexto">
-                <p class="textoDestinoSucursales">Multiplaza Escazú, San José</p>
+        <!--sección de ubicaciones físicas-->
+        <section>
+            <h2 class="text-secondary text-center mt-3">Nuestras sucursales físicas</h2>
+                <!--text-secondary para darle el tamaño y formato al texto del título-->
+                <!--text-center para centrar el texto del título-->
+                <!--mt-3 para darle un margen superior al título-->
+
+            <div class="divContenedorDeSucursales">
+
+                <article class="articleDeSucursales">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15717.152115839996!2d-84.20998665649728!3d9.99304975307821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0f9c450507873%3A0xb27b62220e3f31a4!2sAeropuerto%20Juan%20Santamar%C3%ADa-Alajuela!5e0!3m2!1ses!2scr!4v1782358685671!5m2!1ses!2scr" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" class="mapaSucursales"></iframe>
+                    <div class="capaDeTexto">
+                        <p class="textoDestinoSucursales">Aeropuerto Juan Santamaría, San José</p>
+                    </div>
+                </article>
+
+                <article class="articleDeSucursales">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4673.599979596785!2d-84.10717282218359!3d9.932835826693431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fcacdfdb6d97%3A0xf35790826dbd35c9!2sOficentro%20Ejecutivo%20la%20Sabana!5e0!3m2!1ses!2scr!4v1782359175016!5m2!1ses!2scr" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" class="mapaSucursales"></iframe>
+                    <div class="capaDeTexto">
+                        <p class="textoDestinoSucursales">Oficentro Ejecutivo la Sabana, San José</p>
+                    </div>
+                </article>
+
+                <article class="articleDeSucursales">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5557.671444228544!2d-84.15485047917821!3d9.945008539140325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fb698e1ba15b%3A0x781267d196d66afc!2sMultiplaza%20Escaz%C3%BA!5e0!3m2!1ses!2scr!4v1782359328278!5m2!1ses!２scr" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" class="mapaSucursales"></iframe>
+                    <div class="capaDeTexto">
+                        <p class="textoDestinoSucursales">Multiplaza Escazú, San José</p>
+                    </div>
+                </article>
             </div>
-        </div>
-    </div>
+        </section>
 
+        <section>
+        <!--sección de datos de contacto-->
+            <div class="divContenedorDeContactoSucursales">
+                <article class="articleDeContactoSucursales">
+                    <h3>Datos de contacto</h3>
+                    <ul>
+                        <li>Teléfono: 2433-0001</li>
+                        <li>Whatsapp: 7131-1300</li>
+                        <li>Correo: af1@gmail.com</li>
+                    </ul>
+                </article>
 
-    <!--sección de datos de contacto-->
-    <div class="divContenedorDeContactoSucursales">
-        <div class="divDeContactoSucursales">
-            <h3>Datos de contacto</h3>
-            <ul>
-                <li>Teléfono: 2433-0001</li>
-                <li>Whatsapp: 7131-1300</li>
-                <li>Correo: af1@gmail.com</li>
-            </ul>
-        </div>
+                <article class="articleDeContactoSucursales">
+                    <h3>Datos de contacto</h3>
+                    <ul>
+                        <li>Teléfono: 2433-0002</li>
+                        <li>Whatsapp: 7131-1300</li>
+                        <li>Correo: af2@gmail.com</li>
+                    </ul>
+                </article>
 
-        <div class="divDeContactoSucursales">
-            <h3>Datos de contacto</h3>
-            <ul>
-                <li>Teléfono: 2433-0002</li>
-                <li>Whatsapp: 7131-1300</li>
-                <li>Correo: af2@gmail.com</li>
-            </ul>
-        </div>
-
-        <div class="divDeContactoSucursales">
-            <h3>Datos de contacto</h3>
-            <ul>
-                <li>Teléfono: 2433-0003</li>
-                <li>Whatsapp: 7131-1300</li>
-                <li>Correo: af3@gmail.com</li>
-            </ul>
-        </div>
-    </div>
-
+                <article class="articleDeContactoSucursales">
+                    <h3>Datos de contacto</h3>
+                    <ul>
+                        <li>Teléfono: 2433-0003</li>
+                        <li>Whatsapp: 7131-1300</li>
+                        <li>Correo: af3@gmail.com</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+    </main>
 
     <!--sección de informaci[on nrelevante]-->
-    <div class="divContenedorDeFooterSucursales">
-
-        <div class="divDeFooterSucursales">
-            <h4>Acerca de nosotros</h4> 
-            <ul>
-                <li>Nuestra historia</li>
-                <li>Trayectoria</li>
-                <li>Organigrama</li>
-                <li>Documentos de interés</li>
-            </ul>
-        </div>
-
-        <div class="divDeFooterSucursales">
-            <h4>Información legal</h4>
-            <ul>
-                <li>Términos y condiciones</li>
-                <li>Reclamos de servicios</li>
-                <li>Requisitos por país</li>
-                <li>Obligaciones a bordo</li>
-            </ul>
-        </div>
-
-        <div class="divDeFooterSucursales">
-            <h4>Datos de contacto</h4>
-            <ul>
-                <li>Centro de atención al cliente</li>
-                <li>CorreoDePrueba@uvirtual.com</li>
-                <li>Contacto para empresas</li>
-                <li>Formulario de reclamos</li>
-            </ul>
-        </div>
-
-        <div class="divDeFooterSucursales">
-            <h4>Siguenos en redes sociales</h4>
-            <ul>
-                <li>Facebook</li>
-                <li>Instagram</li>
-                <li>WhatsApp <br>(canal de difusión)</li>
-            </ul>
-        </div>
-    </div>
-
     <footer class="footerDeSucursales">
+        <div class="divContenedorDeFooterSucursales">
+            <div class="divDeFooterSucursales">
+                <h4>Acerca de nosotros</h4> 
+                <ul>
+                    <li>Nuestra historia</li>
+                    <li>Trayectoria</li>
+                    <li>Organigrama</li>
+                    <li>Documentos de interés</li>
+                </ul>
+            </div>
+
+            <div class="divDeFooterSucursales">
+                <h4>Información legal</h4>
+                <ul>
+                    <li>Términos y condiciones</li>
+                    <li>Reclamos de servicios</li>
+                    <li>Requisitos por país</li>
+                    <li>Obligaciones a bordo</li>
+                </ul>
+            </div>
+
+            <div class="divDeFooterSucursales">
+                <h4>Datos de contacto</h4>
+                <ul>
+                    <li>Centro de atención al cliente</li>
+                    <li>CorreoDePrueba@uvirtual.com</li>
+                    <li>Contacto para empresas</li>
+                    <li>Formulario de reclamos</li>
+                </ul>
+            </div>
+
+            <div class="divDeFooterSucursales">
+                <h4>Siguenos en redes sociales</h4>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>WhatsApp <br>(canal de difusión)</li>
+                </ul>
+            </div>
+        </div>
         <p>© 2026 Todos los derechos reservados</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
