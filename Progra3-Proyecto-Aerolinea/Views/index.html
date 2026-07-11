@@ -11,158 +11,161 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark navbarApex">
-        <!--navbar para indicar que es la barra de navegación-->
-        <!--navbar-expand-lg mantiene la barra expandida en pantallas lg o superiores-->
-        <!--navbar-dark para cambiar el estilo de la barra de navegación a un tono claro (light para hacerlo oscuro jaja)-->
-        <!--navbarApex es la clase para editar desde el index.css-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark navbarApex">
+            <!--navbar para indicar que es la barra de navegación-->
+            <!--navbar-expand-lg mantiene la barra expandida en pantallas lg o superiores-->
+            <!--navbar-dark para cambiar el estilo de la barra de navegación a un tono claro (light para hacerlo oscuro jaja)-->
+            <!--navbarApex es la clase para editar desde el index.css-->
 
-        <div class="container-fluid px-4">
-            <!--container para tratar el contenido de la barra de navegación-->
-            <!--px-4 para agregar padding/espacio a los bordes laterales-->
-            
-            <a class="navbar-brand text-white fw-bold fst-italic ms-3" href="../Views/index.html">
-                <!--nav-brand para tratar el logo de la aerolinea y el nombre como una marca sola de redireccionamiento-->
-                <!--text-white para cambiar el color del texto a blanco-->
-                <!--fw-bold para cambiar el grosor del texto a negrita-->
-                <!--fst-italic para cambiar el estilo del texto a cursiva-->
-                <!--ms-3 para agregar un margen a la izquierda, o sea margin start 3 -->
+            <div class="container-fluid px-4">
+                <!--container para tratar el contenido de la barra de navegación-->
+                <!--px-4 para agregar padding/espacio a los bordes laterales-->
+                
+                <a class="navbar-brand text-white fw-bold fst-italic ms-3" href="../Views/index.html">
+                    <!--nav-brand para tratar el logo de la aerolinea y el nombre como una marca sola de redireccionamiento-->
+                    <!--text-white para cambiar el color del texto a blanco-->
+                    <!--fw-bold para cambiar el grosor del texto a negrita-->
+                    <!--fst-italic para cambiar el estilo del texto a cursiva-->
+                    <!--ms-3 para agregar un margen a la izquierda, o sea margin start 3 -->
 
-                <img src="../Assets/img/fotosIndex/avionBarra.png" width="45" class="me-2">
-                Apex Fly
-                <!--me-2 para agregar un margen a la derecha, o sea margin end 2 y separe del texto del nombre de la aerolinea-->
-                <!--width="45" para indicarle que tenga un ancho de 45 píxeles y que calcule la altura automáticamente-->
-            </a>
+                    <img src="../Assets/img/fotosIndex/avionBarra.png" width="45" class="me-2">
+                    Apex Fly
+                    <!--me-2 para agregar un margen a la derecha, o sea margin end 2 y separe del texto del nombre de la aerolinea-->
+                    <!--width="45" para indicarle que tenga un ancho de 45 píxeles y que calcule la altura automáticamente-->
+                </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuDelNavbar"> <!--Botón para colapsar la barra de navegación en pantallas pequeñas-->
-                <!--navbar-toggler clases para abrir o cerrar la barra de navegación en dispositivos de pantallas pequeñas-->
-                <!--data-bs-toggle="collapse" para que el botón active el componente llamado collapse que viene de Js-->
-                <!--data-bs-target="#menuDelNavbar" para que busque lo que tenga ese identificador específico-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuDelNavbar"> <!--Botón para colapsar la barra de navegación en pantallas pequeñas-->
+                    <!--navbar-toggler clases para abrir o cerrar la barra de navegación en dispositivos de pantallas pequeñas-->
+                    <!--data-bs-toggle="collapse" para que el botón active el componente llamado collapse que viene de Js-->
+                    <!--data-bs-target="#menuDelNavbar" para que busque lo que tenga ese identificador específico-->
 
-                <span class="navbar-toggler-icon"></span>
-                    <!--navbar-toggler-icon para para dibujar el icono del botón para cerrar o abrir la barra de navegación-->
-            </button>
+                    <span class="navbar-toggler-icon"></span>
+                        <!--navbar-toggler-icon para para dibujar el icono del botón para cerrar o abrir la barra de navegación-->
+                </button>
 
-            <div class="collapse navbar-collapse" id="menuDelNavbar">
-                <!--collapse inndica que es parte del nnavbar y colapsa la barra de navegación en pantallas pequeñas-->
-                <!--navbar-nav para tratar los enlaces de navegación-->
-                <!--id="menuDelNavbar" para asignarle el identificador que se usa en el botón-->
-
-                <div class="navbar-nav ms-auto">
+                <div class="collapse navbar-collapse" id="menuDelNavbar">
+                    <!--collapse inndica que es parte del nnavbar y colapsa la barra de navegación en pantallas pequeñas-->
                     <!--navbar-nav para tratar los enlaces de navegación-->
-                    <!--ms-auto para alinear los enlaces a la derecha, o sea margin start auto-->
+                    <!--id="menuDelNavbar" para asignarle el identificador que se usa en el botón-->
 
-                    <a class="nav-link text-white rounded-2" href="../Views/index.html"> Página de inicio</a>
-                    <!--nav-link para tratar los enlaces de navegación-->
-                    <!--text-white para cambiar el color del texto a blanco-->
+                    <div class="navbar-nav ms-auto">
+                        <!--navbar-nav para tratar los enlaces de navegación-->
+                        <!--ms-auto para alinear los enlaces a la derecha, o sea margin start auto-->
 
-                    <a class="nav-link text-white rounded-2" href="../Views/destinos.html"> Página de destinos</a>
-                    <!--nav-link para tratar los enlaces de navegación-->
-                    <!--text-white para cambiar el color del texto a blanco-->
-                    
-                    <a class="nav-link text-white rounded-2" href="../Views/vuelos.html">Búsqueda de vuelos</a>
-                    <!--nav-link para tratar los enlaces de navegación-->
-                    <!--text-white para cambiar el color del texto a blanco-->
+                        <a class="nav-link text-white rounded-2" href="../Views/index.html"> Página de inicio</a>
+                        <!--nav-link para tratar los enlaces de navegación-->
+                        <!--text-white para cambiar el color del texto a blanco-->
 
-                    <a class="nav-link text-white rounded-2" href="../Views/sucursalesContacto.html">Sucursales y contacto</a>
-                    <!--nav-link para tratar los enlaces de navegación-->
-                    <!--text-white para cambiar el color del texto a blanco-->
-                    
-                    <!--nav-link agrega padding, separación, alineación y comportamiento de barra nav-->
-                    
+                        <a class="nav-link text-white rounded-2" href="../Views/destinos.html"> Página de destinos</a>
+                        <!--nav-link para tratar los enlaces de navegación-->
+                        <!--text-white para cambiar el color del texto a blanco-->
+                        
+                        <a class="nav-link text-white rounded-2" href="../Views/vuelos.html">Búsqueda de vuelos</a>
+                        <!--nav-link para tratar los enlaces de navegación-->
+                        <!--text-white para cambiar el color del texto a blanco-->
+
+                        <a class="nav-link text-white rounded-2" href="../Views/sucursalesContacto.html">Sucursales y contacto</a>
+                        <!--nav-link para tratar los enlaces de navegación-->
+                        <!--text-white para cambiar el color del texto a blanco-->
+                        
+                        <!--nav-link agrega padding, separación, alineación y comportamiento de barra nav-->
+                        
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <div class="divDeFondoSuperior">
-        <img src="../Assets/img/fotosIndex/avionFondo.png">
-        <div class="textoDeBannerIndex">
-            <p><em>Nuestro destino de viaje nunca es un lugar, sino una nueva forma de ver las cosas — Henry Miller</em></p>
+    <main>
+        <div class="divDeFondoSuperior">
+            <img src="../Assets/img/fotosIndex/avionFondo.png">
+            <div class="textoDeBannerIndex">
+                <p><em>Nuestro destino de viaje nunca es un lugar, sino una nueva forma de ver las cosas — Henry Miller</em></p>
+            </div>
         </div>
-    </div>
 
-    <!--sección de buscador de vuelos-->
-        <h2 class="text-secondary text-center mt-3">Buscador de Vuelos</h2>
+        <!--sección de buscador de vuelos-->
+            <h2 class="text-secondary text-center mt-3">Buscador de Vuelos</h2>
+                <!--text-secondary para darle el tamaño y formato al texto del título-->
+                <!--text-center para centrar el texto del título-->
+                <!--mt-3 para darle un margen superior al título-->
+                
+        <form>
+            <!--campo para el origen-->
+            <label for="origen">Origen:</label>
+            <input type="text" id="origen" name="origen" placeholder="Ciudad de origen">
+            <br><br>
+            <!--campo para el destino-->
+            <label for="destino">Destino:</label>
+            <input type="text" id="destino" name="destino" placeholder="Ciudad de destino">
+            <br><br>
+            <!--campo para la fecha de viaje-->
+            <label for="fecha">Fecha de Viaje:</label>
+            <input type="date" id="fecha" name="fecha">
+            <br><br>
+            <!--botón para enviar el formulario de búsqueda-->
+            <button type="submit">Consultar Disponibilidad</button>
+        </form>
+
+        <!--sección de destinos-->
+        <h2 class="text-secondary text-center mt-3">Nuestros Destinos Destacados</h2>
             <!--text-secondary para darle el tamaño y formato al texto del título-->
             <!--text-center para centrar el texto del título-->
             <!--mt-3 para darle un margen superior al título-->
-            
-    <form>
-        <!--campo para el origen-->
-        <label for="origen">Origen:</label>
-        <input type="text" id="origen" name="origen" placeholder="Ciudad de origen">
-        <br><br>
-        <!--campo para el destino-->
-        <label for="destino">Destino:</label>
-        <input type="text" id="destino" name="destino" placeholder="Ciudad de destino">
-        <br><br>
-        <!--campo para la fecha de viaje-->
-        <label for="fecha">Fecha de Viaje:</label>
-        <input type="date" id="fecha" name="fecha">
-        <br><br>
-        <!--botón para enviar el formulario de búsqueda-->
-        <button type="submit">Consultar Disponibilidad</button>
-    </form>
 
-    <!--sección de destinos-->
-    <h2 class="text-secondary text-center mt-3">Nuestros Destinos Destacados</h2>
-        <!--text-secondary para darle el tamaño y formato al texto del título-->
-        <!--text-center para centrar el texto del título-->
-        <!--mt-3 para darle un margen superior al título-->
+        <div class="divContenedorDeDestinosPrincipalesIndex">
 
-    <div class="divContenedorDeDestinosPrincipalesIndex">
+            <div class="divDentroDeContendorDeDestinosPrincipalesIndex">
+                <img src="../Assets/img/fotosIndex/francia.jpg" alt="Logo de Apex Fly" class="imagenDestinosIndex">
+                <div class="capaDeTexto">
+                    <p class="textoDestinoIndex">París, Francia</p>
+                </div><p class="textoDestinoIndex">París, Francia</p>
+            </div>
 
-        <div class="divDentroDeContendorDeDestinosPrincipalesIndex">
-            <img src="../Assets/img/fotosIndex/francia.jpg" alt="Logo de Apex Fly" class="imagenDestinosIndex">
-            <div class="capaDeTexto">
-                <p class="textoDestinoIndex">París, Francia</p>
-            </div><p class="textoDestinoIndex">París, Francia</p>
-        </div>
+            <div class="divDentroDeContendorDeDestinosPrincipalesIndex">
+                <img src="../Assets/img/fotosIndex/japon.jpg" alt="Logo de Apex Fly" class="imagenDestinosIndex">
+                <div class="capaDeTexto">
+                    <p class="textoDestinoIndex">Tokio, Japón</p>
+                </div>
+            </div>
 
-        <div class="divDentroDeContendorDeDestinosPrincipalesIndex">
-            <img src="../Assets/img/fotosIndex/japon.jpg" alt="Logo de Apex Fly" class="imagenDestinosIndex">
-            <div class="capaDeTexto">
-                <p class="textoDestinoIndex">Tokio, Japón</p>
+            <div class="divDentroDeContendorDeDestinosPrincipalesIndex">
+                <img src="../Assets/img/fotosIndex/brasil.jpg" alt="Logo de Apex Fly" class="imagenDestinosIndex">
+                <div class="capaDeTexto">
+                    <p class="textoDestinoIndex">Río de Janeiro, Brasil</p>
+                </div>
             </div>
         </div>
 
-        <div class="divDentroDeContendorDeDestinosPrincipalesIndex">
-            <img src="../Assets/img/fotosIndex/brasil.jpg" alt="Logo de Apex Fly" class="imagenDestinosIndex">
-            <div class="capaDeTexto">
-                <p class="textoDestinoIndex">Río de Janeiro, Brasil</p>
+        <div class="divContenedorDeDestinosPrincipalesIndex">
+
+            <div class="divDentroDeContendorDeDestinosPrincipalesIndex">
+                <img src="../Assets/img/fotosIndex/costaRica.jpg" alt="Logo de Apex Fly"  class="imagenDestinosIndex">
+                <div class="capaDeTexto">
+                    <p class="textoDestinoIndex">San José, Costa Rica</p>
+                </div>
+            </div>
+
+            <div class="divDentroDeContendorDeDestinosPrincipalesIndex">
+                <img src="../Assets/img/fotosIndex/peru.jpg" alt="Logo de Apex Fly" class="imagenDestinosIndex">
+                <div class="capaDeTexto">
+                    <p class="textoDestinoIndex">Cusco, Perú</p>
+                </div>
+            </div>
+
+            <div class="divDentroDeContendorDeDestinosPrincipalesIndex">
+                <img src="../Assets/img/fotosIndex/groelandia.jpg" alt="Logo de Apex Fly" class="imagenDestinosIndex">
+                <div class="capaDeTexto">
+                    <p class="textoDestinoIndex">Ilulissat , Groelandia</p>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="divContenedorDeDestinosPrincipalesIndex">
-
-        <div class="divDentroDeContendorDeDestinosPrincipalesIndex">
-            <img src="../Assets/img/fotosIndex/costaRica.jpg" alt="Logo de Apex Fly"  class="imagenDestinosIndex">
-            <div class="capaDeTexto">
-                <p class="textoDestinoIndex">San José, Costa Rica</p>
-            </div>
+        <div class="divInferiorDeDestinosIndex">
+            <p ><a href="destinos.html">Ingresa aquí para conocer más acerca de nuestros destinos</a></p>
         </div>
-
-        <div class="divDentroDeContendorDeDestinosPrincipalesIndex">
-            <img src="../Assets/img/fotosIndex/peru.jpg" alt="Logo de Apex Fly" class="imagenDestinosIndex">
-            <div class="capaDeTexto">
-                <p class="textoDestinoIndex">Cusco, Perú</p>
-            </div>
-        </div>
-
-        <div class="divDentroDeContendorDeDestinosPrincipalesIndex">
-            <img src="../Assets/img/fotosIndex/groelandia.jpg" alt="Logo de Apex Fly" class="imagenDestinosIndex">
-            <div class="capaDeTexto">
-                <p class="textoDestinoIndex">Ilulissat , Groelandia</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="divInferiorDeDestinosIndex">
-        <p ><a href="destinos.html">Ingresa aquí para conocer más acerca de nuestros destinos</a></p>
-    </div>
-
+    </main>
     <!--sección de footer-->
     <div class="divContenedorDeFooterIndex">
 
