@@ -138,27 +138,6 @@ object-fit: cover;}
 /*-----------------------------------------------------------------------------------------------------*/
 /*Estilos de la sección de footer*/
 /*-----------------------------------------------------------------------------------------------------*/
-.divContenedorDeFooterSucursales {background-color: #FFFFFF; /*Modifica el contenedor del footer del ubicaciones y contacto general donde está todo guardado*/ 
-    display: flex;
-    width: 90%;
-    height: 200px;
-    margin-top: 20px;
-    justify-content: center;
-    text-align: center;
-    gap: 20px;}
 
-.divDeFooterSucursales {background-color: #FFFFFF; /*Modifica cada div individual dentro del div general ubicaciones y contacto*/
-    width: 250px;}
-
-.divDeFooterSucursales ul{list-style: none; /*Modifica las listas desordenadas del footer*/
-    text-align: center;
-    padding: 0;
-    text-align: center;} 
-
-.divDeFooterSucursales li{margin: 15px 0px;} /*Modifica los elementos de las listas del footer*/
-
-.footerDeSucursales p{background-color: #e2e2e2; /*Modifica el texto de derechos reservados del footer*/
-    border: 1px solid grey;
-    text-align: center;
-    padding: 10px 0px;
-    margin: 0px;} 
+.footerDeSucursales a:hover{color: rgb(255, 158, 41);
+transition: 0.2s;}
