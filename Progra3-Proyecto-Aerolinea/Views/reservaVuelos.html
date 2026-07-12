@@ -5,9 +5,264 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ReservaciónDeVuelos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Assets/css/index.css">
+    <link rel="stylesheet" href="../Assets/css/reservaVuelos.css">
 </head>
 <body>
-    
+    <!--Inicia Header para navegacion rapida entre las diferentes ventanas de la pagina web-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark navbarApex">
+            <!--navbar para indicar que es la barra de navegación-->
+            <!--navbar-expand-lg mantiene la barra expandida en pantallas lg o superiores-->
+            <!--navbar-dark para cambiar el estilo de la barra de navegación a un tono claro (light para hacerlo oscuro jaja)-->
+            <!--navbarApex es la clase para editar desde el index.css-->
+
+            <div class="container-fluid px-4">
+                <!--container para tratar el contenido de la barra de navegación-->
+                <!--px-4 para agregar padding/espacio a los bordes laterales-->
+                
+                <a class="navbar-brand text-white fw-bold fst-italic ms-3" href="../Views/index.html">
+                    <!--nav-brand para tratar el logo de la aerolinea y el nombre como una marca sola de redireccionamiento-->
+                    <!--text-white para cambiar el color del texto a blanco-->
+                    <!--fw-bold para cambiar el grosor del texto a negrita-->
+                    <!--fst-italic para cambiar el estilo del texto a cursiva-->
+                    <!--ms-3 para agregar un margen a la izquierda, o sea margin start 3 -->
+
+                    <img src="../Assets/img/fotosIndex/avionBarra.png" width="45" class="me-2">
+                    Apex Fly
+                    <!--me-2 para agregar un margen a la derecha, o sea margin end 2 y separe del texto del nombre de la aerolinea-->
+                    <!--width="45" para indicarle que tenga un ancho de 45 píxeles y que calcule la altura automáticamente-->
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuDelNavbar"> <!--Botón para colapsar la barra de navegación en pantallas pequeñas-->
+                    <!--navbar-toggler clases para abrir o cerrar la barra de navegación en dispositivos de pantallas pequeñas-->
+                    <!--data-bs-toggle="collapse" para que el botón active el componente llamado collapse que viene de Js-->
+                    <!--data-bs-target="#menuDelNavbar" para que busque lo que tenga ese identificador específico-->
+
+                    <span class="navbar-toggler-icon"></span>
+                        <!--navbar-toggler-icon para para dibujar el icono del botón para cerrar o abrir la barra de navegación-->
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuDelNavbar">
+                    <!--collapse inndica que es parte del nnavbar y colapsa la barra de navegación en pantallas pequeñas-->
+                    <!--navbar-nav para tratar los enlaces de navegación-->
+                    <!--id="menuDelNavbar" para asignarle el identificador que se usa en el botón-->
+
+                    <div class="navbar-nav ms-auto">
+                        <!--navbar-nav para tratar los enlaces de navegación-->
+                        <!--ms-auto para alinear los enlaces a la derecha, o sea margin start auto-->
+
+                        <a class="nav-link text-white rounded-2" href="../Views/index.html"> Página de inicio</a>
+                        <!--nav-link para tratar los enlaces de navegación-->
+                        <!--text-white para cambiar el color del texto a blanco-->
+
+                        <a class="nav-link text-white rounded-2" href="../Views/destinos.html"> Página de destinos</a>
+                        <!--nav-link para tratar los enlaces de navegación-->
+                        <!--text-white para cambiar el color del texto a blanco-->
+                        
+                        <a class="nav-link text-white rounded-2" href="../Views/vuelos.html">Búsqueda de vuelos</a>
+                        <!--nav-link para tratar los enlaces de navegación-->
+                        <!--text-white para cambiar el color del texto a blanco-->
+
+                        <a class="nav-link text-white rounded-2" href="../Views/sucursalesContacto.html">Sucursales y contacto</a>
+                        <!--nav-link para tratar los enlaces de navegación-->
+                        <!--text-white para cambiar el color del texto a blanco-->
+                        
+                        <!--nav-link agrega padding, separación, alineación y comportamiento de barra nav-->
+                        
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header><!--termina header-->
+
+    <main>
+        <div class="container">
+            <main>
+                <!--Inicia parte superior del check out-->
+                <div class="py-5 text-center">
+                    <img class="d-block mx-auto mb-4" src="../assets/img/fotosIndex/avionBarra.png" alt="" width="72"
+                        height="57" />
+                    <h1 class="h2">Apex Fly</h1>
+                    <p class="lead">
+                        "Ya estamos más cerca de completar tu nueva aventura"
+                    </p>
+                </div><!--termina parte superior del check out-->
+
+                <!--Inicia check out-->
+                <div class="row g-5">
+                    <!--Inicia parte de carrito-->
+                    <div class="col-md-5 col-lg-4 order-md-last">
+                        <h4 class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="text-primary">Carrito</span>
+                            <span class="badge bg-primary rounded-pill">1</span>
+                        </h4>
+                        <ul class="list-group mb-3">
+                            <li class="list-group-item d-flex justify-content-between lh-sm">
+                                <div>
+                                    <h6 class="my-0">Tiquete de vuelo</h6>
+                                    <small class="text-body-secondary">Ya incluye impuestos</small>
+                                </div>
+                                <span class="text-body-secondary">$400.99</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Total (USD)</span> <strong>$400.99</strong>
+                            </li>
+                        </ul>
+                    </div><!--termina parte del carrito-->
+
+                    <!--Inicia parte central del check out-->
+                    <div class="col-md-7 col-lg-8">
+                        <h4 class="mb-3">Dirección de facturación</h4>
+                        <form class="needs-validation" novalidate>
+                            <!--inciia validacion de datos-->
+                            <div class="row g-3">
+                                <div class="col-sm-6">
+                                    <label for="firstName" class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" id="firstName" placeholder="" value=""
+                                        required />
+                                    <div class="invalid-feedback">
+                                        Nombre es requerido.
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="lastName" class="form-label">Apellido</label>
+                                    <input type="text" class="form-control" id="lastName" placeholder="" value=""
+                                        required />
+                                    <div class="invalid-feedback">
+                                        Apellido es requerido.
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="email" class="form-label">Correo electronico
+                                        <span class="text-body-secondary">(Opcional)</span></label>
+                                    <input type="email" class="form-control" id="email" placeholder="ejemplo@123.com" />
+                                    <div class="invalid-feedback">
+                                        Por favor ingrese un correco electronico valido.
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="address" class="form-label">Dirección</label>
+                                    <input type="text" class="form-control" id="address" placeholder="Calle Principal 666"
+                                        required />
+                                    <div class="invalid-feedback">
+                                        Ingrese su dirección.
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="address2" class="form-label">Dirección 2
+                                        <span class="text-body-secondary">(Opcional)</span></label>
+                                    <input type="text" class="form-control" id="address2"
+                                        placeholder="Apartamento o Suite" />
+                                </div>
+                                <div class="col-md-5">
+                                    <label for="country" class="form-label">País</label>
+                                    <select class="form-select" id="country" required>
+                                        <option value="">Seleccione...</option>
+                                        <option>Costa Rica</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Ejija un país valido.
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="state" class="form-label">Cuidad</label>
+                                    <select class="form-select" id="state" required>
+                                        <option value="">Seleccione...</option>
+                                        <option>Alajuela</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Seleccione una cuidad valida.
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="zip" class="form-label">Código postal</label>
+                                    <input type="text" class="form-control" id="zip" placeholder="" required />
+                                    <div class="invalid-feedback">Código postal es requerido.</div>
+                                </div>
+                            </div> <!-- termina validacion de datos-->
+                            <!--parte de check box-->
+                            <hr class="my-4" />
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="same-address" />
+                                <label class="form-check-label" for="same-address">Mi dirección de facturación y de la tarjeta son las mismas</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="save-info" />
+                                <label class="form-check-label" for="save-info">Guardar esta información para la siguiente compra</label>
+                            </div><!--termina parte check box-->
+
+                            <!--parte para selecionar tipo de tarjeta-->
+                            <hr class="my-4" />
+                            <h4 class="mb-3">Método de pago</h4>
+                            <div class="my-3">
+                                <div class="form-check">
+                                    <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked
+                                        required />
+                                    <label class="form-check-label" for="credit">Tarjeta de crédito</label>
+                                </div>
+                                <div class="form-check">
+                                    <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required />
+                                    <label class="form-check-label" for="debit">Tarjeta de débito</label>
+                                </div>
+                                <div class="form-check">
+                                    <input id="paypal" name="paymentMethod" type="radio" class="form-check-input"
+                                        required />
+                                    <label class="form-check-label" for="paypal">PayPal</label>
+                                </div>
+                            </div><!--termina parte para elegir tipo de tarjeta-->
+
+                            <!--Parte para ingresar la numeracion de la tarjeta-->
+                            <div class="row gy-3">
+                                <div class="col-md-6">
+                                    <label for="cc-name" class="form-label">Nombre en la tarjeta</label>
+                                    <input type="text" class="form-control" id="cc-name" placeholder="" required />
+                                    <small class="text-body-secondary">Nombre completo como aparece en la tarjeta</small>
+                                    <div class="invalid-feedback">Nombre en la tarjeta es requerido</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="cc-number" class="form-label">Número de tarjeta</label>
+                                    <input type="text" class="form-control" id="cc-number" placeholder="" required />
+                                    <div class="invalid-feedback">
+                                        Número de tarjeta es requerido
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="cc-expiration" class="form-label">Fecha de Caducidad</label>
+                                    <input type="text" class="form-control" id="cc-expiration" placeholder="" required />
+                                    <div class="invalid-feedback">Fecha de Caducidad es requerida</div>
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="cc-cvv" class="form-label">CVV</label>
+                                    <input type="text" class="form-control" id="cc-cvv" placeholder="" required />
+                                    <div class="invalid-feedback">Código de seguridad es requerido</div>
+                                </div>
+                            </div>
+                            <hr class="my-4"/>
+                            <button class="w-100 btn btn-primary btn-lg" type="submit">
+                                Realizar Pago
+                            </button><!--termina parte para ingresar numeracion de la tarjeta-->
+                        </form>
+                    </div><!--termina parte central del check out-->
+                </div><!--termina check out-->
+            </main>
+            <footer class="my-5 pt-5 text-body-secondary text-center text-small">
+                <p class="mb-1">&copy; 2026 Apex Fly</p>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#">Privacidad</a></li>
+                    <li class="list-inline-item"><a href="#">Terminos y condiciones</a></li>
+                    <li class="list-inline-item"><a href="#">Soporte</a></li>
+                </ul>
+            </footer>
+        </div>
+        <script src="../assets/dist/js/bootstrap.bundle.min.js" class="astro-vvvwv3sm"></script>
+        <script src="checkout.js" class="astro-vvvwv3sm"></script>
+        </main>
 </body>
+<script
+    src="../assets/dist/js/bootstrap.bundle.min.js"
+    class="astro-vvvwv3sm"
+    ></script>
+    <script src="checkout.js" class="astro-vvvwv3sm"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </html>
