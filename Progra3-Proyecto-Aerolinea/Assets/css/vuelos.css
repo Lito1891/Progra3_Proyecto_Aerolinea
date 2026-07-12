@@ -1,52 +1,30 @@
 /*-----------------------------------------------------------------------------------------------------*/
-/*Estilos de la barra de navegación del index*/
+/*Estilos de la parte superior del index*/
 /*-----------------------------------------------------------------------------------------------------*/
-.divVuelos{
-    background: #58b6b3; /*Modifica el div contenedor de la barra de navegación*/
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    height: 70px;}
-.divVuelos img{
-width: 50px; /*Modifica la imagen/logo de la aerolinea en la barra de navegación*/
-height: auto;}
 
-.divVuelos .logo {
-    font-size: 30px; /*Modifica el texto para la marca de la aerolinea en la barra de navegación*/
-    font-family: sans-serif;
-    color: white;
-    margin-right: 7px;}
-
-.divVuelos ul{ /*Modifica los enlaces de la barra de navegación*/
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    height: 100%;}
-.divVuelos li {
-    height: 100%;}
-.divVuelos a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.divDeFondoSuperior{ /*Modifica el div del banner del avión y la frase*/
+    width: 100%;
+    height: 470px;
     text-align: center;
-    height: 100%;
-    width: 180px;
-    color: white;
-    font-size: 17px;
-    text-decoration: none;
-    font-family: sans-serif;
-    transition: background-color 0.3s ease;}
-.divVuelos a:hover{
-background: rgb(255, 158, 41); /*Modifica el comportamiento de la barra de navegación*/
-cursor: pointer;
-transform: scaleY(1.03);}
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s ease;
+    position: relative;
+    margin-bottom: 0%;}
 
-.divVuelos p{
-    font-size: 30px; /*Modifica el texto para la marca de la aerolinea en la barra de navegación*/
-    font-family: sans-serif;
-    color: white;
-    margin-right: 7px;}
+.divDeFondoSuperior img{width: 100%; /*Modifica la imagen del banner del div superior*/
+height: 100%;
+object-fit: cover;}
+
+.textoDeBannerIndex{position: absolute; /*Modifica el texto/frase del banner del div superior*/
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(187, 205, 195, 0.3);
+    color: rgb(110, 110, 110);
+    padding: 20px;
+    font-size: 18px;}
 
 /*-----------------------------------------------------------------------------------------------------*/
 /*Estilos del header buscador de vuelos*/
@@ -129,6 +107,7 @@ form{
 /*Estilos de seccion horarios y precios de los vuelos*/
 /*-----------------------------------------------------------------------------------------------------*/
     .imgPais{width: 70px; height: 40px;}
-        .imgHorarios{ width: 30px; height: 30px;}
-        .col-3{background-color: beige;}
-        .pais{gap: 10px;}
+    .imgHorarios{ width: 30px; height: 30px;}
+    .col-3{background-color: beige;}
+    .pais{gap: 10px;}
+    .col-9{background-color: aquamarine;}
