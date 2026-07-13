@@ -1,51 +1,50 @@
-
 /*-----------------------------------------------------------------------------------------------------*/
-/*Estilos */
+/* Estilos Base */
 /*-----------------------------------------------------------------------------------------------------*/
-
-body{font-family: Arial, sans-serif; /*Modifica la fuente central del body, el color de fondo, el margen y el padding*/
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #ffffff;
 }
 
-h2{text-align: center; /*Modifica el comportamiento por defecto de los títulos h2 del body*/
+h2 {
+    text-align: center;
 }
 
-a{color: rgb(0, 0, 0); /*Modifica el color del texto general del cuerpo (este logra cambiarse en cada caso según el modelo cascada pero es el color base si no se modiica a pie)*/
-    text-decoration: none;}
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
 /*-----------------------------------------------------------------------------------------------------*/
-/*Estilos de la barra de navegación*/
+/* Estilos de la Barra de Navegacion */
 /*-----------------------------------------------------------------------------------------------------*/
-.divBarradenavegacionDestinos{
-    background: #58b6b3; /*Modifica el div contenedor de la barra de navegación*/
+.divBarradenavegacionDestinos {
+    background: #58b6b3;
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     height: 70px;
 }
-.divBarradenavegacionDestinos img{
-width: 50px; /*Modifica la imagen/logo de la aerolinea en la barra de navegación*/
-height: auto;
+
+.divBarradenavegacionDestinos img {
+    width: 50px;
+    height: auto;
 }
 
-.divBarradenavegacionDestinos .logo {
-    font-size: 30px; /*Modifica el texto para la marca de la aerolinea en la barra de navegación*/
-    font-family: sans-serif;
-    color: white;
-    margin-right: 7px;
-}
-
-.divBarradenavegacionDestinos ul{ /*Modifica los enlaces de la barra de navegación*/
+.divBarradenavegacionDestinos ul {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
     height: 100%;
 }
+
 .divBarradenavegacionDestinos li {
     height: 100%;
 }
+
 .divBarradenavegacionDestinos a {
     display: flex;
     align-items: center;
@@ -59,43 +58,235 @@ height: auto;
     font-family: sans-serif;
     transition: background-color 0.3s ease;
 }
-.divBarradenavegacionDestinos a:hover{
-background: rgb(255, 158, 41); /*Modifica el comportamiento de la barra de navegación*/
-cursor: pointer;
-transform: scaleY(1.03);}
 
-.divBarradenavegacionDestinos p{
-    font-size: 30px; /*Modifica el texto para la marca de la aerolinea en la barra de navegación*/
+.divBarradenavegacionDestinos a:hover {
+    background: rgb(255, 158, 41);
+    cursor: pointer;
+    transform: scaleY(1.03);
+}
+
+.divBarradenavegacionDestinos p {
+    font-size: 30px;
     font-family: sans-serif;
     color: white;
-    margin-right: 7px;}
-
+    margin-right: 7px;
+}
 
 /*-----------------------------------------------------------------------------------------------------*/
-/*Estilos de la sección de footer*/ 
+/* Estilos para la parte de las tarjetas */
 /*-----------------------------------------------------------------------------------------------------*/
 
-.divContenedorDeFooterDestinos {background-color: #FFFFFF; /*Modifica el contenedor del footer del ubicaciones y contacto general donde está todo guardado*/ 
-    display: flex;
-    width: 90%;
-    height: 200px;
+/* Caja invisible para que el contenido no se pegue a los lados de la pantalla */
+.contenedor-principal {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Para cambiarle el color y dejar en mayuscula el titulo */
+.titulo-seccion {
+    color: #6c757d;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
     margin-top: 20px;
+}
+
+/* Para separar de forma fija las secciones de vuelos nacionales e internacionales */
+.subtitulo-bloque {
+    font-size: 1.4rem;
+    color: #212529;
+    border-bottom: 2px solid #58b6b3;
+    padding-bottom: 5px;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+/* Para centrar los botones de arriba y que se pongan uno a la par del otro */
+.contenedor-botones-filtros {
+    display: flex;
     justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+/* Para que se vean los botones antes de tocarlos */
+.btn-filtrar {
+    background-color: transparent;
+    color: #212529;
+    border: 1px solid #212529;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* El color que se activa cuando pasas el mouse por encima del boton informativo */
+.btn-filtrar:hover {
+    background-color: #58b6b3;
+    border-color: #58b6b3;
+    color: white;
+}
+
+/* Uso grid para acomodar las tarjetas automaticamente en columnas de 300px */
+.grilla-destinos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    margin-bottom: 50px;
+}
+
+/* Bordes redondeados y sombra para que las tarjetas parezcan cajitas ordenadas */
+.destinoTarjeta {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: 1px solid #e2e2e2;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto animado para que la tarjeta suba un poquito cuando pasa el cursor */
+.destinoTarjeta:hover {
+    transform: translateY(-5px);
+}
+
+/* Obligar a que el espacio de la foto mida siempre 200px */
+.contenedor-foto-recorte {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+/* Uso object fit cover para que la imagen rellene el cuadro y no se estire */
+.contenedor-foto-recorte img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Margenes internos para que el texto de la tarjeta no quede pegado al borde */
+.cuerpo-tarjeta {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/* Titulo del pais o ciudad en negrita */
+.nombre-destino {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #212529;
+}
+
+/* Color gris y tamaño para el parrafo con la informacion del viaje */
+.descripcion-destino {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 20px;
+    flex-grow: 1;
+    line-height: 1.4;
+}
+
+/* Con flex space between pongo el precio a la izquierda y el boton a la derecha */
+.pie-tarjeta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+/* Color turquesa llamativo para el precio en dolares */
+.precio-destino {
+    font-weight: bold;
+    color: #58b6b3;
+    font-size: 1.2rem;
+}
+
+/* Como se ve el boton redondo de ver detalles */
+.btn-detalles {
+    color: #58b6b3;
+    border: 1px solid #58b6b3;
+    background: transparent;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Para que cambie a color naranja cuando el usuario pasa el mouse encima */
+.btn-detalles:hover {
+    background-color: rgb(255, 158, 41);
+    border-color: rgb(255, 158, 41);
+    color: white;
+}
+
+/*-----------------------------------------------------------------------------------------------------*/
+/* Estilos para acomodar pie de pagina */
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Con display flex separo los 4 bloques en la misma linea y los centro */
+.divContenedorDeFooterDestinos {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px 0;
+    gap: 15px;
+}
+
+/* Estilo para que las 4 columnas midan lo mismo */
+.divDeFooterDestinos {
+    background-color: #FFFFFF;
+    flex: 1;
     text-align: center;
-    gap: 20px;}
+}
 
-.divDeFooterDestinos {background-color: #FFFFFF; /*Modifica cada div individual dentro del div general ubicaciones y contacto*/
-    width: 250px;}
+/* Titulos principales de cada columna del pie de pagina */
+.divDeFooterDestinos h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
 
-.divDeFooterDestinos ul{list-style: none; /*Modifica las listas desordenadas del footer*/
-    text-align: center;
-    padding: 0;
-    text-align: center;} 
+/* El list style none para tener lista sin viñetas */
+.divDeFooterDestinos ul {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
 
-.divDeFooterDestinos li{margin: 15px 0px;} /*Modifica los elementos de las listas del footer*/
+/* Separacion vertical de los enlaces del footer */
+.divDeFooterDestinos li {
+    margin: 10px 0px;
+    font-size: 0.9rem;
+    color: #212529;
+    line-height: 1.4;
+}
 
-.footerDestinos p{background-color: #e2e2e2; /*Modifica el texto de derechos reservados del footer*/
-    border: 1px solid grey;
+/* Barra de abajo en fondo gris para los derechos */
+.footerDestinos p {
+    background-color: #e2e2e2;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
     text-align: center;
     padding: 10px 0px;
-    margin: 0px;} 
+    margin: 0px;
+    font-size: 0.85rem;
+    color: #212529;
+}

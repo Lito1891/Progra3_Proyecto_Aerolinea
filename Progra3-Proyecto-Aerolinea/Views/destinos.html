@@ -1,30 +1,174 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Assets/css/destinos.css">
     <title>Destinos y Servicios - Apex Fly</title>
+
+    <!-- Enlace para cargar la hoja de estilos desde la carpeta assets -->
+    <link rel="stylesheet" href="../Assets/css/destinos.css">
+
     <style>
-        main{background-color: lightgoldenrodyellow;}
+        /* Estilo rapido para poner el fondo amarillo claro */
+        main {
+            background-color: lightgoldenrodyellow;
+        }
     </style>
 </head>
+
 <body>
+
+    <!-- Barra de navegacion del sitio web -->
     <nav class="divBarradenavegacionDestinos">
         <p><strong><em>Apex Fly</em></strong></p>
         <img src="../Assets/img/fotosIndex/avionBarra.png" alt="Logo de Apex Fly">
-        <a href="index.html">Página de inicio</a>
-        <a href="destinos.html">Página de destinos</a>
-        <a href="vuelos.html">Búsqueda de vuelos</a>
-        <a href="sucursalesContacto.html">Sucursales y contacto</a>
-</nav>
+        <a href="../Views/index.html">Página de inicio</a>
+        <a href="../Views/destinos.html">Página de destinos</a>
+        <a href="../Views/vuelos.html">Búsqueda de vuelos</a>
+        <a href="../Views/sucursalesContacto.html">Sucursales y contacto</a>
+    </nav>
 
+    <!-- Contenido principal de la pagina de destinos -->
+    <main class="py-5">
+        <div class="contenedor-principal">
 
-   <!--sección de footer-->
+            <h2 class="titulo-seccion">Nuestros Destinos Destacados</h2>
+
+            <!-- Botones estaticos de informacion para el usuario -->
+            <div class="contenedor-botones-filtros">
+                <button class="btn-filtrar">Todos los vuelos</button>
+                <button class="btn-filtrar">Rutas locales</button>
+                <button class="btn-filtrar">Rutas internacionales</button>
+            </div>
+
+            <!-- SECCION DE VUELOS NACIONALES -->
+            <h3 class="subtitulo-bloque">Vuelos Nacionales</h3>
+            <div class="grilla-destinos">
+
+                <!-- Tarjeta: San Jose -->
+                <div class="destino-item">
+                    <div class="destinoTarjeta">
+                        <div class="contenedor-foto-recorte">
+                            <img src="../Assets/img/fotosDestinos/costarica.jpg" alt="San José, Costa Rica">
+                        </div>
+                        <div class="cuerpo-tarjeta">
+                            <h5 class="nombre-destino">San José, Costa Rica</h5>
+                            <p class="descripcion-destino">Descubre exuberantes bosques tropicales, volcanes imponentes
+                                y la calidez del estilo de vida Pura Vida.</p>
+                            <div class="pie-tarjeta">
+                                <span class="precio-destino">$150</span>
+                                <button class="btn-detalles">Ver detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- SECCION DE VUELOS INTERNACIONALES -->
+            <h3 class="subtitulo-bloque">Vuelos Internacionales</h3>
+            <div class="grilla-destinos">
+
+                <!-- Tarjeta: Paris -->
+                <div class="destino-item">
+                    <div class="destinoTarjeta">
+                        <div class="contenedor-foto-recorte">
+                            <img src="../Assets/img/fotosDestinos/paris.jpg" alt="París, Francia">
+                        </div>
+                        <div class="cuerpo-tarjeta">
+                            <h5 class="nombre-destino">París, Francia</h5>
+                            <p class="descripcion-destino">Camina por los Campos Elíseos, admira la Torre Eiffel
+                                iluminada y vive la experiencia europea.</p>
+                            <div class="pie-tarjeta">
+                                <span class="precio-destino">$599</span>
+                                <button class="btn-detalles">Ver detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta: Tokio -->
+                <div class="destino-item">
+                    <div class="destinoTarjeta">
+                        <div class="contenedor-foto-recorte">
+                            <img src="../Assets/img/fotosDestinos/tokio.jpg" alt="Tokio, Japón">
+                        </div>
+                        <div class="cuerpo-tarjeta">
+                            <h5 class="nombre-destino">Tokio, Japón</h5>
+                            <p class="descripcion-destino">Fusión asombrosa de santuarios antiguos y rascacielos
+                                tecnológicos llenos de luces de neón.</p>
+                            <div class="pie-tarjeta">
+                                <span class="precio-destino">$899</span>
+                                <button class="btn-detalles">Ver detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta: Rio de Janeiro -->
+                <div class="destino-item">
+                    <div class="destinoTarjeta">
+                        <div class="contenedor-foto-recorte">
+                            <img src="../Assets/img/fotosDestinos/riodejaneiro.jpg" alt="Río de Janeiro, Brasil">
+                        </div>
+                        <div class="cuerpo-tarjeta">
+                            <h5 class="nombre-destino">Río de Janeiro, Brasil</h5>
+                            <p class="descripcion-destino">Disfruta de las costas doradas de Copacabana, explora el
+                                Cristo Redentor y vive el ritmo tropical.</p>
+                            <div class="pie-tarjeta">
+                                <span class="precio-destino">$420</span>
+                                <button class="btn-detalles">Ver detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta: Cusco -->
+                <div class="destino-item">
+                    <div class="destinoTarjeta">
+                        <div class="contenedor-foto-recorte">
+                            <img src="../Assets/img/fotosDestinos/peru.jpg" alt="Cusco, Perú">
+                        </div>
+                        <div class="cuerpo-tarjeta">
+                            <h5 class="nombre-destino">Cusco, Perú</h5>
+                            <p class="descripcion-destino">Explora la histórica capital del Imperio Inca y maravíllate
+                                con los misterios arqueológicos de Machu Picchu.</p>
+                            <div class="pie-tarjeta">
+                                <span class="precio-destino">$380</span>
+                                <button class="btn-detalles">Ver detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta: Ilulissat -->
+                <div class="destino-item">
+                    <div class="destinoTarjeta">
+                        <div class="contenedor-foto-recorte">
+                            <img src="../Assets/img/fotosDestinos/groenlandia.jpg" alt="Ilulissat, Groenlandia">
+                        </div>
+                        <div class="cuerpo-tarjeta">
+                            <h5 class="nombre-destino">Ilulissat, Groenlandia</h5>
+                            <p class="descripcion-destino">Una aventura única entre icebergs gigantescos, auroras
+                                boreales espectaculares y paisajes árticos.</p>
+                            <div class="pie-tarjeta">
+                                <span class="precio-destino">$1,250</span>
+                                <button class="btn-detalles">Ver detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Seccion para el pie de pagina con las 4 columnas de informacion -->
     <div class="divContenedorDeFooterDestinos">
 
         <div class="divDeFooterDestinos">
-            <h4>Acerca de nosotros</h4> <!-- pendiente de ponerle nombre a la aerolinea-->
+            <h4>Nosotros</h4>
             <ul>
                 <li>Nuestra historia</li>
                 <li>Trayectoria</li>
@@ -47,14 +191,14 @@
             <h4>Datos de contacto</h4>
             <ul>
                 <li>Centro de atención al cliente</li>
-                <li>CorreoDePrueba@uvirtual.com</li>
+                <li>Correo electrónico</li>
                 <li>Contacto para empresas</li>
                 <li>Formulario de reclamos</li>
             </ul>
         </div>
 
         <div class="divDeFooterDestinos">
-            <h4>Siguenos en redes sociales</h4>
+            <h4>Redes sociales</h4>
             <ul>
                 <li>Facebook</li>
                 <li>Instagram</li>
@@ -63,8 +207,12 @@
         </div>
 
     </div>
+
+    <!-- Barra final gris de los derechos de autor -->
     <footer class="footerDestinos">
         <p>© 2026 Todos los derechos reservados</p>
     </footer>
+
 </body>
+
 </html>
