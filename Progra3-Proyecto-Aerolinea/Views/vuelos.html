@@ -9,7 +9,23 @@
     <link rel="stylesheet" href="../Assets/css/vuelos.css">
     <!--los styles de abajo son para identificar yo poder ubicarme mejor en la pagina-->
     <style>
-    
+    .row{
+        margin: 5px 0px;
+    }
+    .col-5{
+        border: solid yellow;
+        margin: auto;
+    }
+    .col-7{
+        border: solid black;
+    }
+    .francia{
+        border: solid red;
+    }
+    .pais{ margin: 5px;}
+    .imgPais{
+        border: solid blue;
+    }
     </style>
 </head>
 <body>
@@ -130,36 +146,42 @@
     <!--Inicia div de todos los paises-->
     <div class="allCountries">
         <!--Inicia Francia-->
-        <div class=" text-center">
-        <div class="row justify-content-center">
-            <div class="col-3"><!--col-3 inicio-->
-            <span class="row justify-content-center">París, Francia</span>
-            <img class="col-12 imgPais" src="../Assets/img/fotosVuelos/francia.webp" alt="Francia">
+        <div class=" francia justify-content-center">
+        <div class="row ">
+            <div class="col-5"><!--col-5 inicio-->
+            <span class="spanFrancia"><strong class="row justify-content-center">París, Francia</strong></span>
+            <div class="justify-content-center">
+                <img class="imgPais" src="../Assets/img/fotosVuelos/francia.webp" alt="Francia">
+            </div>
             <div class="pais row">
-                <div class="row justify-content-center">
-                    <div class="col"><img class="col imgHorarios" src="../Assets/img/fotosVuelos/madrugada.png" alt="madrugada"></div>
-                    <span class="col">Madrugada 00:00 - 05:59</span>
+                <div class="row">
+                    <div class="col">
+                        <img class="col imgHorarios" src="../Assets/img/fotosVuelos/madrugada.png" alt="madrugada">
+                        <span class="col">Madrugada 00:00 - 05:59</span></div>
                 </div>
 
                 <div class="row">
-                    <div class="col"><img class="col imgHorarios" src="../Assets/img/fotosVuelos/mañana.png" alt="mañana"></div>
-                    <span class="col">Mañana 06:00 - 11:59</span>
+                    <div class="col">
+                        <img class="col imgHorarios" src="../Assets/img/fotosVuelos/mañana.png" alt="mañana">
+                        <span class="col">Mañana 06:00 - 11:59</span></div>
                 </div>
 
                 <div class="row">
-                    <div class="col"><img class="col imgHorarios" src="../Assets/img/fotosVuelos/tarde.png" alt="tarde"></div>
-                    <span class="col">Tarde 12:00 - 17:59</span>
+                    <div class="col">
+                        <img class="col imgHorarios" src="../Assets/img/fotosVuelos/tarde.png" alt="tarde">
+                        <span class="col">Tarde 12:00 - 17:59</span></div>
                 </div>
 
                 <div class="row">
-                    <div class="col"><img class="col imgHorarios" src="../Assets/img/fotosVuelos/noche.png" alt="noche"></div>
-                    <span class="col">Noche 18:00 - 23:59</span>
+                    <div class="col">
+                        <img class="col imgHorarios" src="../Assets/img/fotosVuelos/noche.png" alt="noche">
+                        <span class="col">Noche 18:00 - 23:59</span></div>
                 </div>
             </div>
                 
-            </div><!--col-3 final-->
+            </div><!--col-5 final-->
             
-            <div class="col-9">
+            <div class="col-7">
             <span class="row justify-content-center">París, Francia</span>
             <img class="col-12 imgPais" src="../Assets/img/fotosVuelos/francia.webp" alt="Francia">
             <div class="accordion" id="accordionExampleFrancia"><!--Inicia carrusel-->
