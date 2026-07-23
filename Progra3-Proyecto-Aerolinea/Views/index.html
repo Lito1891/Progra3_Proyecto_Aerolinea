@@ -94,10 +94,11 @@
 
         <section> <!--Pendiente de colocarle un nombre descriptivo a la sección-->
             <!--sección de buscador de vuelos-->
-                <h2 class="text-secondary text-center mt-3">Buscador de Vuelos</h2>
+                <h2 class="text-secondary text-center mt-3 mb-4">Buscador de Vuelos</h2>
                     <!--text-secondary para darle el tamaño y formato al texto del título-->
                     <!--text-center para centrar el texto del título-->
                     <!--mt-3 para darle un margen superior al título-->
+                    <!--mb-4 para darle un margen inferior al título-->
                     
             <form>
                 <!--campo para el origen-->
@@ -117,65 +118,160 @@
             </form>
         </section>
 
-        <section> <!--Pendiente de colocarle un nombre descriptivo a la sección-->
-        <!--sección de destinos-->
-            <h2 class="text-secondary text-center mt-3">Nuestros Destinos Destacados</h2>
-                <!--text-secondary para darle el tamaño y formato al texto del título-->
-                <!--text-center para centrar el texto del título-->
-                <!--mt-3 para darle un margen superior al título-->
 
-            <div class="divContenedorDeDestinosPrincipalesIndex">
+        <!--sección de destinos destacados-->
+        <section class="py-3">
+            <!--py-3 agrega un padding superior e inferior, para los lados sería px-5-->
 
-                <article class="articleDestinosPrincipalesIndex">
-                    <img src="../Assets/img/fotosIndex/francia.jpg" alt="Logo de Apex Fly" class="imagenDestinosIndex">
-                    <div class="capaDeTexto">
-                        <p class="textoDestinoIndex">París, Francia</p>
+            <div class="container">
+                <!--container para crear un contenedor que centre el contenido sin escribir margin:auto-->
+
+                <h2 class="text-secondary text-center mt-3 mb-4">Nuestros Destinos Destacados</h2>
+                    <!--text-secondary para darle el tamaño y formato al texto del título-->
+                    <!--text-center para centrar el texto del título-->
+                    <!--mt-3 para darle un margen superior al título-->
+                    <!--mb-4 para darle un margen inferior al título-->
+
+                <div class="row g-5 justify-content-center">
+                    <!--row para crear una fila de columnas que envuelvan el contenido y poderlo dividir-->
+                    <!--g-5 para darle un espacio entre las columnas-->
+                    <!--justify-content-center para centrar las columnas-->
+
+                    <div class="col-12 col-md-8 col-lg-4">
+                        <!--col-12 para que ocupe todo el ancho en dispositivos móviles-->
+                        <!--col-md-6 para que ocupe la mitad en dispositivos medianos-->
+                        <!--col-lg-4 para que ocupe un tercio en dispositivos grandes-->
+
+                        <article class="articleDestinosPrincipalesIndex">
+                            <img src="../Assets/img/fotosIndex/francia.jpg"
+                                alt="París, Francia"
+                                class="imagenDestinosIndex img-fluid">
+                                <!--img-fluid para hacer la imagen responsive sin que sea más pequeña o vaya más allá que el contenedor-->
+                            
+                                <div class="capaDeTexto">
+                                <p class="mb-0">París, Francia</p>
+                                <!--mb-0 para eliminar el margen inferior-->
+                            </div>
+                        </article>
                     </div>
-                </article>
 
-                <article class="articleDestinosPrincipalesIndex">
-                    <img src="../Assets/img/fotosIndex/japon.jpg" alt="Logo de Apex Fly" class="imagenDestinosIndex">
-                    <div class="capaDeTexto">
-                        <p class="textoDestinoIndex">Tokio, Japón</p>
+                    <div class="col-12 col-md-8 col-lg-4">
+                        <!--col-12 para que ocupe todo el ancho en dispositivos móviles-->
+                        <!--col-md-6 para que ocupe la mitad en dispositivos medianos-->
+                        <!--col-lg-4 para que ocupe un tercio en dispositivos grandes-->
+
+                        <article class="articleDestinosPrincipalesIndex">
+                            <img src="../Assets/img/fotosIndex/japon.jpg"
+                                alt="Tokio, Japón"
+                                class="imagenDestinosIndex img-fluid">
+                                <!--img-fluid para hacer la imagen responsive sin que sea más pequeña o vaya más allá que el contenedor-->
+                            
+                                <div class="capaDeTexto">
+                                <p class="mb-0">Tokio, Japón</p>
+                                <!--mb-0 para eliminar el margen inferior-->
+                            </div>
+                        </article>
                     </div>
-                </article>
 
-                <article class="articleDestinosPrincipalesIndex">
-                    <img src="../Assets/img/fotosIndex/brasil.jpg" alt="Logo de Apex Fly" class="imagenDestinosIndex">
-                    <div class="capaDeTexto">
-                        <p class="textoDestinoIndex">Río de Janeiro, Brasil</p>
+                    <div class="col-12 col-md-8 col-lg-4">
+                        <!--col-12 para que ocupe todo el ancho en dispositivos móviles-->
+                        <!--col-md-6 para que ocupe la mitad en dispositivos medianos-->
+                        <!--col-lg-4 para que ocupe un tercio en dispositivos grandes-->
+
+                        <article class="articleDestinosPrincipalesIndex">
+                            <img src="../Assets/img/fotosIndex/brasil.jpg"
+                                alt="Río de Janeiro, Brasil"
+                                class="imagenDestinosIndex img-fluid">
+                                <!--img-fluid para hacer la imagen responsive sin que sea más pequeña o vaya más allá que el contenedor-->
+
+                            <div class="capaDeTexto">
+                                <p class="mb-0">Río de Janeiro, Brasil</p>
+                                <!--mb-0 para eliminar el margen inferior-->
+                            </div>
+                        </article>
                     </div>
-                </article>
-            </div>
 
-            <div class="divContenedorDeDestinosPrincipalesIndex">
+                    <div class="col-12 col-md-8 col-lg-4">
+                        <!--col-12 para que ocupe todo el ancho en dispositivos móviles-->
+                        <!--col-md-6 para que ocupe la mitad en dispositivos medianos-->
+                        <!--col-lg-4 para que ocupe un tercio en dispositivos grandes-->
 
-                <article class="articleDestinosPrincipalesIndex">
-                    <img src="../Assets/img/fotosIndex/costaRica.jpg" alt="Logo de Apex Fly"  class="imagenDestinosIndex">
-                    <div class="capaDeTexto">
-                        <p class="textoDestinoIndex">San José, Costa Rica</p>
+                        <article class="articleDestinosPrincipalesIndex">
+                            <img src="../Assets/img/fotosIndex/costaRica.jpg"
+                                alt="San José, Costa Rica"  
+                                class="imagenDestinosIndex img-fluid">
+                                <!--img-fluid para hacer la imagen responsive sin que sea más pequeña o vaya más allá que el contenedor-->
+
+                            <div class="capaDeTexto">
+                                <p class="mb-0">San José, Costa Rica</p>
+                                <!--mb-0 para eliminar el margen inferior-->
+                            </div>
+                        </article>
                     </div>
-                </article>
 
-                <article class="articleDestinosPrincipalesIndex">
-                    <img src="../Assets/img/fotosIndex/peru.jpg" alt="Logo de Apex Fly" class="imagenDestinosIndex">
-                    <div class="capaDeTexto">
-                        <p class="textoDestinoIndex">Cusco, Perú</p>
-                    </div>
-                </article>
+                    <div class="col-12 col-md-8 col-lg-4">
+                        <!--col-12 para que ocupe todo el ancho en dispositivos móviles-->
+                        <!--col-md-6 para que ocupe la mitad en dispositivos medianos-->
+                        <!--col-lg-4 para que ocupe un tercio en dispositivos grandes-->
 
-                <article class="articleDestinosPrincipalesIndex">
-                    <img src="../Assets/img/fotosIndex/groelandia.jpg" alt="Logo de Apex Fly" class="imagenDestinosIndex">
-                    <div class="capaDeTexto">
-                        <p class="textoDestinoIndex">Ilulissat , Groelandia</p>
+                        <article class="articleDestinosPrincipalesIndex">
+                            <img src="../Assets/img/fotosIndex/peru.jpg"
+                                alt="Cusco, Perú"
+                                class="imagenDestinosIndex img-fluid">
+                                <!--img-fluid para hacer la imagen responsive sin que sea más pequeña o vaya más allá que el contenedor-->
+
+                            <div class="capaDeTexto">
+                                <p class="mb-0">Cusco, Perú</p>
+                                <!--mb-0 para eliminar el margen inferior-->
+                            </div>
+                        </article>
                     </div>
-                </article>
+
+                    <div class="col-12 col-md-8 col-lg-4">
+                        <!--col-12 para que ocupe todo el ancho en dispositivos móviles-->
+                        <!--col-md-6 para que ocupe la mitad en dispositivos medianos-->
+                        <!--col-lg-4 para que ocupe un tercio en dispositivos grandes-->
+
+                        <article class="articleDestinosPrincipalesIndex">
+                            <img src="../Assets/img/fotosIndex/groelandia.jpg"
+                                alt="Ilulissat , Groelandia"
+                                class="imagenDestinosIndex img-fluid">
+                                <!--img-fluid para hacer la imagen responsive sin que sea más pequeña o vaya más allá que el contenedor-->
+
+                            <div class="capaDeTexto">
+                                <p class="mb-0">Ilulissat , Groelandia</p>
+                                <!--mb-0 para eliminar el margen inferior-->
+                            </div>
+                        </article>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <div class="divInferiorDeDestinosIndex">
-            <p ><a href="destinos.html">Ingresa aquí para conocer más acerca de nuestros destinos</a></p>
-        </div>
+        <section class="text-center pt-4 pb-5">
+            <!--text-center para centrar el texto-->
+            <!--pt-4 para agregar un padding top de tamaño 4-->
+            <!--pb-5 para agregar un padding bottom de tamaño 5-->
+
+            <div class="container">
+                <!--container para ser tratado como la clase container de bootstrap y que contenga sus propiedades de caja-->
+                
+                <div class="enlaceDestinos d-inline-block rounded-3 p-3">
+                    <!--d-inline-block para que se muestre en línea-->
+                    <!--rounded-3 para agregar bordes redondeados-->
+                    <!--p-3 para agregar un padding de tamaño 3-->
+
+                    <a href="destinos.html" class="text-white text-decoration-none fw-semibold">
+                        <!--text-white para que el texto sea blanco-->
+                        <!--text-decoration-none para quitar el subrayado del enlace-->
+                        <!--fw-semibold para hacer el texto en negrita-->
+
+                        Ingresa aquí para conocer más acerca de nuestros destinos
+                    </a>
+                </div>
+            </div>
+        </section>
+
     </main>
     <!--sección de footer-->
     <footer class="footerDeSucursales">
@@ -193,10 +289,10 @@
                     <h4 class="fw-bold">Nosotros</h4>
                     <ul class="list-unstyled">
                         <!--list-unstyled para quitar los puntos de la lista-->
-                        <li class="mb-1"><a href="../Views/index.html">Nuestra historia</a></li> <!--Se referencia a la misma página a falta de backend para simulación de redirección-->
-                        <li class="mb-1"><a href="../Views/index.html">Trayectoria</a></li>
-                        <li class="mb-1"><a href="../Views/index.html">Organigrama</a></li>
-                        <li class="mb-1"><a href="../Views/index.html">Documentos de interés</a></li>
+                        <li class="mb-1"><a href="#">Nuestra historia</a></li> <!--Se referencia a la misma página a falta de backend para simulación de redirección-->
+                        <li class="mb-1"><a href="#">Trayectoria</a></li>
+                        <li class="mb-1"><a href="#">Organigrama</a></li>
+                        <li class="mb-1"><a href="#">Documentos de interés</a></li>
                     </ul>
                 </div>
 
@@ -209,10 +305,10 @@
                     <!--fw-bold para hacer el h4 en negrita-->
                     <ul class="list-unstyled">
                         <!--list-unstyled para quitar los puntos de la lista-->
-                        <li class="mb-1"><a href="../Views/index.html">Términos y condiciones</a></li>
-                        <li class="mb-1"><a href="../Views/index.html">Reclamos de servicios</a></li>
-                        <li class="mb-1"><a href="../Views/index.html">Requisitos por país</a></li>
-                        <li class="mb-1"><a href="../Views/index.html">Obligaciones a bordo</a></li>
+                        <li class="mb-1"><a href="#">Términos y condiciones</a></li>
+                        <li class="mb-1"><a href="#">Reclamos de servicios</a></li>
+                        <li class="mb-1"><a href="#">Requisitos por país</a></li>
+                        <li class="mb-1"><a href="#">Obligaciones a bordo</a></li>
                     </ul>
                 </div>
 
@@ -225,10 +321,10 @@
                     <!--fw-bold para hacer el h4 en negrita-->
                     <ul class="list-unstyled">
                         <!--list-unstyled para quitar los puntos de la lista-->
-                        <li class="mb-1"><a href="../Views/index.html">Centro de atención al cliente</a></li>
-                        <li class="mb-1"><a href="../Views/index.html">Correo electrónico</a></li>
-                        <li class="mb-1"><a href="../Views/index.html">Contacto para empresas</a></li>
-                        <li class="mb-1"><a href="../Views/index.html">Formulario de reclamos</a></li>
+                        <li class="mb-1"><a href="#">Centro de atención al cliente</a></li>
+                        <li class="mb-1"><a href="#">Correo electrónico</a></li>
+                        <li class="mb-1"><a href="#">Contacto para empresas</a></li>
+                        <li class="mb-1"><a href="#">Formulario de reclamos</a></li>
                     </ul>
                 </div>
 
@@ -240,9 +336,9 @@
                     <h4 class="fw-bold">Redes sociales</h4>
                     <!--fw-bold para hacer el h4 en negrita-->
                     <ul class="list-unstyled">
-                        <li class="mb-1"><a href="../Views/index.html">Facebook</a></li>
-                        <li class="mb-1"><a href="../Views/index.html">Instagram</a></li>
-                        <li class="mb-1"><a href="../Views/index.html">WhatsApp <br>(canal de difusión)</a></li>
+                        <li class="mb-1"><a href="#">Facebook</a></li>
+                        <li class="mb-1"><a href="#">Instagram</a></li>
+                        <li class="mb-1"><a href="#">WhatsApp <br>(canal de difusión)</a></li>
                     </ul>
                 </div>
             </section>
