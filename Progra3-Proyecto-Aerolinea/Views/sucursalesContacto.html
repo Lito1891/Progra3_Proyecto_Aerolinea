@@ -15,22 +15,24 @@
         <nav class="navbar navbar-expand-lg navbar-dark navbarApex">
             <!--navbar para indicar que es la barra de navegación-->
             <!--navbar-expand-lg mantiene la barra expandida en pantallas lg o superiores-->
-            <!--navbar-light para cambiar el estilo de la barra de navegación a un tono oscuro (light para hacerlo oscuro jaja)-->
+            <!--navbar-dark para cambiar el estilo de la barra de navegación a un tono claro (light para hacerlo oscuro jaja)-->
             <!--navbarApex es la clase para editar desde el index.css-->
 
             <div class="container-fluid px-4">
                 <!--container para tratar el contenido de la barra de navegación-->
-
+                <!--px-4 para agregar padding/espacio a los bordes laterales-->
+                
                 <a class="navbar-brand text-white fw-bold fst-italic ms-3" href="../Views/index.html">
                     <!--nav-brand para tratar el logo de la aerolinea y el nombre como una marca sola de redireccionamiento-->
                     <!--text-white para cambiar el color del texto a blanco-->
                     <!--fw-bold para cambiar el grosor del texto a negrita-->
                     <!--fst-italic para cambiar el estilo del texto a cursiva-->
-                    <!--ms-3 para agregar un margen a la izquierda, o sea margin start 3-->
+                    <!--ms-3 para agregar un margen a la izquierda, o sea margin start 3 -->
 
                     <img src="../Assets/img/fotosIndex/avionBarra.png" width="45" class="me-2">
                     Apex Fly
-                    <!--me-2 para agregar un margen a la derecha, o sea margin end 2-->
+                    <!--me-2 para agregar un margen a la derecha, o sea margin end 2 y separe del texto del nombre de la aerolinea-->
+                    <!--width="45" para indicarle que tenga un ancho de 45 píxeles y que calcule la altura automáticamente-->
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuDelNavbar"> <!--Botón para colapsar la barra de navegación en pantallas pequeñas-->
@@ -47,44 +49,48 @@
                     <!--navbar-nav para tratar los enlaces de navegación-->
                     <!--id="menuDelNavbar" para asignarle el identificador que se usa en el botón-->
 
-                    <div class="navbar-nav ms-auto">
+                    <ul class="navbar-nav ms-auto">
                         <!--navbar-nav para tratar los enlaces de navegación-->
                         <!--ms-auto para alinear los enlaces a la derecha, o sea margin start auto-->
+                        <li class="nav-item">
+                            <!--nav-item para tratar los elementos de la lista de navegación-->
 
-                        <a class="nav-link text-white rounded-2" href="../Views/index.html"> Página de inicio</a>
-                        <!--nav-link para tratar los enlaces de navegación-->
-                        <!--text-white para cambiar el color del texto a blanco-->
+                            <a class="nav-link text-white rounded-2" href="../Views/index.html"> Página de inicio</a>
+                            <!--nav-link para tratar los enlaces de navegación-->
+                            <!--text-white para cambiar el color del texto a blanco-->
+                        </li>
+                        
+                        <li class="nav-item">
+                            <!--nav-item para tratar los elementos de la lista de navegación-->
 
-                        <a class="nav-link text-white rounded-2" href="../Views/destinos.html"> Página de destinos</a>
-                        <!--nav-link para tratar los enlaces de navegación-->
-                        <!--text-white para cambiar el color del texto a blanco-->
+                            <a class="nav-link text-white rounded-2" href="../Views/destinos.html"> Página de destinos</a>
+                            <!--nav-link para tratar los enlaces de navegación-->
+                            <!--text-white para cambiar el color del texto a blanco-->
+                        </li>
                         
-                        <a class="nav-link text-white rounded-2" href="../Views/vuelos.html">Búsqueda de vuelos</a>
-                        <!--nav-link para tratar los enlaces de navegación-->
-                        <!--text-white para cambiar el color del texto a blanco-->
+                        <li class="nav-item">
+                            <!--nav-item para tratar los elementos de la lista de navegación-->
 
-                        <a class="nav-link text-white rounded-2" href="../Views/sucursalesContacto.html">Sucursales y contacto</a>
-                        <!--nav-link para tratar los enlaces de navegación-->
-                        <!--text-white para cambiar el color del texto a blanco-->
+                            <a class="nav-link text-white rounded-2" href="../Views/vuelos.html">Búsqueda de vuelos</a>
+                            <!--nav-link para tratar los enlaces de navegación-->
+                            <!--text-white para cambiar el color del texto a blanco-->
+                        </li>
                         
-                        <!--nav-link agrega padding, separación, alineación y comportamiento de barra nav-->
+                        <li class="nav-item">
+                            <!--nav-item para tratar los elementos de la lista de navegación-->
+
+                            <a class="nav-link text-white rounded-2" href="../Views/sucursalesContacto.html">Sucursales y contacto</a>
+                            <!--nav-link para tratar los enlaces de navegación-->
+                            <!--text-white para cambiar el color del texto a blanco-->
+                        </li>
                         
-                    </div>
+                    </ul>
                 </div>
             </div>
         </nav>
     </header>
 
     <main>
-        <section>
-            <div class="divDeFondoSuperior">
-                <img src="../Assets/img/fotosSucursalesContacto/bannerSucursalesContaco.jpg">
-                <div class="textoDeBannerSucursales">
-                    <p><em>“Vive tus sueños, no sueñes tu vida”</em></p>
-                </div>
-            </div>
-        </section>
-
         <!--sección de ubicaciones físicas-->
         <section>
             <h2 class="text-secondary text-center mt-3">Nuestras sucursales físicas</h2>
@@ -166,10 +172,10 @@
                     <h4 class="fw-bold">Nosotros</h4>
                     <ul class="list-unstyled">
                         <!--list-unstyled para quitar los puntos de la lista-->
-                        <li class="mb-1"><a href="../Views/index.html">Nuestra historia</a></li> <!--Se referencia a la misma página a falta de backend para simulación de redirección-->
-                        <li class="mb-1"><a href="../Views/index.html">Trayectoria</a></li>
-                        <li class="mb-1"><a href="../Views/index.html">Organigrama</a></li>
-                        <li class="mb-1"><a href="../Views/index.html">Documentos de interés</a></li>
+                        <li class="mb-1"><a href="#">Nuestra historia</a></li> <!--Se referencia a la misma página a falta de backend para simulación de redirección-->
+                        <li class="mb-1"><a href="#">Trayectoria</a></li>
+                        <li class="mb-1"><a href="#">Organigrama</a></li>
+                        <li class="mb-1"><a href="#">Documentos de interés</a></li>
                     </ul>
                 </div>
 
@@ -182,10 +188,10 @@
                     <!--fw-bold para hacer el h4 en negrita-->
                     <ul class="list-unstyled">
                         <!--list-unstyled para quitar los puntos de la lista-->
-                        <li class="mb-1"><a href="../Views/index.html">Términos y condiciones</a></li>
-                        <li class="mb-1"><a href="../Views/index.html">Reclamos de servicios</a></li>
-                        <li class="mb-1"><a href="../Views/index.html">Requisitos por país</a></li>
-                        <li class="mb-1"><a href="../Views/index.html">Obligaciones a bordo</a></li>
+                        <li class="mb-1"><a href="#">Términos y condiciones</a></li>
+                        <li class="mb-1"><a href="#">Reclamos de servicios</a></li>
+                        <li class="mb-1"><a href="#">Requisitos por país</a></li>
+                        <li class="mb-1"><a href="#">Obligaciones a bordo</a></li>
                     </ul>
                 </div>
 
@@ -198,10 +204,10 @@
                     <!--fw-bold para hacer el h4 en negrita-->
                     <ul class="list-unstyled">
                         <!--list-unstyled para quitar los puntos de la lista-->
-                        <li class="mb-1"><a href="../Views/index.html">Centro de atención al cliente</a></li>
-                        <li class="mb-1"><a href="../Views/index.html">Correo electrónico</a></li>
-                        <li class="mb-1"><a href="../Views/index.html">Contacto para empresas</a></li>
-                        <li class="mb-1"><a href="../Views/index.html">Formulario de reclamos</a></li>
+                        <li class="mb-1"><a href="#">Centro de atención al cliente</a></li>
+                        <li class="mb-1"><a href="#">Correo electrónico</a></li>
+                        <li class="mb-1"><a href="#">Contacto para empresas</a></li>
+                        <li class="mb-1"><a href="#">Formulario de reclamos</a></li>
                     </ul>
                 </div>
 
@@ -213,9 +219,9 @@
                     <h4 class="fw-bold">Redes sociales</h4>
                     <!--fw-bold para hacer el h4 en negrita-->
                     <ul class="list-unstyled">
-                        <li class="mb-1"><a href="../Views/index.html">Facebook</a></li>
-                        <li class="mb-1"><a href="../Views/index.html">Instagram</a></li>
-                        <li class="mb-1"><a href="../Views/index.html">WhatsApp <br>(canal de difusión)</a></li>
+                        <li class="mb-1"><a href="#">Facebook</a></li>
+                        <li class="mb-1"><a href="#">Instagram</a></li>
+                        <li class="mb-1"><a href="#">WhatsApp <br>(canal de difusión)</a></li>
                     </ul>
                 </div>
             </section>

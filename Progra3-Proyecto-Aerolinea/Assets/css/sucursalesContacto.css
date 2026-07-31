@@ -3,16 +3,9 @@
 /*-----------------------------------------------------------------------------------------------------*/
 
 body{font-family: Arial, sans-serif; /*Modifica la fuente central del body, el color de fondo, el margen y el padding*/
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
-    color: black;
 }
 
-h2{text-align: center; /*Modifica el comportamiento por defecto de los títulos h2 del body*/
-}
-
-a{color: black; /*Modifica el color del texto general del cuerpo (este logra cambiarse en cada caso según el modelo cascada pero es el color base si no se modiica a pie)*/
+a{ color: black; /*Modifica el color del texto general del cuerpo (este logra cambiarse en cada caso según el modelo cascada pero es el color base si no se modiica a pie)*/
     text-decoration: none;}
 
 
@@ -32,34 +25,6 @@ a{color: black; /*Modifica el color del texto general del cuerpo (este logra cam
     background: rgb(255, 158, 41); /*Modifica el color de transición de los enlaces del nav*/
     transition: background-color 0.3s; /*Modifica el tiempo de trannsición a los parámetros*/
 }
-
-/*-----------------------------------------------------------------------------------------------------*/
-/*Estilos de la parte superior*/
-/*-----------------------------------------------------------------------------------------------------*/
-
-.divDeFondoSuperior{ /*Modifica el div del banner del avión y la frase*/
-    width: 100%;
-    height: 470px;
-    text-align: center;
-    align-items: center;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: 0.3s ease;
-    position: relative;
-    margin-bottom: 0%;}
-
-.divDeFondoSuperior img{width: 100%; /*Modifica la imagen del banner del div superior*/
-height: 100%;
-object-fit: cover;}
-
-.textoDeBannerSucursales{position: absolute; /*Modifica el texto/frase del banner del div superior*/
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    background-color: rgba(187, 205, 195, 0.3);
-    color: rgb(110, 110, 110);
-    padding: 20px;
-    font-size: 18px;}
 
 /*-----------------------------------------------------------------------------------------------------*/
 /*Estilos de la sección de ubicaciones*/
@@ -139,5 +104,5 @@ object-fit: cover;}
 /*Estilos de la sección de footer*/
 /*-----------------------------------------------------------------------------------------------------*/
 
-.footerDeSucursales a:hover{color: rgb(255, 158, 41);
-transition: 0.2s;}
+.footerDeSucursales a:hover{color: rgb(255, 158, 41); /*controla el color del enlace al pasar el cursor sobre él*/
+transition: 0.2s;} /*controla la transición del color del enlace al pasar el cursor sobre él*/
