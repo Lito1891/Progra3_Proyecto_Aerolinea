@@ -27,13 +27,13 @@ form{padding: 50px 0px 0px 0px; display: flex; flex-direction: column;}
 /*-----------------------------------------------------------------------------------------------------*/
 /*Estilos de seccion horarios y precios de los vuelos*/
 /*-----------------------------------------------------------------------------------------------------*/
-    .imgPais{width: 70px; height: 40px;}
-    .imgHorarios{ width: 30px; height: 30px;}
-    .pais{gap: 10px; margin: 5px;}
-    .row{margin: 5px 0px;}
-    .col-4{margin: 5px 16px; background-color: rgb(174, 220, 249);padding: 0px 0px 0px 25px; }
-    .col-7{margin: 5px 0px 5px 0px; background-color: rgb(245, 243, 243);}
-    .imgFrancia{width: 90px;  margin: 0px 0px 10px 0px;}
-    .imagenFrancia{ display: flex; flex-direction: column; align-items: center;}
-    section{ display: flex; align-content: space-evenly;}
-    img{border: 1px solid transparent; border-radius: 8px;}
+.imgPais{width: 70px; height: 40px;}
+.imgHorarios{ width: 30px; height: 30px;}
+.pais{gap: 10px; margin: 5px;}
+.row{margin: 5px 0px;}
+.col-4{margin: 5px 16px; background-color: rgb(198, 226, 243);padding: 0px 0px 0px 25px; }
+.col-7{margin: 5px 0px 5px 0px; background-color: rgb(196, 221, 240);}
+.imgFrancia{width: 90px;  margin: 0px 0px 10px 0px;}
+.imagenFrancia{ display: flex; flex-direction: column; align-items: center;}
+section{ display: flex; align-content: space-evenly;}
+img{border: 1px solid transparent; border-radius: 8px;}
