@@ -1,0 +1,81 @@
+/*-----------------------------------------------------------------------------------------------------*/
+/*Estilos de títulos generales para pruebas*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+body{font-family: Arial, sans-serif; /*Modifica la fuente central del body, el color de fondo, el margen y el padding*/
+}
+
+a{ color: black; /*Modifica el color del texto general del cuerpo (este logra cambiarse en cada caso según el modelo cascada pero es el color base si no se modiica a pie)*/
+    text-decoration: none;}
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*Estilos de la barra de navegación del index*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+.navbarApex{ /*Modifica aspectos generales de la barra de navegación*/
+    background: #58b6b3; /*Modifica el color del fondo del nav de la barra de navegación*/
+} 
+
+.navbarApex .nav-link { /*Modifica los enlaces de la barra de navegación*/
+    font-size: 19px; /*Modifica el tamaño de la letra*/
+}
+
+.navbarApex .nav-link:hover { /*Modifica como se comporta al posicionarse sobre los enlaces del nav*/
+    background: rgb(255, 158, 41); /*Modifica el color de transición de los enlaces del nav*/
+    transition: background-color 0.3s; /*Modifica el tiempo de trannsición a los parámetros*/
+}
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*Estilos de la sección de login*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+.seccionLogin{ /*Modifica la sección de login*/
+    background-color: #FFFFFF;/*Modifica el color de fondo de toda la sección donde se encuentra el formulario*/
+    padding: 133px 0;} /*Agrega espacio arriba y abajo de la sección para separar el formulario de los bordes de la página*/
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*Estilos de la tarjeta del formulario*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+.tarjetaLogin{ /*Modifica directamente la parte interna de la seccion de login*/
+    /*Establece el fondo blanco de la tarjeta que contiene el formulario*/
+    background-color: #58b6b3;
+    border-radius: 20px; /*Redondea las esquinas*/
+    box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.1); /*Agrega una sombra alrededor*/
+    border: solid 1px grey; /* A{ade un borde de 1 pixel solido y color gris claro*/
+}
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*Estilos del botón de ingresar*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+.btnLogin{ /*Modifica el botón de login*/
+    background-color: #FFFFFF;/*Establece el color de fondo del botón utilizando el mismo color principal de la página*/
+    color: rgb(27, 26, 26); /*Establece el color para el texto del botón*/
+    border: none; /*Elimina el borde predeterminado del botón*/
+    padding: 10px 0; /*Agrega espacio interno arriba y abajo del texto del botón*/
+    border-radius: 8px; /*Redondea las esquinas del botón*/
+    transition: 0.3s ease; /*Hace que los cambios realizados al pasar el cursor sean suaves*/
+}
+
+.btnLogin:hover{ /*modifica el comportamiento de interacción con el botón*/
+    background-color: rgb(255, 158, 41); /*Cambia el color de fondo del botón cuando el usuario pasa el cursor sobre él*/
+    color: #FFFFFF; /*Vuelve el texto de otro color cuando se pasa sobre él*/
+}
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*Estilos de los enlaces dentro del formulario*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+.tarjetaLogin a:hover{
+    /*Cambia el color del enlace cuando el usuario pasa el cursor sobre él*/
+    color: rgb(255, 158, 41); }
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*Estilos de la sección de footer*/
+/*-----------------------------------------------------------------------------------------------------*/
+
+.footerDeSucursales a:hover{color: rgb(255, 158, 41); /*controla el color del enlace al pasar el cursor sobre él*/
+transition: 0.2s;} /*controla la transición del color del enlace al pasar el cursor sobre él*/

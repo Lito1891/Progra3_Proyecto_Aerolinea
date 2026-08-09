@@ -1,24 +1,24 @@
 {
   "CSS-002": {
-    "occurrences": 176,
+    "occurrences": 194,
     "confidence": 1,
     "mastered_explicitly": false,
     "first_seen": "2026-07-04T01:19:32.705Z",
-    "last_seen": "2026-07-13T04:58:29.212Z"
+    "last_seen": "2026-08-09T22:02:46.643Z"
   },
   "HTML-002": {
-    "occurrences": 42,
+    "occurrences": 52,
     "confidence": 1,
     "mastered_explicitly": false,
     "first_seen": "2026-07-04T03:27:56.944Z",
-    "last_seen": "2026-07-13T04:56:40.032Z"
+    "last_seen": "2026-08-09T21:54:26.365Z"
   },
   "CSS-001": {
-    "occurrences": 28,
+    "occurrences": 57,
     "confidence": 1,
     "mastered_explicitly": false,
     "first_seen": "2026-07-13T04:39:36.734Z",
-    "last_seen": "2026-07-13T04:58:24.939Z"
+    "last_seen": "2026-08-09T22:02:21.238Z"
   },
   "CSS-003": {
     "occurrences": 1,
