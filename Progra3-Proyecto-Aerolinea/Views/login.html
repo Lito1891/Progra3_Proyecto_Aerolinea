@@ -7,7 +7,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     
-    <link rel="stylesheet" href="../Assets/css/index.css">
+    <link rel="stylesheet" href="../Assets/css/login.css">
 </head>
 
 <body>
@@ -100,133 +100,102 @@
 
     <main>
         <!--sección del formulario de login-->
-        <section class="py-3">
-            <!--py-3 agrega un padding superior e inferior, para los lados sería px-5-->
+        <section class="seccionLogin d-flex align-items-center justify-content-center">
+        <!--d-flex convierte la sección en un contenedor flexbox-->
+        <!--align-items-center centra el contenido verticalmente-->
+        <!--justify-content-center centra el contenido horizontalmente-->
 
             <div class="container">
-                <!--container para crear un contenedor que centre el contenido sin escribir margin:auto-->
+                <!--container  para usar u n contenedor responmsive-->
+                <div class="row justify-content-center">
+                    <!--row para para usar el sistema de rejillas de bootstrap-->
+                    <!--justify-content-center para centrar el contenido horizontalmente-->
 
-                <h2 class="text-secondary text-center mt-3 mb-4">Nuestros Destinos Destacados</h2>
-                    <!--text-secondary para darle el tamaño y formato al texto del título-->
-                    <!--text-center para centrar el texto del título-->
-                    <!--mt-3 para darle un margen superior al título-->
-                    <!--mb-4 para darle un margen inferior al título-->
+                    <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+                        <!--col-12 para que valga 12 en pantallas más pequelas-->
+                        <!--col-sm-8 para uqe valga 8 en pantallas de tamaño small para adelamte-->
+                        <!--col-md-6 para que valga 6 a partir de pantallas medianas en adelante-->
+                        <!--col-lg-4 para que valga 4 a partir de pantallas lg en adelante-->
 
-                <div class="row g-5 justify-content-center">
-                    <!--row para crear una fila de columnas que envuelvan el contenido y poderlo dividir-->
-                    <!--g-5 para darle un espacio entre las columnas-->
-                    <!--justify-content-center para centrar las columnas-->
+                        <div class="tarjetaLogin p-4 p-md-5">
+                            <!--tarjetaLogin para usarla como referencia en CSS-->
+                            <!--p-4 para añadir un padding interno de 4 en pantallas pequeñas-->
+                            <!--p-md-5 para usar un padding de 5 en pantallas medianas en adelante-->
 
-                    <div class="col-12 col-md-8 col-lg-4">
-                        <!--col-12 para que ocupe todo el ancho en dispositivos móviles-->
-                        <!--col-md-6 para que ocupe la mitad en dispositivos medianos-->
-                        <!--col-lg-4 para que ocupe un tercio en dispositivos grandes-->
+                            <div class="text-center mb-4">
+                                <!--text-center para centrar el texto horizontalmente-->
+                                <!--mb-4 para usar un margin inferior de 4-->
 
-                        <article class="articleDestinosPrincipalesIndex">
-                            <img src="../Assets/img/fotosIndex/francia.jpg"
-                                alt="París, Francia"
-                                class="imagenDestinosIndex img-fluid">
-                                <!--img-fluid para hacer la imagen responsive sin que sea más pequeña o vaya más allá que el contenedor-->
-                            
-                                <div class="capaDeTexto">
-                                <p class="mb-0">París, Francia</p>
-                                <!--mb-0 para eliminar el margen inferior-->
+                                <h2 class="fw-bold">Iniciar sesión</h2>
+                                <!--fw-bold para hacer el título en negrita-->
+
+                                <p class="text-muted mb-0">Ingresa tus datos para continuar</p>
+                                <!--text-muted para darle un color más de texto secundario luego de título-->
+                                <!--mb-0 quita el margin inferior que ya trae p por defecto-->
+
                             </div>
-                        </article>
-                    </div>
 
-                    <div class="col-12 col-md-8 col-lg-4">
-                        <!--col-12 para que ocupe todo el ancho en dispositivos móviles-->
-                        <!--col-md-6 para que ocupe la mitad en dispositivos medianos-->
-                        <!--col-lg-4 para que ocupe un tercio en dispositivos grandes-->
+                            <form id="formLogin">
+                                <!--formLogin para darle el id y poder identificar el formulario en el Js-->
 
-                        <article class="articleDestinosPrincipalesIndex">
-                            <img src="../Assets/img/fotosIndex/japon.jpg"
-                                alt="Tokio, Japón"
-                                class="imagenDestinosIndex img-fluid">
-                                <!--img-fluid para hacer la imagen responsive sin que sea más pequeña o vaya más allá que el contenedor-->
-                            
-                                <div class="capaDeTexto">
-                                <p class="mb-0">Tokio, Japón</p>
-                                <!--mb-0 para eliminar el margen inferior-->
-                            </div>
-                        </article>
-                    </div>
+                                <div class="mb-3">
+                                    <!--mb-3 para usar un margin inferior de 3-->
 
-                    <div class="col-12 col-md-8 col-lg-4">
-                        <!--col-12 para que ocupe todo el ancho en dispositivos móviles-->
-                        <!--col-md-6 para que ocupe la mitad en dispositivos medianos-->
-                        <!--col-lg-4 para que ocupe un tercio en dispositivos grandes-->
+                                    <label for="usuario" class="form-label fw-semibold">Usuario</label>
+                                    <!--label para identificar el campo que el usuario va a usar para el usuario-->
+                                    <!--for="usuario" para relacionar la etiqueta con el input que va a tener el id de usuario-->
+                                    <!--form-label para usar el formato de etiqueta que trae bootstrap-->
+                                    <!--fw-semibold para aplicar un grosor fierte pero medio -->
 
-                        <article class="articleDestinosPrincipalesIndex">
-                            <img src="../Assets/img/fotosIndex/brasil.jpg"
-                                alt="Río de Janeiro, Brasil"
-                                class="imagenDestinosIndex img-fluid">
-                                <!--img-fluid para hacer la imagen responsive sin que sea más pequeña o vaya más allá que el contenedor-->
+                                    <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Ingresa tu usuario">
+                                    <!--type="text" para indicar que sea de tipo texto-->
+                                    <!--class="form-control" para usar el estilo de caja de texto del bootstrap-->
+                                    <!--id="usuario" para identificar el campos-->
+                                    <!--name="usuario" para identificar el dato dentro del input-->
+                                    <!--placeholder para que aparezca una leyenda en el input que guíe al usuario de que tiene que ingresar-->
+                                </div>
 
-                            <div class="capaDeTexto">
-                                <p class="mb-0">Río de Janeiro, Brasil</p>
-                                <!--mb-0 para eliminar el margen inferior-->
-                            </div>
-                        </article>
-                    </div>
+                                <div class="mb-3">
+                                    <!--mb-3 para usar un margin inferior de 3-->
 
-                    <div class="col-12 col-md-8 col-lg-4">
-                        <!--col-12 para que ocupe todo el ancho en dispositivos móviles-->
-                        <!--col-md-6 para que ocupe la mitad en dispositivos medianos-->
-                        <!--col-lg-4 para que ocupe un tercio en dispositivos grandes-->
+                                    <label for="contrasena" class="form-label fw-semibold">Contraseña</label>
+                                    <!--label para identificar el campo que el usuario va a usar para la contraseña-->
+                                    <!--for="contrasena" para relacionar la etiqueta con el input que tiene el id de contraseña-->
+                                    <!--form-label para usar el formato de etiqueta que trae bootstrap-->
+                                    <!--fw-semibold para aplicar un grosor fierte pero medio -->
+                                    
+                                    <input type="password" class="form-control" id="contrasena" name="contrasena" placeholder="Ingresa tu contraseña">
+                                    <!--type="password" para indicar que sea de tipo password por lo que esconde lo que el usuario ingrese-->
+                                    <!--class="form-control" para usar el estilo de caja de texto del bootstrap-->
+                                    <!--id="contrasena" para usar el id de contraseña e identificar el campo-->
+                                    <!--name="contrasena" para identificar el dato dentro del input-->
+                                    <!--placeholder para que aparezca una leyenda en el input que guíe al usuario de que tiene que ingresar-->
 
-                        <article class="articleDestinosPrincipalesIndex">
-                            <img src="../Assets/img/fotosIndex/costaRica.jpg"
-                                alt="San José, Costa Rica"  
-                                class="imagenDestinosIndex img-fluid">
-                                <!--img-fluid para hacer la imagen responsive sin que sea más pequeña o vaya más allá que el contenedor-->
+                                </div>
 
-                            <div class="capaDeTexto">
-                                <p class="mb-0">San José, Costa Rica</p>
-                                <!--mb-0 para eliminar el margen inferior-->
-                            </div>
-                        </article>
-                    </div>
 
-                    <div class="col-12 col-md-8 col-lg-4">
-                        <!--col-12 para que ocupe todo el ancho en dispositivos móviles-->
-                        <!--col-md-6 para que ocupe la mitad en dispositivos medianos-->
-                        <!--col-lg-4 para que ocupe un tercio en dispositivos grandes-->
+                                <button type="submit" class=" btnLogin btn w-100 fw-semibold">Ingresar</button>
+                                <!--type="submit" para indicar que el botón va a enviar el formulario--> 
+                                <!--btnLogin para usarla como enlace en el CSS-->
+                                <!--btn aplica el estilo de boton base que trae bootstrap-->
+                                <!--w-100 para que el botón ocupe el total del ancho posible del contenedor-->
+                                <!--fw-semibold para aplicar un grosor fierte pero medio -->
 
-                        <article class="articleDestinosPrincipalesIndex">
-                            <img src="../Assets/img/fotosIndex/peru.jpg"
-                                alt="Cusco, Perú"
-                                class="imagenDestinosIndex img-fluid">
-                                <!--img-fluid para hacer la imagen responsive sin que sea más pequeña o vaya más allá que el contenedor-->
+                                <p class="text-center mt-3 mb-0"> ¿No tienes cuenta? <a href="#" class="fw-semibold">Regístrate aquí</a>
+                                    <!--text-center para centrar el texto de forma horizontal-->
+                                    <!--mt-3 para agregar un margen top de 3-->
+                                    <!--mb-0 para quitar el margen inferior-->
+                                    <!--href="#" para colocar la referencia de dónde va a redirigir ****PENDIENTE DE COLOCAR AL DAASHBOARD****-->
+                                    <!--fw-semibold para aplicar un grosor fierte pero medio -->
 
-                            <div class="capaDeTexto">
-                                <p class="mb-0">Cusco, Perú</p>
-                                <!--mb-0 para eliminar el margen inferior-->
-                            </div>
-                        </article>
-                    </div>
-
-                    <div class="col-12 col-md-8 col-lg-4">
-                        <!--col-12 para que ocupe todo el ancho en dispositivos móviles-->
-                        <!--col-md-6 para que ocupe la mitad en dispositivos medianos-->
-                        <!--col-lg-4 para que ocupe un tercio en dispositivos grandes-->
-
-                        <article class="articleDestinosPrincipalesIndex">
-                            <img src="../Assets/img/fotosIndex/groelandia.jpg"
-                                alt="Ilulissat , Groelandia"
-                                class="imagenDestinosIndex img-fluid">
-                                <!--img-fluid para hacer la imagen responsive sin que sea más pequeña o vaya más allá que el contenedor-->
-
-                            <div class="capaDeTexto">
-                                <p class="mb-0">Ilulissat , Groelandia</p>
-                                <!--mb-0 para eliminar el margen inferior-->
-                            </div>
-                        </article>
+                                </p>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+    </main>
 
     <!--sección de footer-->
     <footer class="footerDeSucursales">
@@ -300,5 +269,7 @@
         </div>        
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="../Models/modeloLogin.js"></script>
+    <script src="../Controllers/controladorLogin.js"></script>
 </body>
 </html>
