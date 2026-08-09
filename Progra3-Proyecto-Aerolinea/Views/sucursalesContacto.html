@@ -84,6 +84,13 @@
                             <!--text-white para cambiar el color del texto a blanco-->
                         </li>
                         
+                        <li class="nav-item">
+                            <!--nav-item para tratar los elementos de la lista de navegación-->
+
+                            <a class="nav-link text-white rounded-2" href="../Views/login.html">Login</a>
+                            <!--nav-link para tratar los enlaces de navegación-->
+                            <!--text-white para cambiar el color del texto a blanco-->
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -92,66 +99,138 @@
 
     <main>
         <!--sección de ubicaciones físicas-->
-        <section>
-            <h2 class="text-secondary text-center mt-3">Nuestras sucursales físicas</h2>
+        <section class="py-3">
+            <!--py-3 para agregar un padding arriba y abajo del section de 3-->
+
+            <div class="container">
+            <!-- se agrega container para usar un contenedor responsive que centra el contenido-->
+            <!---->
+
+                <h2 class="text-secondary text-center mt-3 mb-4">Nuestras sucursales físicas</h2>
                 <!--text-secondary para darle el tamaño y formato al texto del título-->
                 <!--text-center para centrar el texto del título-->
                 <!--mt-3 para darle un margen superior al título-->
+                <!--mb-4 para darle un margen inferior al título-->
+                
 
-            <div class="divContenedorDeSucursales">
+                <div class="row justify-content-center g-4">
+                <!--row para crear la fila y trabajar en el sistema de rejillas-->
+                <!--justify-content-center para centrar las columnas cuando no se ocupe todo el ancho-->
+                <!--g-4 para poner un espacio entre las columnas de 4-->
+                <!---->
 
-                <article class="articleDeSucursales">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15717.152115839996!2d-84.20998665649728!3d9.99304975307821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0f9c450507873%3A0xb27b62220e3f31a4!2sAeropuerto%20Juan%20Santamar%C3%ADa-Alajuela!5e0!3m2!1ses!2scr!4v1782358685671!5m2!1ses!2scr" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" class="mapaSucursales"></iframe>
-                    <div class="capaDeTexto">
-                        <p class="textoDestinoSucursales">Aeropuerto Juan Santamaría, San José</p>
-                    </div>
-                </article>
 
-                <article class="articleDeSucursales">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4673.599979596785!2d-84.10717282218359!3d9.932835826693431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fcacdfdb6d97%3A0xf35790826dbd35c9!2sOficentro%20Ejecutivo%20la%20Sabana!5e0!3m2!1ses!2scr!4v1782359175016!5m2!1ses!2scr" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" class="mapaSucursales"></iframe>
-                    <div class="capaDeTexto">
-                        <p class="textoDestinoSucursales">Oficentro Ejecutivo la Sabana, San José</p>
-                    </div>
-                </article>
+                    <!--aquí se modifica en dado caso la primera dirección-->
+                    <article class="col-12 col-lg-6 col-xxl-4">
+                        <!--col-12 para que ocupe un espacio de 12 por defecto-->
+                        <!--col-lg-6 para que en pantallas lag abarque un tamaño de 6-->
+                        <!--col-xxl-4 para que en una pantalla xxl valga 4, aqui se mostrarían las 3 en fila horizontal-->
 
-                <article class="articleDeSucursales">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5557.671444228544!2d-84.15485047917821!3d9.945008539140325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fb698e1ba15b%3A0x781267d196d66afc!2sMultiplaza%20Escaz%C3%BA!5e0!3m2!1ses!2scr!4v1782359328278!5m2!1ses!２scr" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" class="mapaSucursales"></iframe>
-                    <div class="capaDeTexto">
-                        <p class="textoDestinoSucursales">Multiplaza Escazú, San José</p>
-                    </div>
-                </article>
-            </div>
-        </section>
+                        <div class="articleDeSucursales">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15717.152115839996!2d-84.20998665649728!3d9.99304975307821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0f9c450507873%3A0xb27b62220e3f31a4!2sAeropuerto%20Juan%20Santamar%C3%ADa-Alajuela!5e0!3m2!1ses!2scr!4v1782358685671!5m2!1ses!2scr" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" class="mapaSucursales"></iframe>
+                            <!--aquí se añade la ubicación traida desde google maps copiada y pegada directamente-->
 
-        <section>
-        <!--sección de datos de contacto-->
-            <div class="divContenedorDeContactoSucursales">
-                <article class="articleDeContactoSucursales">
-                    <h3>Datos de contacto</h3>
-                    <ul>
-                        <li>Teléfono: 2433-0001</li>
-                        <li>Whatsapp: 7131-1300</li>
-                        <li>Correo: af1@gmail.com</li>
-                    </ul>
-                </article>
+                            <div class="capaDeTexto">
+                                <p class="mb-0">Aeropuerto Juan Santamaría, San José</p>
+                                <!--mb-0 para quitar el margen inferior del texto-->
+                            </div>
+                        </div>
 
-                <article class="articleDeContactoSucursales">
-                    <h3>Datos de contacto</h3>
-                    <ul>
-                        <li>Teléfono: 2433-0002</li>
-                        <li>Whatsapp: 7131-1300</li>
-                        <li>Correo: af2@gmail.com</li>
-                    </ul>
-                </article>
+                        <!--aquí se modifica la información de la primera información de las sucursales-->
+                        <div class="articleDeContactoSucursales pt-2 pb-1 mt-3">
+                            <!--pt-3 para poner un padding top de 2-->
+                            <!--pb-1 para poner un padding inferior de 1-->
+                            <!--mt-3 para poner un margen arriba de 3-->
 
-                <article class="articleDeContactoSucursales">
-                    <h3>Datos de contacto</h3>
-                    <ul>
-                        <li>Teléfono: 2433-0003</li>
-                        <li>Whatsapp: 7131-1300</li>
-                        <li>Correo: af3@gmail.com</li>
-                    </ul>
-                </article>
+                            <h4 class="fw-bold">Datos de contacto</h4>
+                            <!--fw-bold para hacerlo negrita como usando strong en html-->
+
+                            <ul class="list-unstyled mb-0">
+                                <!--list-unstyled para quitar los puntos de cada elemento de la lista-->
+                                <!--mb-0 para quitar el margen de abajo-->
+
+                                <li class="mb-3">Teléfono: 2433-0001</li>
+                                <li class="mb-3">Whatsapp: 7131-1300</li>
+                                <li class="mb-3">Correo: af1@gmail.com</li>
+                                <!--mb-3 para usar un margen inferior de 3-->
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!--aquí se modifica en dado caso la segunda dirección-->
+                    <article class="col-12 col-lg-6 col-xxl-4">
+                        <!--col-12 para que ocupe un espacio de 12 por defecto-->
+                        <!--col-lg-6 para que en pantallas lag abarque un tamaño de 6-->
+                        <!--col-xxl-4 para que en una pantalla xxl valga 4, aqui se mostrarían las 3 en fila horizontal-->
+
+                        <div class="articleDeSucursales">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4673.599979596785!2d-84.10717282218359!3d9.932835826693431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fcacdfdb6d97%3A0xf35790826dbd35c9!2sOficentro%20Ejecutivo%20la%20Sabana!5e0!3m2!1ses!2scr!4v1782359175016!5m2!1ses!2scr" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" class="mapaSucursales"></iframe>
+                            <!--aquí se añade la ubicación traida desde google maps copiada y pegada directamente-->
+
+                            <div class="capaDeTexto">
+                                <p class="mb-0">Oficentro Ejecutivo la Sabana, San José</p>
+                                <!--mb-0 para quitar el margen inferior del texto-->
+                            </div>
+                        </div>
+
+                        <!--aquí se modifica la información de la primera información de las sucursales-->
+                        <div class="articleDeContactoSucursales pt-2 pb-1 mt-3">
+                            <!--pt-3 para poner un padding top de 2-->
+                            <!--pb-1 para poner un padding inferior de 1-->
+                            <!--mt-3 para poner un margen arriba de 3-->
+
+                            <h4 class="fw-bold">Datos de contacto</h4>
+                            <!--fw-bold para hacerlo negrita como usando strong en html-->
+
+                            <ul class="list-unstyled mb-0">
+                                <!--list-unstyled para quitar los puntos de cada elemento de la lista-->
+                                <!--mb-0 para quitar el margen de abajo-->
+
+                                <li class="mb-3">Teléfono: 2433-0001</li>
+                                <li class="mb-3">Whatsapp: 7131-1300</li>
+                                <li class="mb-3">Correo: af1@gmail.com</li>
+                                <!--mb-3 para usar un margen inferior de 3-->
+                            </ul>
+                        </div>
+                    </article>
+                    
+                    <!--aquí se modifica en dado caso la tercera dirección-->
+                    <article class="col-12 col-lg-6 col-xxl-4">
+                        <!--col-12 para que ocupe un espacio de 12 por defecto-->
+                        <!--col-lg-6 para que en pantallas lag abarque un tamaño de 6-->
+                        <!--col-xxl-4 para que en una pantalla xxl valga 4, aqui se mostrarían las 3 en fila horizontal-->
+
+                        <div class="articleDeSucursales">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5557.671444228544!2d-84.15485047917821!3d9.945008539140325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fb698e1ba15b%3A0x781267d196d66afc!2sMultiplaza%20Escaz%C3%BA!5e0!3m2!1ses!2scr!4v1782359328278!5m2!1ses!2scr" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" class="mapaSucursales"></iframe>
+                            <!--aquí se añade la ubicación traida desde google maps copiada y pegada directamente-->
+
+                            <div class="capaDeTexto">
+                                <p class="mb-0">Multiplaza Escazú, San José</p>
+                                <!--mb-0 para quitar el margen inferior del texto-->
+                            </div>
+                        </div>
+
+                        <!--aquí se modifica la información de la primera información de las sucursales-->
+                        <div class="articleDeContactoSucursales pt-2 pb-1 mt-3">
+                            <!--pt-3 para poner un padding top de 2-->
+                            <!--pb-1 para poner un padding inferior de 1-->
+                            <!--mt-3 para poner un margen arriba de 3-->
+
+                            <h4 class="fw-bold">Datos de contacto</h4>
+                            <!--fw-bold para hacerlo negrita como usando strong en html-->
+                            
+                            <ul class="list-unstyled mb-0">
+                                <!--list-unstyled para quitar los puntos de cada elemento de la lista-->
+                                <!--mb-0 para quitar el margen de abajo-->
+
+                                <li class="mb-3">Teléfono: 2433-0001</li>
+                                <li class="mb-3">Whatsapp: 7131-1300</li>
+                                <li class="mb-3">Correo: af1@gmail.com</li>
+                                <!--mb-3 para usar un margen inferior de 3-->
+                            </ul>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
     </main>
@@ -161,11 +240,11 @@
         <div class="container"> <!--se quita de momento para pruebas la clase divContenedorDeFooterIndex-->
             <!--container para ser tratado como la clase container de bootstrap y que contenga sus propiedades de caja-->
 
-            <section class="row text-center">
+            <section class="row text-center pb-0">
                 <!--section porque es una sección de la página-->
                 <!--row para crear filas de elementos-->
 
-                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="col-12 col-md-6 col-lg-3">
                     <!--col-12 para que ocupe todo el ancho en dispositivos móviles-->
                     <!--col-md-6 para que ocupe la mitad en dispositivos medianos-->
                     <!--col-lg-3 para que ocupe un cuarto en dispositivos grandes-->
@@ -179,7 +258,7 @@
                     </ul>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="col-12 col-md-6 col-lg-3">
                     <!--col-12 para que ocupe todo el ancho en dispositivos móviles-->
                     <!--col-md-6 para que ocupe la mitad en dispositivos medianos-->
                     <!--col-lg-3 para que ocupe un cuarto en dispositivos grandes-->
@@ -195,7 +274,7 @@
                     </ul>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="col-12 col-md-6 col-lg-3">
                     <!--col-12 para que ocupe todo el ancho en dispositivos móviles-->
                     <!--col-md-6 para que ocupe la mitad en dispositivos medianos-->
                     <!--col-lg-3 para que ocupe un cuarto en dispositivos grandes-->
@@ -211,7 +290,7 @@
                     </ul>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="col-12 col-md-6 col-lg-3">
                     <!--col-12 para que ocupe todo el ancho en dispositivos móviles-->
                     <!--col-md-6 para que ocupe la mitad en dispositivos medianos-->
                     <!--col-lg-3 para que ocupe un cuarto en dispositivos grandes-->

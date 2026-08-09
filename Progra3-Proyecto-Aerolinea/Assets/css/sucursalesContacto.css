@@ -29,80 +29,56 @@ a{ color: black; /*Modifica el color del texto general del cuerpo (este logra ca
 /*-----------------------------------------------------------------------------------------------------*/
 /*Estilos de la sección de ubicaciones*/
 /*-----------------------------------------------------------------------------------------------------*/
+.articleDeSucursales{background-color: #eff5de; /*Modifica cada artículo de ubicaciones físicas*/
+    width: 100%; /*maneja el ancho dentro de la columna que se hizo en bootstrap*/
+    max-width: 480px; /*para controlar el maximo de altura*/
+    margin: 0 auto; /*para centrarlo*/
+    height: 450px; /* modifica la altura*/
+    border-radius: 10px; /*redondea las esquinas*/
+    overflow: hidden; /*hace que el contenido no salga del artículo*/
+    box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.15); /*agrega una sombra alrededor*/
+    transition: 0.3s ease; /* hace más suave y no de golpe el efecto al pasar el cursos*/
+    position: relative} /* pone usa el artículo como referencia para poner la capa de texto*/
 
-.divContenedorDeSucursales{background-color: #FFFFFF; /*Modifica el div contenedor principal que engloba todos los divs de ubicaciones físicas*/
-    display: flex;
-    width: 100%;
-    height: 350px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    justify-content: center;
-    gap: 100px;
-}
+.articleDeSucursales:hover{ /*Modifica el comportamiento al pasar el cursos sobre ellos*/
+    transform: translateY(-5px);/*mueve 5 pixeles hacia arriba al usarlo con Y*/ 
+    cursor: pointer;} /*cambia el cursos cuando pase sobre ellos*/
 
-.articleDeSucursales{background-color: #eff5de; /*Modifica cada div individual dentro del contenedor div general de ubicaciones físicas*/
-    border: 1px solid grey;
-    width: 400px;
-    height: 350px;
-    text-align: center;
-    align-items: center;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.15);
-    transition: 0.3s ease;
-    position: relative}
+/*-----------------------------------------------------------------------------------------------------*/
+/*Estilos de los mapas*/
+/*-----------------------------------------------------------------------------------------------------*/
+.mapaSucursales{ /*Modifica el tamaño y comportamiento de los mapas dentro de cada div de ubicaciones físicas sobre el texto*/
+    height: 100%; /*hace que el mapa ocupe toda la altura*/
+    width: 100%; /*hace que el mapa ocupe todo el ancho*/ 
+    border: 0;} /*quita el borde que trae el iframe*/
 
-.articleDeSucursales:hover{transform: translateY(-5px); /*Modifica el comportamiento de los divs de las ubicaciones físicas principales al pasar el cursos sobre ellos*/
-    cursor: pointer;}
+/*-----------------------------------------------------------------------------------------------------*/
+/*Estilos de la capa de texto*/
+/*-----------------------------------------------------------------------------------------------------*/
+.capaDeTexto{ /*Modifica el texto de las imagenes de los divs de ubicaciones físicas*/
+    position: absolute; /*se usa para poner la capa sobre el mapa que aparece de cada ubicación*/
+    bottom: 0; /*pone la capa de texto en l aparte de abajo*/
+    left: 0; /* hace que comience el texto desde la izquierda*/
+    width: 100%; /*hace que ocupe todo el ancho*/
+    background-color: rgba(0,0,0,0.5); /*agrega un fondo semitransparente a la capa de texto*/
+    color: white; /*vuelve el texto color blanco*/
+    padding: 15px; /*agrega un espacio interno alrededor tel texto*/
+    text-align: center;} /*centra el texto agregado*/
 
-.mapaSucursales{width: 100%; /*Modifica el tamaño y comportamiento de las imágenes dentro de cada div de ubicaciones físicas sobre el texto*/
-height: 100%;
-object-fit: cover;}
-
-.capaDeTexto{position: absolute; /*Modifica el texto de las imagenes de los divs de ubicaciones físicas*/
-    bottom: 0;
-    width: 100%;
-    height: 55px;
-    background-color: rgba(0,0,0,0.5);
-    color: white;
-    font-size: 18px;}
-
-*-----------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
 /*Estilos de la sección de contacto*/
 /*-----------------------------------------------------------------------------------------------------*/
-.footerDeSucursales {background-color: #FFFFFF;}
 
-.divContenedorDeContactoSucursales {background-color: #FFFFFF; /*Modifica el contenedor de los datos de contacto*/ 
-    display: flex;
-    width: 90%;
-    height: 90%;
-    margin: 0 auto;
-    justify-content: center;
-    text-align: center;
-    gap: 255px;}
-
-.articleDeContactoSucursales {background-color: #58b6b3; /*Modifica cada div individual dentro del div general de contacto*/
-    width: 250px;
-    border-radius: 7px;}
-
-.articleDeContactoSucursales ul{list-style: none; /*Modifica las listas desordenadas de contacto*/
-    text-align: center;
-    padding: 0;
-    text-align: center;
-    font-size: 17px;} 
-
-.articleDeContactoSucursales li{margin: 15px 0px;} /*Modifica los elementos de las listas de contacto*/
-
-.footerDeSucursales p{background-color: #e2e2e2; /*Modifica el texto de derechos reservados de contacto*/
-    border: 1px solid grey;
-    text-align: center;
-    padding: 10px 0px;
-    margin: 0px;} 
-
+.articleDeContactoSucursales{ /*Modifica el contenedor de los datos de contacto*/ 
+    background-color: #58b6b3; /*fondo de color blanco*/ 
+    width: 330px; /*regula el ancho/
+    max-width: 400px; /*limita el ancho del máximo como la parte del mapa*/
+    margin: 0 auto; /*centra dentro de la columna*/
+    text-align: center; /* centra el contenido*/
+    border-radius: 7px;} /* redondea las esquinas*/
 
 /*-----------------------------------------------------------------------------------------------------*/
 /*Estilos de la sección de footer*/
 /*-----------------------------------------------------------------------------------------------------*/
-
 .footerDeSucursales a:hover{color: rgb(255, 158, 41); /*controla el color del enlace al pasar el cursor sobre él*/
 transition: 0.2s;} /*controla la transición del color del enlace al pasar el cursor sobre él*/
