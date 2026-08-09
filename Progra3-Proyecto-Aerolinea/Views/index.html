@@ -99,12 +99,12 @@
     </header>
 
     <main>
-        <section class="bannerInnicio">
-            <div class="contenedorBanner">
-                <img src="../Assets/img/fotosIndex/avionFondo.png" class="imagennBanner img-fluid" >
+        <section class="banerInnicio">
+            <div class="contenedorBaner">
+                <img src="../Assets/img/fotosIndex/avionFondo.png" class="imagennBaner img-fluid" >
                 <!--img-fluid para hacer la imagen responsive y que no sea más grande que el contenedor-->
 
-                <div class="textoDeBannerIndex">
+                <div class="textoDeBanerIndex">
                     <p class="fst-italic fs-5 mb-0">Nuestro destino de viaje nunca es un lugar, sino una nueva forma de ver las cosas — Henry Miller</p>
                     <!--fst-italic para hacer el texto itálico-->
                     <!--fs-5 para hacer el tamaño de la fuente 5-->
@@ -112,33 +112,6 @@
                 </div>
             </div>
         </section>
-
-        <section>
-            <!--sección de buscador de vuelos-->
-                <h2 class="text-secondary text-center mt-3 mb-4">Buscador de Vuelos</h2>
-                    <!--text-secondary para darle el tamaño y formato al texto del título-->
-                    <!--text-center para centrar el texto del título-->
-                    <!--mt-3 para darle un margen superior al título-->
-                    <!--mb-4 para darle un margen inferior al título-->
-                    
-            <form>
-                <!--campo para el origen-->
-                <label for="origen">Origen:</label>
-                <input type="text" id="origen" name="origen" placeholder="Ciudad de origen">
-                <br><br>
-                <!--campo para el destino-->
-                <label for="destino">Destino:</label>
-                <input type="text" id="destino" name="destino" placeholder="Ciudad de destino">
-                <br><br>
-                <!--campo para la fecha de viaje-->
-                <label for="fecha">Fecha de Viaje:</label>
-                <input type="date" id="fecha" name="fecha">
-                <br><br>
-                <!--botón para enviar el formulario de búsqueda-->
-                <button type="submit">Consultar Disponibilidad</button>
-            </form>
-        </section>
-
 
         <!--sección de destinos destacados-->
         <section class="py-3">
@@ -164,10 +137,13 @@
                         <!--col-lg-4 para que ocupe un tercio en dispositivos grandes-->
 
                         <article class="articleDestinosPrincipalesIndex">
-                            <img src="../Assets/img/fotosIndex/francia.jpg"
+                            <a href="../Views/vuelos.html">
+                                <img src="../Assets/img/fotosIndex/francia.jpg"
                                 alt="París, Francia"
                                 class="imagenDestinosIndex img-fluid">
                                 <!--img-fluid para hacer la imagen responsive sin que sea más pequeña o vaya más allá que el contenedor-->
+                            </a>
+                            
                             
                                 <div class="capaDeTexto">
                                 <p class="mb-0">París, Francia</p>
@@ -182,11 +158,12 @@
                         <!--col-lg-4 para que ocupe un tercio en dispositivos grandes-->
 
                         <article class="articleDestinosPrincipalesIndex">
-                            <img src="../Assets/img/fotosIndex/japon.jpg"
-                                alt="Tokio, Japón"
-                                class="imagenDestinosIndex img-fluid">
-                                <!--img-fluid para hacer la imagen responsive sin que sea más pequeña o vaya más allá que el contenedor-->
-                            
+                            <a href="../Views/vuelos.html">
+                                <img src="../Assets/img/fotosIndex/japon.jpg"
+                                    alt="Tokio, Japón"
+                                    class="imagenDestinosIndex img-fluid">
+                                    <!--img-fluid para hacer la imagen responsive sin que sea más pequeña o vaya más allá que el contenedor-->
+                            </a>
                                 <div class="capaDeTexto">
                                 <p class="mb-0">Tokio, Japón</p>
                                 <!--mb-0 para eliminar el margen inferior-->
@@ -200,11 +177,12 @@
                         <!--col-lg-4 para que ocupe un tercio en dispositivos grandes-->
 
                         <article class="articleDestinosPrincipalesIndex">
-                            <img src="../Assets/img/fotosIndex/brasil.jpg"
-                                alt="Río de Janeiro, Brasil"
-                                class="imagenDestinosIndex img-fluid">
-                                <!--img-fluid para hacer la imagen responsive sin que sea más pequeña o vaya más allá que el contenedor-->
-
+                            <a href="../Views/vuelos.html">
+                                <img src="../Assets/img/fotosIndex/brasil.jpg"
+                                    alt="Río de Janeiro, Brasil"
+                                    class="imagenDestinosIndex img-fluid">
+                                    <!--img-fluid para hacer la imagen responsive sin que sea más pequeña o vaya más allá que el contenedor-->
+                            </a>
                             <div class="capaDeTexto">
                                 <p class="mb-0">Río de Janeiro, Brasil</p>
                                 <!--mb-0 para eliminar el margen inferior-->
@@ -218,11 +196,12 @@
                         <!--col-lg-4 para que ocupe un tercio en dispositivos grandes-->
 
                         <article class="articleDestinosPrincipalesIndex">
-                            <img src="../Assets/img/fotosIndex/costaRica.jpg"
-                                alt="San José, Costa Rica"  
-                                class="imagenDestinosIndex img-fluid">
-                                <!--img-fluid para hacer la imagen responsive sin que sea más pequeña o vaya más allá que el contenedor-->
-
+                            <a href="../Views/vuelos.html">
+                                <img src="../Assets/img/fotosIndex/costaRica.jpg"
+                                    alt="San José, Costa Rica"  
+                                    class="imagenDestinosIndex img-fluid">
+                                    <!--img-fluid para hacer la imagen responsive sin que sea más pequeña o vaya más allá que el contenedor-->
+                            </a>
                             <div class="capaDeTexto">
                                 <p class="mb-0">San José, Costa Rica</p>
                                 <!--mb-0 para eliminar el margen inferior-->
@@ -236,11 +215,12 @@
                         <!--col-lg-4 para que ocupe un tercio en dispositivos grandes-->
 
                         <article class="articleDestinosPrincipalesIndex">
-                            <img src="../Assets/img/fotosIndex/peru.jpg"
-                                alt="Cusco, Perú"
-                                class="imagenDestinosIndex img-fluid">
-                                <!--img-fluid para hacer la imagen responsive sin que sea más pequeña o vaya más allá que el contenedor-->
-
+                            <a href="../Views/vuelos.html">
+                                <img src="../Assets/img/fotosIndex/peru.jpg"
+                                    alt="Cusco, Perú"
+                                    class="imagenDestinosIndex img-fluid">
+                                    <!--img-fluid para hacer la imagen responsive sin que sea más pequeña o vaya más allá que el contenedor-->
+                            </a>
                             <div class="capaDeTexto">
                                 <p class="mb-0">Cusco, Perú</p>
                                 <!--mb-0 para eliminar el margen inferior-->
@@ -254,11 +234,12 @@
                         <!--col-lg-4 para que ocupe un tercio en dispositivos grandes-->
 
                         <article class="articleDestinosPrincipalesIndex">
-                            <img src="../Assets/img/fotosIndex/groelandia.jpg"
-                                alt="Ilulissat , Groelandia"
-                                class="imagenDestinosIndex img-fluid">
-                                <!--img-fluid para hacer la imagen responsive sin que sea más pequeña o vaya más allá que el contenedor-->
-
+                            <a href="../Views/vuelos.html">
+                                <img src="../Assets/img/fotosIndex/groelandia.jpg"
+                                    alt="Ilulissat , Groelandia"
+                                    class="imagenDestinosIndex img-fluid">
+                                    <!--img-fluid para hacer la imagen responsive sin que sea más pequeña o vaya más allá que el contenedor-->
+                            </a>
                             <div class="capaDeTexto">
                                 <p class="mb-0">Ilulissat , Groelandia</p>
                                 <!--mb-0 para eliminar el margen inferior-->
@@ -293,17 +274,16 @@
             </div>
         </section>
 
-    </main>
     <!--sección de footer-->
     <footer class="footerDeSucursales">
         <div class="container"> <!--se quita de momento para pruebas la clase divContenedorDeFooterIndex-->
             <!--container para ser tratado como la clase container de bootstrap y que contenga sus propiedades de caja-->
 
-            <section class="row text-center">
+            <section class="row text-center pb-0">
                 <!--section porque es una sección de la página-->
                 <!--row para crear filas de elementos-->
 
-                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="col-12 col-md-6 col-lg-3">
                     <!--col-12 para que ocupe todo el ancho en dispositivos móviles-->
                     <!--col-md-6 para que ocupe la mitad en dispositivos medianos-->
                     <!--col-lg-3 para que ocupe un cuarto en dispositivos grandes-->
@@ -317,7 +297,7 @@
                     </ul>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="col-12 col-md-6 col-lg-3">
                     <!--col-12 para que ocupe todo el ancho en dispositivos móviles-->
                     <!--col-md-6 para que ocupe la mitad en dispositivos medianos-->
                     <!--col-lg-3 para que ocupe un cuarto en dispositivos grandes-->
@@ -333,7 +313,7 @@
                     </ul>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="col-12 col-md-6 col-lg-3">
                     <!--col-12 para que ocupe todo el ancho en dispositivos móviles-->
                     <!--col-md-6 para que ocupe la mitad en dispositivos medianos-->
                     <!--col-lg-3 para que ocupe un cuarto en dispositivos grandes-->
@@ -349,7 +329,7 @@
                     </ul>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="col-12 col-md-6 col-lg-3">
                     <!--col-12 para que ocupe todo el ancho en dispositivos móviles-->
                     <!--col-md-6 para que ocupe la mitad en dispositivos medianos-->
                     <!--col-lg-3 para que ocupe un cuarto en dispositivos grandes-->

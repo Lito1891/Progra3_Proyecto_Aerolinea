@@ -31,17 +31,17 @@ a{ color: black; /*Modifica el color del texto general del cuerpo (este logra ca
 /*Estilos de la parte superior del index*/
 /*-----------------------------------------------------------------------------------------------------*/
 
-.contenedorBanner{ /*Modifica el div del banner del avión y la frase*/
+.contenedorBaner{ /*Modifica el div del baner del avión y la frase*/
     width: 100%;
     height: 470px;
     overflow: hidden;
     position: relative;}
 
-.imagennBanner{width: 100%; /*Modifica la imagen del banner del div superior*/
+.imagennBaner{width: 100%; /*Modifica la imagen del baner del div superior*/
 height: 100%;
 object-fit: cover;}
 
-.textoDeBannerIndex{position: absolute; /*Modifica el texto/frase del banner del div superior*/
+.textoDeBanerIndex{position: absolute; /*Modifica el texto/frase del baner del div superior*/
     bottom: 0;
     width: 100%;
     background-color: rgba(187, 205, 195, 0.3);
