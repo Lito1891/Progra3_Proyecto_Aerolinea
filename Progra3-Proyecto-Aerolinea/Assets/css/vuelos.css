@@ -6,23 +6,13 @@ body {font-family: Arial, sans-serif; background-color: #ffffff;
 /*-----------------------------------------------------------------------------------------------------*/
 /*Estilos del header buscador de vuelos*/
 /*-----------------------------------------------------------------------------------------------------*/
-.buscadorDeVuelos{display: flex;flex-direction: column; background-color: azure; margin: 0px 5px; padding: 0px 5px;}
-
-.titulo{display: flex; justify-content: center;}
-
-.h2Vuelo{margin: 20px 0px;}
-
-form{padding: 50px 0px 0px 0px; display: flex; flex-direction: column;}
-
+.titulo {text-align: center; padding: 20px;}
 .btnViajar{color: #58b6b3; border: 1px solid #58b6b3; background: transparent; border-radius: 50px;
         font-weight: bold; cursor: pointer; transition: all 0.3s ease;}
 .btnViajar:hover{background-color: rgb(255, 158, 41); border-color: rgb(255, 158, 41); color: white;}
-
 .btnViajar{margin: 0px 0px 5px 30px;}
-
 .checkIda{margin: 0px 10px 0px 0px;}
 
-.inputBuscador{border: 1px solid black; border-radius: 40px;}
 
 /*-----------------------------------------------------------------------------------------------------*/
 /*Estilos de seccion horarios y precios de los vuelos*/
@@ -30,10 +20,13 @@ form{padding: 50px 0px 0px 0px; display: flex; flex-direction: column;}
 .imgPais{width: 70px; height: 40px;}
 .imgHorarios{ width: 30px; height: 30px;}
 .pais{gap: 10px; margin: 5px;}
-.row{margin: 5px 0px;}
-.col-4{margin: 5px 16px; background-color: rgb(198, 226, 243);padding: 0px 0px 0px 25px; }
-.col-7{margin: 5px 0px 5px 0px; background-color: rgb(196, 221, 240);}
 .imgFrancia{width: 90px;  margin: 0px 0px 10px 0px;}
 .imagenFrancia{ display: flex; flex-direction: column; align-items: center;}
 section{ display: flex; align-content: space-evenly;}
 img{border: 1px solid transparent; border-radius: 8px;}
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*Estilos para ocultar las secciones de vuelo*/
+/*-----------------------------------------------------------------------------------------------------*/
+.resultado-vuelo{display: none;}
+.resultado-vuelo.activo{display: block;}
