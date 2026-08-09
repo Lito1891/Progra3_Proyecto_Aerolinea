@@ -2,6 +2,8 @@
 
 //array para validar el nombre de usuario, de momento para prueba solamente habrá uno
 let usuarioLogin =["admin"]
+//se declaran como variables globales
 
 //array para validar la contraseña del usuario, de momento para prueba solamente habrá uno
 let contraLogin =["admin"]
+//se declaran como variables globales
