@@ -34,8 +34,13 @@ function validarLogin(){
             title: "Inicio de sesión exitoso",
             text: "Binvenido de nuevo",
             icon: "success"
-        });
+
         //se usa sweetalert generar alerta
+        }).then(function(){
+            window.location.href = "../Views/dashboard.php";
+        //luego redirecciona a la página del dashboard al darle ok a la alerta del sweetalert
+        });
+        
     } else{
 
         Swal.fire({
