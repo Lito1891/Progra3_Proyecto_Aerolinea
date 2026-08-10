@@ -1,292 +1,194 @@
-/*-----------------------------------------------------------------------------------------------------*/
-/* Estilos Base */
-/*-----------------------------------------------------------------------------------------------------*/
+/* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
 }
 
 h2 {
-    text-align: center;
+  text-align: center;
 }
 
 a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
 }
 
-/*-----------------------------------------------------------------------------------------------------*/
-/* Estilos de la Barra de Navegacion */
-/*-----------------------------------------------------------------------------------------------------*/
-.divBarradenavegacionDestinos {
-    background: #58b6b3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70px;
+/* Navbar */
+.navbarApex {
+  background: #58b6b3;
 }
 
-.divBarradenavegacionDestinos img {
-    width: 50px;
-    height: auto;
+.navbarApex .nav-link {
+  font-size: 19px;
 }
 
-.divBarradenavegacionDestinos ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    height: 100%;
+.navbarApex .nav-link:hover {
+  background: rgb(255, 158, 41);
+  transition: background-color 0.3s;
 }
 
-.divBarradenavegacionDestinos li {
-    height: 100%;
-}
-
-.divBarradenavegacionDestinos a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 100%;
-    width: 180px;
-    color: white;
-    font-size: 17px;
-    text-decoration: none;
-    font-family: sans-serif;
-    transition: background-color 0.3s ease;
-}
-
-.divBarradenavegacionDestinos a:hover {
-    background: rgb(255, 158, 41);
-    cursor: pointer;
-    transform: scaleY(1.03);
-}
-
-.divBarradenavegacionDestinos p {
-    font-size: 30px;
-    font-family: sans-serif;
-    color: white;
-    margin-right: 7px;
-}
-
-/*-----------------------------------------------------------------------------------------------------*/
-/* Estilos para la parte de las tarjetas */
-/*-----------------------------------------------------------------------------------------------------*/
-
-/* Caja invisible para que el contenido no se pegue a los lados de la pantalla */
+/* Contenedor principal */
 .contenedor-principal {
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 0 15px;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
 }
 
-/* Para cambiarle el color y dejar en mayuscula el titulo */
 .titulo-seccion {
-    color: #6c757d;
-    margin-bottom: 25px;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-top: 20px;
+  color: #6c757d;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 20px;
 }
 
-/* Para separar de forma fija las secciones de vuelos nacionales e internacionales */
-.subtitulo-bloque {
-    font-size: 1.4rem;
-    color: #212529;
-    border-bottom: 2px solid #58b6b3;
-    padding-bottom: 5px;
-    margin-top: 35px;
-    margin-bottom: 20px;
-}
-
-/* Para centrar los botones de arriba y que se pongan uno a la par del otro */
+/* Botones de filtro */
 .contenedor-botones-filtros {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 40px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
 }
 
-/* Para que se vean los botones antes de tocarlos */
 .btn-filtrar {
-    background-color: transparent;
-    color: #212529;
-    border: 1px solid #212529;
-    padding: 8px 20px;
-    border-radius: 50px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  background-color: transparent;
+  color: #212529;
+  border: 1px solid #212529;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-/* El color que se activa cuando pasas el mouse por encima del boton informativo */
-.btn-filtrar:hover {
-    background-color: #58b6b3;
-    border-color: #58b6b3;
-    color: white;
+.btn-filtrar:hover,
+.btn-filtrar.boton-activo {
+  background-color: #58b6b3;
+  border-color: #58b6b3;
+  color: white;
 }
 
-/* Uso grid para acomodar las tarjetas automaticamente en columnas de 300px */
+/* Grilla de destinos */
 .grilla-destinos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 24px;
-    margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 50px;
+  width: 100%;
 }
 
-/* Bordes redondeados y sombra para que las tarjetas parezcan cajitas ordenadas */
+/* Responsividad */
+@media (max-width: 992px) {
+  .grilla-destinos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .grilla-destinos {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Tarjetas */
 .destinoTarjeta {
-    background-color: #ffffff;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    border: 1px solid #e2e2e2;
-    transition: transform 0.3s ease;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2e2e2;
+  transition: transform 0.3s ease;
+  width: 100%;
 }
 
-/* Efecto animado para que la tarjeta suba un poquito cuando pasa el cursor */
 .destinoTarjeta:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
-/* Obligar a que el espacio de la foto mida siempre 200px */
+/* Ajuste de imágenes */
 .contenedor-foto-recorte {
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
 }
 
-/* Uso object fit cover para que la imagen rellene el cuadro y no se estire */
 .contenedor-foto-recorte img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
-/* Margenes internos para que el texto de la tarjeta no quede pegado al borde */
 .cuerpo-tarjeta {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
+  padding: 20px;
 }
 
-/* Titulo del pais o ciudad en negrita */
 .nombre-destino {
-    font-size: 1.25rem;
-    font-weight: bold;
-    margin-top: 0;
-    margin-bottom: 10px;
-    color: #212529;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #212529;
 }
 
-/* Color gris y tamaño para el parrafo con la informacion del viaje */
 .descripcion-destino {
-    font-size: 0.9rem;
-    color: #6c757d;
-    margin-bottom: 20px;
-    flex-grow: 1;
-    line-height: 1.4;
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin-bottom: 20px;
+  line-height: 1.4;
 }
 
-/* Con flex space between pongo el precio a la izquierda y el boton a la derecha */
 .pie-tarjeta {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* Color turquesa llamativo para el precio en dolares */
 .precio-destino {
-    font-weight: bold;
-    color: #58b6b3;
-    font-size: 1.2rem;
+  font-weight: bold;
+  color: #58b6b3;
+  font-size: 1.2rem;
 }
 
-/* Como se ve el boton redondo de ver detalles */
 .btn-detalles {
-    color: #58b6b3;
-    border: 1px solid #58b6b3;
-    background: transparent;
-    padding: 5px 15px;
-    border-radius: 50px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  color: #58b6b3;
+  border: 1px solid #58b6b3;
+  background: transparent;
+  padding: 5px 15px;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-/* Para que cambie a color naranja cuando el usuario pasa el mouse encima */
 .btn-detalles:hover {
-    background-color: rgb(255, 158, 41);
-    border-color: rgb(255, 158, 41);
-    color: white;
+  background-color: rgb(255, 158, 41);
+  border-color: rgb(255, 158, 41);
+  color: white;
 }
 
-/*-----------------------------------------------------------------------------------------------------*/
-/* Estilos para acomodar pie de pagina */
-/*-----------------------------------------------------------------------------------------------------*/
-
-/* Con display flex separo los 4 bloques en la misma linea y los centro */
-.divContenedorDeFooterDestinos {
-    background-color: #FFFFFF;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    width: 90%;
-    max-width: 1200px;
-    margin: 50px auto;
-    padding: 20px 0;
-    gap: 15px;
+/* Footer */
+.footerDeSucursales a {
+  color: #212529;
+  text-decoration: none;
 }
 
-/* Estilo para que las 4 columnas midan lo mismo */
-.divDeFooterDestinos {
-    background-color: #FFFFFF;
-    flex: 1;
-    text-align: center;
+.footerDeSucursales a:hover {
+  color: rgb(255, 158, 41);
+  transition: 0.2s;
 }
 
-/* Titulos principales de cada columna del pie de pagina */
-.divDeFooterDestinos h4 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #000000;
-    margin-top: 0;
-    margin-bottom: 20px;
-}
-
-/* El list style none para tener lista sin viñetas */
-.divDeFooterDestinos ul {
-    list-style: none !important;
-    padding: 0 !important;
-    margin: 0 !important;
-}
-
-/* Separacion vertical de los enlaces del footer */
-.divDeFooterDestinos li {
-    margin: 10px 0px;
-    font-size: 0.9rem;
-    color: #212529;
-    line-height: 1.4;
-}
-
-/* Barra de abajo en fondo gris para los derechos */
-.footerDestinos p {
-    background-color: #e2e2e2;
-    border-top: 1px solid grey;
-    border-bottom: 1px solid grey;
-    text-align: center;
-    padding: 10px 0px;
-    margin: 0px;
-    font-size: 0.85rem;
-    color: #212529;
+.footerDeSucursales p {
+  background-color: #e2e2e2;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  text-align: center;
+  padding: 10px 0px;
+  margin: 0px;
+  font-size: 0.85rem;
+  color: #212529;
 }
