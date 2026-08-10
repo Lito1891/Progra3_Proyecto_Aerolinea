@@ -50,11 +50,10 @@ function validarLogin(){
         });
         //se usa sweetalert generar alerta
     }
-
 }
 
 //evento que controla el envío del formulario
-document.getElementById("formLogin").addEventListener("submit", function(event) {
+document.getElementById("formLogin").addEventListener("ubmits", function(event) {
     //escucha el evento cuando se le da a submit
 
     event.preventDefault();

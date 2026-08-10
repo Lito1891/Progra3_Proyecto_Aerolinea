@@ -186,7 +186,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <i class="fas fa-piggy-bank fa-7x text-primary mb-3"></i>
                 <!-- fas para indicar que el icono va a ser sólido -->
                 <!--fa-piggy-bank que es el nombre específico del ícono del chanchito alcancía-->
-                <!-- fa-3x para controlar el tamaño-->
+                <!-- fa-7x para controlar el tamaño-->
                 <!--text-primary para que el color del texto sea el azul del bootstrap-->
                 <!--mb-3 para darle un margin bottom de 3-->
                 <!--ícono de ahorro, viene de Font Awesome-->

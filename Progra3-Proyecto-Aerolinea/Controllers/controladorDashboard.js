@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const millasFaltantes = datosMillas.millasTotales - datosMillas.millasAcumuladas;
     // constante para representar lo que falta para el premio
 
-    const contextoGrafico = document.getElementById("graficoMillas");//.getContext("2d");
+    const contextoGrafico = document.getElementById("graficoMillas");
     // constante para buscar en el html el id de graficoMillas para pasarlo luego como contexto del canvas al chart para que sepa donde debe dibujarse
 
     new Chart(contextoGrafico, {
