@@ -1,96 +1,96 @@
 /* Estilos generales */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #ffffff;
+  font-family: Arial, sans-serif; /*Modifica la fuente central del cuerpo de la página*/
+  margin: 0; /*Elimina los márgenes exteriores*/
+  padding: 0; /*Elimina el relleno interno por defecto*/
+  background-color: #ffffff; /*Establece el color blanco de fondo de la pg*/
 }
 
 h2 {
-  text-align: center;
+  text-align: center; /*Alinea los títulos h2 al centro de la pantalla*/
 }
 
 a {
-  color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0); /*Modifica el color base de los enlaces a color negro*/
   text-decoration: none;
 }
 
-/* Navbar */
+/* Navbar controla el color turquesa de fondo para la barra de navegación*/ 
 .navbarApex {
   background: #58b6b3;
 }
 
-.navbarApex .nav-link {
+.navbarApex .nav-link { /*Modifica el tamaño de la fuente para los enlaces del menú*/
   font-size: 19px;
 }
 
 .navbarApex .nav-link:hover {
-  background: rgb(255, 158, 41);
-  transition: background-color 0.3s;
+  background: rgb(255, 158, 41); /*Cambia el fondo a naranja al pasar el cursor sobre un enlace*/
+  transition: background-color 0.3s; /*Define una transición suave de 0.3 segundos para el cambio de color*/
 }
 
 /* Contenedor principal */
 .contenedor-principal {
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 0 15px;
-  width: 100%;
+  max-width: 1140px; /*Limita el ancho máximo del contenido para mantener un diseño centrado*/
+  margin: 0 auto; /*Centra horizontalmente el contenedor en la pantalla*/
+  padding: 0 15px; /*Agrega un espacio interno lateral de seguridad*/
+  width: 100%; /*Hace que el contenedor ajuste el 100% en pantallas pequeñas*/
 }
 
 .titulo-seccion {
-  color: #6c757d;
-  margin-bottom: 25px;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-top: 20px;
+  color: #6c757d; /*Aplica un color gris al título principal de la sección*/
+  margin-bottom: 25px; /*Da un margen inferior para separar del contenido*/
+  text-transform: uppercase; /*Transforma todo el texto del título a mayúsculas*/
+  font-weight: bold; /*Aplica texto en negrita*/
+  margin-top: 20px; /*Agrega espacio superior respecto al navbar*/
 }
 
 /* Botones de filtro */
 .contenedor-botones-filtros {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 40px;
-  flex-wrap: wrap;
+  display: flex; /*Utiliza flexbox para alinear los botones horizontalmente*/
+  justify-content: center; /*Centra el grupo de botones en la pantalla*/
+  gap: 10px; /*Espaciado uniforme entre cada botón*/
+  margin-bottom: 40px; /*Margen inferior para alejar de la grilla de destinos*/
+  flex-wrap: wrap; /*Permite que los botones bajen de línea en pantallas pequeñas*/
 }
 
 .btn-filtrar {
-  background-color: transparent;
-  color: #212529;
-  border: 1px solid #212529;
-  padding: 8px 20px;
-  border-radius: 50px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  background-color: transparent; /*Define fondo transparente en estado normal*/
+  color: #212529; /*Color oscuro para el texto del botón*/
+  border: 1px solid #212529; /*Crea un borde fino de color oscuro*/
+  padding: 8px 20px; /*Controla el tamaño interno del botón*/
+  border-radius: 50px; /*Aplica bordes redondeados*/
+  font-weight: bold; /*Texto en negrita para destacar*/
+  cursor: pointer; /*Cambia el puntero del mouse a mano al posicionarse encima*/
+  transition: all 0.3s ease; /*Suaviza todos los cambios de estado (colores y bordes)*/
 }
 
 .btn-filtrar:hover,
 .btn-filtrar.boton-activo {
-  background-color: #58b6b3;
-  border-color: #58b6b3;
-  color: white;
+  background-color: #58b6b3; /*Cambia el fondo a turquesa cuando está activo o se pasa el cursor*/
+  border-color: #58b6b3; /*Modifica el borde al mismo tono del fondo*/
+  color: white; /*Cambia la letra a color blanco para mantener contraste*/
 }
 
 /* Grilla de destinos */
 .grilla-destinos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  margin-bottom: 50px;
-  width: 100%;
+  display: grid; /*Implementa CSS Grid para una estructura en columnas*/
+  grid-template-columns: repeat(3, 1fr); /*Divide la grilla en 3 columnas iguales por defecto*/
+  gap: 24px; /*Espaciado entre cada tarjeta de la grilla*/
+  margin-bottom: 50px; /*Margen inferior antes de llegar al footer*/
+  width: 100%; /*Abarca todo el ancho de su contenedor padre*/
 }
 
 /* Responsividad */
 @media (max-width: 992px) {
   .grilla-destinos {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /*Cambia la grilla a 2 columnas en pantallas medianas (tablets)*/
   }
 }
 
 @media (max-width: 576px) {
   .grilla-destinos {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /*Cambia la grilla a 1 sola columna en celulares*/
   }
 }
 
@@ -170,25 +170,8 @@ a {
   border-color: rgb(255, 158, 41);
   color: white;
 }
-
-/* Footer */
-.footerDeSucursales a {
-  color: #212529;
-  text-decoration: none;
-}
-
-.footerDeSucursales a:hover {
-  color: rgb(255, 158, 41);
-  transition: 0.2s;
-}
-
-.footerDeSucursales p {
-  background-color: #e2e2e2;
-  border-top: 1px solid grey;
-  border-bottom: 1px solid grey;
-  text-align: center;
-  padding: 10px 0px;
-  margin: 0px;
-  font-size: 0.85rem;
-  color: #212529;
-}
+/*-----------------------------------------------------------------------------------------------------*/
+/*Estilos de la sección de footer*/
+/*-----------------------------------------------------------------------------------------------------*/
+.footerDeSucursales a:hover{color: rgb(255, 158, 41); /*controla el color del enlace al pasar el cursor sobre él*/
+transition: 0.2s;} /*controla la transición del color del enlace al pasar el cursor sobre él*/

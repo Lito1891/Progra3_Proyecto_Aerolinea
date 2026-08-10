@@ -5,75 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Destinos y Servicios - Apex Fly</title>
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-
-    <!-- Estilos de pagina -->
-    <link rel="stylesheet" href="../Assets/css/destinos.css?v=8" />
-
-    <style>
-      main {
-        background-color: #ffffff;
-      }
-    </style>
+ 
   </head>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="../Assets/css/destinos.css">
+</head>
   <body>
     <!-- Navbar principal -->
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-dark navbarApex">
-        <div class="container-fluid px-4">
-          <a
-            class="navbar-brand text-white fw-bold fst-italic ms-3"
-            href="../Views/index.html"
-          >
-            <img
-              src="../Assets/img/fotosIndex/avionBarra.png"
-              width="45"
-              class="me-2"
-              alt="Logo Apex Fly"
-            />
-            Apex Fly
-          </a>
+        <header>
+        <nav class="navbar navbar-expand-lg navbar-dark navbarApex">
+            <!--navbar para indicar que es la barra de navegación-->
+            <!--navbar-expand-lg mantiene la barra expandida en pantallas lg o superiores-->
+            <!--navbar-dark para cambiar el estilo de la barra de navegación a un tono claro (light para hacerlo oscuro jaja)-->
+            <!--navbarApex es la clase para editar desde el index.css-->
 
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#menuDelNavbar"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+            <div class="container-fluid px-4">
+                <!--container para tratar el contenido de la barra de navegación-->
+                <!--px-4 para agregar padding/espacio a los bordes laterales-->
+                
+                <a class="navbar-brand text-white fw-bold fst-italic ms-3" href="../Views/index.html">
+                    <!--nav-brand para tratar el logo de la aerolinea y el nombre como una marca sola de redireccionamiento-->
+                    <!--text-white para cambiar el color del texto a blanco-->
+                    <!--fw-bold para cambiar el grosor del texto a negrita-->
+                    <!--fst-italic para cambiar el estilo del texto a cursiva-->
+                    <!--ms-3 para agregar un margen a la izquierda, o sea margin start 3 -->
 
-          <div class="collapse navbar-collapse" id="menuDelNavbar">
-            <div class="navbar-nav ms-auto">
-              <a
-                class="nav-link text-white rounded-2"
-                href="../Views/index.html"
-                >Página de inicio</a
-              >
-              <a
-                class="nav-link text-white rounded-2"
-                href="../Views/destinos.html"
-                >Página de destinos</a
-              >
-              <a
-                class="nav-link text-white rounded-2"
-                href="../Views/vuelos.html"
-                >Búsqueda de vuelos</a
-              >
-              <a
-                class="nav-link text-white rounded-2"
-                href="../Views/sucursalesContacto.html"
-                >Sucursales y contacto</a
-              >
+                    <img src="../Assets/img/fotosIndex/avionBarra.png" width="45" class="me-2">
+                    Apex Fly
+                    <!--me-2 para agregar un margen a la derecha, o sea margin end 2 y separe del texto del nombre de la aerolinea-->
+                    <!--width="45" para indicarle que tenga un ancho de 45 píxeles y que calcule la altura automáticamente-->
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuDelNavbar"> <!--Botón para colapsar la barra de navegación en pantallas pequeñas-->
+                    <!--navbar-toggler clases para abrir o cerrar la barra de navegación en dispositivos de pantallas pequeñas-->
+                    <!--data-bs-toggle="collapse" para que el botón active el componente llamado collapse que viene de Js-->
+                    <!--data-bs-target="#menuDelNavbar" para que busque lo que tenga ese identificador específico-->
+
+                    <span class="navbar-toggler-icon"></span>
+                        <!--navbar-toggler-icon para para dibujar el icono del botón para cerrar o abrir la barra de navegación-->
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuDelNavbar">
+                    <!--collapse inndica que es parte del nnavbar y colapsa la barra de navegación en pantallas pequeñas-->
+                    <!--navbar-nav para tratar los enlaces de navegación-->
+                    <!--id="menuDelNavbar" para asignarle el identificador que se usa en el botón-->
+
+                    <ul class="navbar-nav ms-auto">
+                        <!--navbar-nav para tratar los enlaces de navegación-->
+                        <!--ms-auto para alinear los enlaces a la derecha, o sea margin start auto-->
+                        <li class="nav-item">
+                            <!--nav-item para tratar los elementos de la lista de navegación-->
+
+                            <a class="nav-link text-white rounded-2" href="../Views/index.html"> Página de inicio</a>
+                            <!--nav-link para tratar los enlaces de navegación-->
+                            <!--text-white para cambiar el color del texto a blanco-->
+                        </li>
+                        
+                        <li class="nav-item">
+                            <!--nav-item para tratar los elementos de la lista de navegación-->
+
+                            <a class="nav-link text-white rounded-2" href="../Views/destinos.html"> Página de destinos</a>
+                            <!--nav-link para tratar los enlaces de navegación-->
+                            <!--text-white para cambiar el color del texto a blanco-->
+                        </li>
+                        
+                        <li class="nav-item">
+                            <!--nav-item para tratar los elementos de la lista de navegación-->
+
+                            <a class="nav-link text-white rounded-2" href="../Views/vuelos.html">Búsqueda de vuelos</a>
+                            <!--nav-link para tratar los enlaces de navegación-->
+                            <!--text-white para cambiar el color del texto a blanco-->
+                        </li>
+                        
+                        <li class="nav-item">
+                            <!--nav-item para tratar los elementos de la lista de navegación-->
+
+                            <a class="nav-link text-white rounded-2" href="../Views/sucursalesContacto.html">Sucursales y contacto</a>
+                            <!--nav-link para tratar los enlaces de navegación-->
+                            <!--text-white para cambiar el color del texto a blanco-->
+                        </li>
+
+                        <li class="nav-item">
+                            <!--nav-item para tratar los elementos de la lista de navegación-->
+
+                            <a class="nav-link text-white rounded-2" href="../Views/login.html">Login</a>
+                            <!--nav-link para tratar los enlaces de navegación-->
+                            <!--text-white para cambiar el color del texto a blanco-->
+                        </li>
+
+                    </ul>
+                </div>
             </div>
-          </div>
-        </div>
-      </nav>
+        </nav>
     </header>
-
     <!-- Sección de catálogo y filtros -->
     <main class="py-5">
       <div class="contenedor-principal">
@@ -96,7 +121,7 @@
         <div class="grilla-destinos">
           <div class="destino-item" data-categoria="internacional">
             <div class="destinoTarjeta">
-              <div class="contenedor-foto-recorte">
+             <div class="contenedor-foto-recorte"> 
                 <img
                   src="../Assets/img/fotosDestinos/paris.jpg"
                   alt="París, Francia"
@@ -110,7 +135,7 @@
                 </p>
                 <div class="pie-tarjeta">
                   <span class="precio-destino">$599</span>
-                  <button class="btn-detalles">Ver detalles</button>
+                 <a href="../Views/vuelos.html" class="btn-detalles text-decoration-none">Ver detalles</a>
                 </div>
               </div>
             </div>
@@ -132,7 +157,7 @@
                 </p>
                 <div class="pie-tarjeta">
                   <span class="precio-destino">$899</span>
-                  <button class="btn-detalles">Ver detalles</button>
+                  <a href="../Views/vuelos.html" class="btn-detalles text-decoration-none">Ver detalles</a>
                 </div>
               </div>
             </div>
@@ -154,7 +179,7 @@
                 </p>
                 <div class="pie-tarjeta">
                   <span class="precio-destino">$420</span>
-                  <button class="btn-detalles">Ver detalles</button>
+                  <a href="../Views/vuelos.html" class="btn-detalles text-decoration-none">Ver detalles</a>
                 </div>
               </div>
             </div>
@@ -176,7 +201,7 @@
                 </p>
                 <div class="pie-tarjeta">
                   <span class="precio-destino">$150</span>
-                  <button class="btn-detalles">Ver detalles</button>
+                  <a href="../Views/vuelos.html" class="btn-detalles text-decoration-none">Ver detalles</a>
                 </div>
               </div>
             </div>
@@ -198,7 +223,7 @@
                 </p>
                 <div class="pie-tarjeta">
                   <span class="precio-destino">$380</span>
-                  <button class="btn-detalles">Ver detalles</button>
+                  <a href="../Views/vuelos.html" class="btn-detalles text-decoration-none">Ver detalles</a>
                 </div>
               </div>
             </div>
@@ -220,7 +245,7 @@
                 </p>
                 <div class="pie-tarjeta">
                   <span class="precio-destino">$1,250</span>
-                  <button class="btn-detalles">Ver detalles</button>
+                  <a href="../Views/vuelos.html" class="btn-detalles text-decoration-none">Ver detalles</a>
                 </div>
               </div>
             </div>
@@ -242,7 +267,7 @@
                 </p>
                 <div class="pie-tarjeta">
                   <span class="precio-destino">$650</span>
-                  <button class="btn-detalles">Ver detalles</button>
+                  <a href="../Views/vuelos.html" class="btn-detalles text-decoration-none">Ver detalles</a>
                 </div>
               </div>
             </div>
@@ -264,7 +289,7 @@
                 </p>
                 <div class="pie-tarjeta">
                   <span class="precio-destino">$450</span>
-                  <button class="btn-detalles">Ver detalles</button>
+                  <a href="../Views/vuelos.html" class="btn-detalles text-decoration-none">Ver detalles</a>
                 </div>
               </div>
             </div>
@@ -286,7 +311,7 @@
                 </p>
                 <div class="pie-tarjeta">
                   <span class="precio-destino">$680</span>
-                  <button class="btn-detalles">Ver detalles</button>
+                  <a href="../Views/vuelos.html" class="btn-detalles text-decoration-none">Ver detalles</a>
                 </div>
               </div>
             </div>
@@ -308,7 +333,7 @@
                 </p>
                 <div class="pie-tarjeta">
                   <span class="precio-destino">$310</span>
-                  <button class="btn-detalles">Ver detalles</button>
+                  <a href="../Views/vuelos.html" class="btn-detalles text-decoration-none">Ver detalles</a>
                 </div>
               </div>
             </div>
@@ -330,7 +355,7 @@
                 </p>
                 <div class="pie-tarjeta">
                   <span class="precio-destino">$920</span>
-                  <button class="btn-detalles">Ver detalles</button>
+                  <a href="../Views/vuelos.html" class="btn-detalles text-decoration-none">Ver detalles</a>
                 </div>
               </div>
             </div>
@@ -352,7 +377,7 @@
                 </p>
                 <div class="pie-tarjeta">
                   <span class="precio-destino">$1,150</span>
-                  <button class="btn-detalles">Ver detalles</button>
+                  <a href="../Views/vuelos.html" class="btn-detalles text-decoration-none">Ver detalles</a> <!--Al hacer click en ver detalles lo envia a vuelos.html-->
                 </div>
               </div>
             </div>
@@ -360,83 +385,78 @@
         </div>
       </div>
     </main>
+    <!--sección de footer-->
+    <footer class="footerDeSucursales">
+        <div class="container"> <!--se quita de momento para pruebas la clase divContenedorDeFooterIndex-->
+            <!--container para ser tratado como la clase container de bootstrap y que contenga sus propiedades de caja-->
 
-    <!-- Footer -->
-    <footer class="footerDeSucursales py-4">
-      <div class="container">
-        <section class="row text-center">
-          <div class="col-12 col-md-6 col-lg-3 mb-4">
-            <h4 class="fw-bold">Nosotros</h4>
-            <ul class="list-unstyled">
-              <li class="mb-1">
-                <a href="../Views/index.html">Nuestra historia</a>
-              </li>
-              <li class="mb-1">
-                <a href="../Views/index.html">Trayectoria</a>
-              </li>
-              <li class="mb-1">
-                <a href="../Views/index.html">Organigrama</a>
-              </li>
-              <li class="mb-1">
-                <a href="../Views/index.html">Documentos de interés</a>
-              </li>
-            </ul>
-          </div>
+            <section class="row text-center pb-0">
+                <!--section porque es una sección de la página-->
+                <!--row para crear filas de elementos-->
 
-          <div class="col-12 col-md-6 col-lg-3 mb-4">
-            <h4 class="fw-bold">Información legal</h4>
-            <ul class="list-unstyled">
-              <li class="mb-1">
-                <a href="../Views/index.html">Términos y condiciones</a>
-              </li>
-              <li class="mb-1">
-                <a href="../Views/index.html">Reclamos de servicios</a>
-              </li>
-              <li class="mb-1">
-                <a href="../Views/index.html">Requisitos por país</a>
-              </li>
-              <li class="mb-1">
-                <a href="../Views/index.html">Obligaciones a bordo</a>
-              </li>
-            </ul>
-          </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <!--col-12 para que ocupe todo el ancho en dispositivos móviles-->
+                    <!--col-md-6 para que ocupe la mitad en dispositivos medianos-->
+                    <!--col-lg-3 para que ocupe un cuarto en dispositivos grandes-->
+                    <h4 class="fw-bold">Nosotros</h4>
+                    <ul class="list-unstyled">
+                        <!--list-unstyled para quitar los puntos de la lista-->
+                        <li class="mb-1"><a href="#">Nuestra historia</a></li> <!--Se referencia a la misma página a falta de backend para simulación de redirección-->
+                        <li class="mb-1"><a href="#">Trayectoria</a></li>
+                        <li class="mb-1"><a href="#">Organigrama</a></li>
+                        <li class="mb-1"><a href="#">Documentos de interés</a></li>
+                    </ul>
+                </div>
 
-          <div class="col-12 col-md-6 col-lg-3 mb-4">
-            <h4 class="fw-bold">Datos de contacto</h4>
-            <ul class="list-unstyled">
-              <li class="mb-1">
-                <a href="../Views/index.html">Centro de atención al cliente</a>
-              </li>
-              <li class="mb-1">
-                <a href="../Views/index.html">Correo electrónico</a>
-              </li>
-              <li class="mb-1">
-                <a href="../Views/index.html">Contacto para empresas</a>
-              </li>
-              <li class="mb-1">
-                <a href="../Views/index.html">Formulario de reclamos</a>
-              </li>
-            </ul>
-          </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <!--col-12 para que ocupe todo el ancho en dispositivos móviles-->
+                    <!--col-md-6 para que ocupe la mitad en dispositivos medianos-->
+                    <!--col-lg-3 para que ocupe un cuarto en dispositivos grandes-->
+                    <!--mb-4 para agregar un margin bottom o sea de abajo de tamaño 4-->
+                    <h4 class="fw-bold">Información legal</h4>
+                    <!--fw-bold para hacer el h4 en negrita-->
+                    <ul class="list-unstyled">
+                        <!--list-unstyled para quitar los puntos de la lista-->
+                        <li class="mb-1"><a href="#">Términos y condiciones</a></li>
+                        <li class="mb-1"><a href="#">Reclamos de servicios</a></li>
+                        <li class="mb-1"><a href="#">Requisitos por país</a></li>
+                        <li class="mb-1"><a href="#">Obligaciones a bordo</a></li>
+                    </ul>
+                </div>
 
-          <div class="col-12 col-md-6 col-lg-3 mb-4">
-            <h4 class="fw-bold">Redes sociales</h4>
-            <ul class="list-unstyled">
-              <li class="mb-1"><a href="../Views/index.html">Facebook</a></li>
-              <li class="mb-1"><a href="../Views/index.html">Instagram</a></li>
-              <li class="mb-1">
-                <a href="../Views/index.html"
-                  >WhatsApp <br />(canal de difusión)</a
-                >
-              </li>
-            </ul>
-          </div>
-        </section>
-      </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <!--col-12 para que ocupe todo el ancho en dispositivos móviles-->
+                    <!--col-md-6 para que ocupe la mitad en dispositivos medianos-->
+                    <!--col-lg-3 para que ocupe un cuarto en dispositivos grandes-->
+                    <!--mb-4 para agregar un margin bottom o sea de abajo de tamaño 4-->
+                    <h4 class="fw-bold">Datos de contacto</h4>
+                    <!--fw-bold para hacer el h4 en negrita-->
+                    <ul class="list-unstyled">
+                        <!--list-unstyled para quitar los puntos de la lista-->
+                        <li class="mb-1"><a href="#">Centro de atención al cliente</a></li>
+                        <li class="mb-1"><a href="#">Correo electrónico</a></li>
+                        <li class="mb-1"><a href="#">Contacto para empresas</a></li>
+                        <li class="mb-1"><a href="#">Formulario de reclamos</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <!--col-12 para que ocupe todo el ancho en dispositivos móviles-->
+                    <!--col-md-6 para que ocupe la mitad en dispositivos medianos-->
+                    <!--col-lg-3 para que ocupe un cuarto en dispositivos grandes-->
+                    <!--mb-4 para agregar un margin bottom o sea de abajo de tamaño 4-->
+                    <h4 class="fw-bold">Redes sociales</h4>
+                    <!--fw-bold para hacer el h4 en negrita-->
+                    <ul class="list-unstyled">
+                        <li class="mb-1"><a href="#">Facebook</a></li>
+                        <li class="mb-1"><a href="#">Instagram</a></li>
+                        <li class="mb-1"><a href="#">WhatsApp <br>(canal de difusión)</a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>        
     </footer>
-
-    <!-- Bootstrap JS y script -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script> 
     <script src="../Assets/js/destinos.js"></script>
   </body>
 </html>
