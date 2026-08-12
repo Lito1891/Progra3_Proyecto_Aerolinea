@@ -235,3 +235,51 @@ Elementos que manipula:
 Controlador asociado:
 
 ---
+
+## Carpeta Controllers
+
+Descripción: contiene los controladores que luego tomarán los modelos para responder a eventos o peticiones realizadas en las vistas.
+
+---
+
+### Nombre: controladorDashboard.js
+
+Descripción:
+
+Archivos HTML asociados:
+
+Funcionalidades:
+
+Elementos que manipula:
+
+Modelo asociado:
+
+---
+
+### Nombre: controladorDestino.js
+
+Descripción:
+
+Archivos HTML asociados:
+
+Funcionalidades:
+
+Elementos que manipula:
+
+Modelo asociado:
+
+---
+
+### Nombre: controladorLogin.js
+
+Descripción:
+
+Archivos HTML asociados:
+
+Funcionalidades:
+
+Elementos que manipula:
+
+Modelo asociado:
+
+---
