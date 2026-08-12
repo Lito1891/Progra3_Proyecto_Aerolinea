@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 const contenedorGrilla = document.getElementById("grillaDestinos");
 const botonesFiltro = document.querySelectorAll(".btn-filtrar");
 
-  // 1. Función para renderizar dinámicamente las tarjetas en la Vista
+  //Función para renderizar dinámicamente las tarjetas en la Vista
 const renderizarTarjetas = (destinos) => {
     contenedorGrilla.innerHTML = ""; // Limpiar el contenedor antes de renderizar
 
@@ -31,10 +31,10 @@ const renderizarTarjetas = (destinos) => {
     });
 };
 
-  // 2. Carga inicial de todos los destinos al entrar a la página
+  //Carga inicial de todos los destinos al entrar a la página
 renderizarTarjetas(obtenerDestinos("todos"));
 
-  // 3. Gestión de eventos de filtrado
+  //Gestión de eventos de filtrado
 botonesFiltro.forEach((boton) => {
     boton.addEventListener("click", (evento) => {
     const botonActual = evento.currentTarget;

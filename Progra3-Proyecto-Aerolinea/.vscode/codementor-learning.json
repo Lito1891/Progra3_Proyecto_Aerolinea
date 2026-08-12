@@ -28,17 +28,17 @@
     "last_seen": "2026-07-13T04:58:24.940Z"
   },
   "CC-004": {
-    "occurrences": 43,
+    "occurrences": 47,
     "confidence": 1,
     "mastered_explicitly": false,
     "first_seen": "2026-08-10T03:09:31.404Z",
-    "last_seen": "2026-08-12T04:05:53.815Z"
+    "last_seen": "2026-08-12T04:12:25.772Z"
   },
   "SEC-004": {
-    "occurrences": 37,
+    "occurrences": 41,
     "confidence": 1,
     "mastered_explicitly": false,
     "first_seen": "2026-08-12T03:30:00.714Z",
-    "last_seen": "2026-08-12T04:05:53.814Z"
+    "last_seen": "2026-08-12T04:12:25.771Z"
   }
 }
