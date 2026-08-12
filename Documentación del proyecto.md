@@ -30,7 +30,11 @@ Carpeta Views: Páginas que el usuario ve e interactúa de primera mano
 
 ---
 
-## Vistas
+## Carpeta Views
+
+Descripción: contiene las vistas creadas para que los usuarios manipulen de primera mano e interactuden y desplacen sobre la página.
+
+---
 
 ### Nombre: Index.html
 
@@ -130,5 +134,104 @@ Controlador asociado:
 
 ---
 
+## Carpeta Assets
 
+Descripción: contiene los elementos estáticos del proyecto como estilos, funcionalidades en JavaScript e imágenes empleaas en las diversas páginas
 
+---
+
+### Sub carpeta css
+
+Descripción: contiene los estilos que modifican las vistas del proyecto
+
+---
+
+### Nombre: index.css
+
+Descripción:
+
+Archivos HTML asociados:
+
+Componentes visuales que controla y principales clases:
+
+---
+
+### Nombre: login.css
+
+Descripción:
+
+Archivos HTML asociados:
+
+Componentes visuales que controla y principales clases:
+
+---
+
+### Nombre: sucursalesContaco.css
+
+Descripción:
+
+Archivos HTML asociados:
+
+Componentes visuales que controla y principales clases:
+
+---
+
+### Nombre:  destinos.css
+
+Descripción:
+
+Archivos HTML asociados:
+
+Componentes visuales que controla y principales clases:
+
+---
+
+### Nombre: vuelos.css
+
+Descripción:
+
+Archivos HTML asociados:
+
+Componentes visuales que controla y principales clases:
+
+---
+
+### Sub carpeta img
+
+Descripción: contiene imágenes empleadas durante el proyecto, dentro de la misma se encuentra dotosDestinos, dotosIndez, fotosSucursalesContacto, fotosVuelos, de esta carpeta salen las imagenes para todo el proyecto a excepción del dashboard que tiene sus propios recursos dentro de la carpeta Views.
+
+---
+
+### Sub carpeta js
+
+Descripción: contiene los elementos js que no sean catalogados como controladores o como modelos.
+
+---
+
+### Nombre: reservaVuelos.js
+
+Descripción:
+
+Archivos HTML asociados:
+
+Funcionalidades:
+
+Elementos que manipula:
+
+Controlador asociado:
+
+---
+
+### Nombre: vuelos.js
+
+Descripción:
+
+Archivos HTML asociados:
+
+Funcionalidades:
+
+Elementos que manipula:
+
+Controlador asociado:
+
+---
