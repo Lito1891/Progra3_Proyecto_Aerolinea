@@ -4,6 +4,16 @@
 
 El presente proyecto consta de la construcción de una página web enfocada en servir como portal de una aerolínea comercial, respetando siempre el modelo vista controlador (MVC). La misma emplea archivos con extensión HTML, PHP, CSS y Js enlazados mediante rutas dinámicas omitiendo la mala práctica del uso de direcciones estáticas que pudiesen afectar al funcionamiento del proyecto.
 
+### Grupo 01 - Integrantes:
+
+Jorge Solano
+
+Cristofer Madrigal
+
+Herlyn Espinoza
+
+
+
 ## ¿Cómo iniciar?
 
 ### Requisitos previos
@@ -66,15 +76,13 @@ Controlador asociado: no contempla un controlador asociado.
 
 ### Nombre: login.html
 
-Descripción:
+Descripción: página creada como punto de acceso para el dashboard de métricas para los usuarios.
 
-Secciones que contiene:
+Secciones que contiene: barra de navegación, contenido central que abarca el formulario del login, footer.
 
-Estilos:
+Estilos: Bootstrap y enlace directo a login.css.
 
-JavaScript asociado:
-
-Controlador asociado:
+Controlador asociado: enlazado directamente a controladorLogin.js quien se encarga de realizar las validaciones correspondientes para redireccionar al dashboard.
 
 ---
 
@@ -122,57 +130,49 @@ Controlador asociado:
 
 ### Nombre: dashboard.php
 
-Descripción:
+Descripción: vista que genera gráficos de métricas obtenidas por el usuario al usar los servicios de la aerolínea.
 
-Secciones que contiene:
+Secciones que contiene: resalta su barra de navegación, contenido de generación de gráficos, footer.
 
-Estilos:
+Estilos: Bootstrap y para el correcto funcionamiento se maneja por varios documentos dentro de la carpeta "dist" ubicada en la carpeta Views.
 
-JavaScript asociado:
-
-Controlador asociado:
+JavaScript asociado: Para el correcto funcionamiento se maneja por varios documentos dentro de la carpeta "plugins" ubicada en la carpeta Views.
 
 ---
 
 ## Carpeta Assets
 
-Descripción: contiene los elementos estáticos del proyecto como estilos, funcionalidades en JavaScript e imágenes empleaas en las diversas páginas
+Descripción: contiene los elementos estáticos del proyecto como estilos, funcionalidades en JavaScript e imágenes empleaas en las diversas páginas.
 
 ---
 
 ### Sub carpeta css
 
-Descripción: contiene los estilos que modifican las vistas del proyecto
+Descripción: contiene los estilos que modifican algunas características técnicas de las vistas del proyecto.
 
 ---
 
 ### Nombre: index.css
 
-Descripción:
+Descripción: archivo que modifica los estilos de Index.html directamente.
 
-Archivos HTML asociados:
-
-Componentes visuales que controla y principales clases:
+Archivos HTML asociados: Inde.html
 
 ---
 
 ### Nombre: login.css
 
-Descripción:
+Descripción: archivo que modifica los estilos de login.html directamente.
 
-Archivos HTML asociados:
-
-Componentes visuales que controla y principales clases:
+Archivos HTML asociados: login.html
 
 ---
 
 ### Nombre: sucursalesContaco.css
 
-Descripción:
+Descripción: archivo que modifica los estilos de sucursalesContacto.html directamente.
 
-Archivos HTML asociados:
-
-Componentes visuales que controla y principales clases:
+Archivos HTML asociados: sucursalesContacto.html
 
 ---
 
@@ -182,8 +182,6 @@ Descripción:
 
 Archivos HTML asociados:
 
-Componentes visuales que controla y principales clases:
-
 ---
 
 ### Nombre: vuelos.css
@@ -191,8 +189,6 @@ Componentes visuales que controla y principales clases:
 Descripción:
 
 Archivos HTML asociados:
-
-Componentes visuales que controla y principales clases:
 
 ---
 
@@ -244,15 +240,11 @@ Descripción: contiene modelos que los controladores tomarán como información 
 
 ### Nombre: modeloDashboard.js
 
-Descripción:
+Descripción: archivo que contiene los datos base para la correcta generación de gráficos y métricas en el dashboard por medio del controlador controladorDashboard.js.
 
-Funcionalidad:
+Funcionalidad: almacenar datos base para generación de métricas y gráfico.
 
-Datos que gestiona:
-
-Métodos o funciones principales:
-
-Controlador asociado:
+Controlador asociado: controladorDashboard.js.
 
 ---
 
@@ -262,8 +254,6 @@ Descripción:
 
 Funcionalidad:
 
-Datos que gestiona:
-
 Métodos o funciones principales:
 
 Controlador asociado:
@@ -272,15 +262,11 @@ Controlador asociado:
 
 ### Nombre: modeloLogin.js
 
-Descripción:
+Descripción: archivo que contiene los datos base para el correcto acceso al dashboard por medio de controladorLogin.js.
 
-Funcionalidad:
+Funcionalidad: almacenar los datos de usuario y contraseña para el inicio de sesión en la vista login.
 
-Datos que gestiona:
-
-Métodos o funciones principales:
-
-Controlador asociado:
+Controlador asociado: controladorLogin.js
 
 ---
 
