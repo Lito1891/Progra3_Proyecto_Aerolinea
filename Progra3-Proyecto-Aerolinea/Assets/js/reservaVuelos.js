@@ -49,7 +49,7 @@ Array.from(formulario).forEach(form => {//foreach
             
             event.preventDefault();//se evita el comportamiento normal de pagina, ejemplo que se actualice la pagina y se pierdan datos que se ingresaron previamente ingresamos en los inputs
             
-            const nombre = document.getElementById("firstName").value;//declaramos variable para obtener nombre mediante su respectivo ID
+            const nombre = document.getElementById("nombreUsuario").value;//declaramos variable para obtener nombre mediante su respectivo ID
             // Mostrar mensaje de pago exitoso mediante un sweetAlert
             Swal.fire({
                 title: "¡Pago realizado con éxito!",
