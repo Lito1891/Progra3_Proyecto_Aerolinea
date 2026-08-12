@@ -32,7 +32,7 @@ a{ color: black; /*Modifica el color del texto general del cuerpo (este logra ca
 
 .seccionLogin{ /*Modifica la sección de login*/
     background-color: #FFFFFF;/*Modifica el color de fondo de toda la sección donde se encuentra el formulario*/
-    padding: 133px 0;} /*Agrega espacio arriba y abajo de la sección para separar el formulario de los bordes de la página*/
+    padding: 155px 0;} /*Agrega espacio arriba y abajo de la sección para separar el formulario de los bordes de la página*/
 
 /*-----------------------------------------------------------------------------------------------------*/
 /*Estilos de la tarjeta del formulario*/
