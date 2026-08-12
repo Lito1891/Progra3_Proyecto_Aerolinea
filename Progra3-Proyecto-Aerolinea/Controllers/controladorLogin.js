@@ -53,7 +53,7 @@ function validarLogin(){
 }
 
 //evento que controla el envío del formulario
-document.getElementById("formLogin").addEventListener("ubmits", function(event) {
+document.getElementById("formLogin").addEventListener("submit", function(event) {
     //escucha el evento cuando se le da a submit
 
     event.preventDefault();
