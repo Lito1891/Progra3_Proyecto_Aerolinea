@@ -1,17 +1,16 @@
 <!doctype html>
 <html lang="es">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Destinos y Servicios - Apex Fly</title>
 
- 
-  </head>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     
     <link rel="stylesheet" href="../Assets/css/destinos.css">
 </head>
-  <body>
+<body>
     <!-- Navbar principal -->
         <header>
         <nav class="navbar navbar-expand-lg navbar-dark navbarApex">
@@ -101,289 +100,25 @@
     </header>
     <!-- Sección de catálogo y filtros -->
     <main class="py-5">
-      <div class="contenedor-principal">
+    <div class="contenedor-principal">
         <h2 class="titulo-seccion">Nuestros Destinos Destacados</h2>
 
         <!-- Filtros de búsqueda -->
         <div class="contenedor-botones-filtros">
-          <button class="btn-filtrar boton-activo" data-filtro="todos">
+        <button class="btn-filtrar boton-activo" data-filtro="todos">
             Todos
-          </button>
-          <button class="btn-filtrar" data-filtro="internacional">
+        </button>
+        <button class="btn-filtrar" data-filtro="internacional">
             Vuelos Internacionales
-          </button>
-          <button class="btn-filtrar" data-filtro="nacional">
+        </button>
+        <button class="btn-filtrar" data-filtro="nacional">
             Vuelos Nacionales
-          </button>
+        </button>
         </div>
 
-        <!-- Lista de tarjetas -->
-        <div class="grilla-destinos">
-          <div class="destino-item" data-categoria="internacional">
-            <div class="destinoTarjeta">
-             <div class="contenedor-foto-recorte"> 
-                <img
-                  src="../Assets/img/fotosDestinos/paris.jpg"
-                  alt="París, Francia"
-                />
-              </div>
-              <div class="cuerpo-tarjeta">
-                <h5 class="nombre-destino">París, Francia</h5>
-                <p class="descripcion-destino">
-                  Camina por los Campos Elíseos, admira la Torre Eiffel
-                  iluminada y vive la experiencia europea.
-                </p>
-                <div class="pie-tarjeta">
-                  <span class="precio-destino">$599</span>
-                 <a href="../Views/vuelos.html" class="btn-detalles text-decoration-none">Ver detalles</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="destino-item" data-categoria="internacional">
-            <div class="destinoTarjeta">
-              <div class="contenedor-foto-recorte">
-                <img
-                  src="../Assets/img/fotosDestinos/tokio.jpg"
-                  alt="Tokio, Japón"
-                />
-              </div>
-              <div class="cuerpo-tarjeta">
-                <h5 class="nombre-destino">Tokio, Japón</h5>
-                <p class="descripcion-destino">
-                  Fusión asombrosa de santuarios antiguos y rascacielos
-                  tecnológicos llenos de luces de neón.
-                </p>
-                <div class="pie-tarjeta">
-                  <span class="precio-destino">$899</span>
-                  <a href="../Views/vuelos.html" class="btn-detalles text-decoration-none">Ver detalles</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="destino-item" data-categoria="internacional">
-            <div class="destinoTarjeta">
-              <div class="contenedor-foto-recorte">
-                <img
-                  src="../Assets/img/fotosDestinos/riodejaneiro.jpg"
-                  alt="Río de Janeiro, Brasil"
-                />
-              </div>
-              <div class="cuerpo-tarjeta">
-                <h5 class="nombre-destino">Río de Janeiro, Brasil</h5>
-                <p class="descripcion-destino">
-                  Disfruta de las costas doradas de Copacabana, explora el
-                  Cristo Redentor y vive el ritmo tropical.
-                </p>
-                <div class="pie-tarjeta">
-                  <span class="precio-destino">$420</span>
-                  <a href="../Views/vuelos.html" class="btn-detalles text-decoration-none">Ver detalles</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="destino-item" data-categoria="nacional">
-            <div class="destinoTarjeta">
-              <div class="contenedor-foto-recorte">
-                <img
-                  src="../Assets/img/fotosDestinos/costarica.jpg"
-                  alt="San José, Costa Rica"
-                />
-              </div>
-              <div class="cuerpo-tarjeta">
-                <h5 class="nombre-destino">San José, Costa Rica</h5>
-                <p class="descripcion-destino">
-                  Descubre exuberantes bosques tropicales, volcanes imponentes y
-                  la calidez del estilo de vida Pura Vida.
-                </p>
-                <div class="pie-tarjeta">
-                  <span class="precio-destino">$150</span>
-                  <a href="../Views/vuelos.html" class="btn-detalles text-decoration-none">Ver detalles</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="destino-item" data-categoria="internacional">
-            <div class="destinoTarjeta">
-              <div class="contenedor-foto-recorte">
-                <img
-                  src="../Assets/img/fotosDestinos/peru.jpg"
-                  alt="Cusco, Perú"
-                />
-              </div>
-              <div class="cuerpo-tarjeta">
-                <h5 class="nombre-destino">Cusco, Perú</h5>
-                <p class="descripcion-destino">
-                  Explora la histórica capital del Imperio Inca y maravíllate
-                  con los misterios arqueológicos de Machu Picchu.
-                </p>
-                <div class="pie-tarjeta">
-                  <span class="precio-destino">$380</span>
-                  <a href="../Views/vuelos.html" class="btn-detalles text-decoration-none">Ver detalles</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="destino-item" data-categoria="internacional">
-            <div class="destinoTarjeta">
-              <div class="contenedor-foto-recorte">
-                <img
-                  src="../Assets/img/fotosDestinos/groenlandia.jpg"
-                  alt="Ilulissat, Groenlandia"
-                />
-              </div>
-              <div class="cuerpo-tarjeta">
-                <h5 class="nombre-destino">Ilulissat, Groenlandia</h5>
-                <p class="descripcion-destino">
-                  Una aventura única entre icebergs gigantescos, auroras
-                  boreales espectaculares y paisajes árticos.
-                </p>
-                <div class="pie-tarjeta">
-                  <span class="precio-destino">$1,250</span>
-                  <a href="../Views/vuelos.html" class="btn-detalles text-decoration-none">Ver detalles</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="destino-item" data-categoria="internacional">
-            <div class="destinoTarjeta">
-              <div class="contenedor-foto-recorte">
-                <img
-                  src="../Assets/img/fotosDestinos/londres.jpg"
-                  alt="Londres, Reino Unido"
-                />
-              </div>
-              <div class="cuerpo-tarjeta">
-                <h5 class="nombre-destino">Londres, Reino Unido</h5>
-                <p class="descripcion-destino">
-                  Pasea junto al río Támesis, admira el emblemático Big Ben y
-                  descubre la rica historia de la capital británica.
-                </p>
-                <div class="pie-tarjeta">
-                  <span class="precio-destino">$650</span>
-                  <a href="../Views/vuelos.html" class="btn-detalles text-decoration-none">Ver detalles</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="destino-item" data-categoria="internacional">
-            <div class="destinoTarjeta">
-              <div class="contenedor-foto-recorte">
-                <img
-                  src="../Assets/img/fotosDestinos/nuevayork.jpg"
-                  alt="Nueva York, Estados Unidos"
-                />
-              </div>
-              <div class="cuerpo-tarjeta">
-                <h5 class="nombre-destino">Nueva York, EE. UU.</h5>
-                <p class="descripcion-destino">
-                  Siente la energía de Times Square, camina por Central Park y
-                  contempla los rascacielos más icónicos del mundo.
-                </p>
-                <div class="pie-tarjeta">
-                  <span class="precio-destino">$450</span>
-                  <a href="../Views/vuelos.html" class="btn-detalles text-decoration-none">Ver detalles</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="destino-item" data-categoria="internacional">
-            <div class="destinoTarjeta">
-              <div class="contenedor-foto-recorte">
-                <img
-                  src="../Assets/img/fotosDestinos/roma.jpg"
-                  alt="Roma, Italia"
-                />
-              </div>
-              <div class="cuerpo-tarjeta">
-                <h5 class="nombre-destino">Roma, Italia</h5>
-                <p class="descripcion-destino">
-                  Viaja en el tiempo entre el majestuoso Coliseo, la mítica
-                  Fontana de Trevi y la exquisita gastronomía italiana.
-                </p>
-                <div class="pie-tarjeta">
-                  <span class="precio-destino">$680</span>
-                  <a href="../Views/vuelos.html" class="btn-detalles text-decoration-none">Ver detalles</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="destino-item" data-categoria="internacional">
-            <div class="destinoTarjeta">
-              <div class="contenedor-foto-recorte">
-                <img
-                  src="../Assets/img/fotosDestinos/cancun.jpg"
-                  alt="Cancún, México"
-                />
-              </div>
-              <div class="cuerpo-tarjeta">
-                <h5 class="nombre-destino">Cancún, México</h5>
-                <p class="descripcion-destino">
-                  Sumérgete en aguas cristalinas turquesa, relajantes resorts
-                  con todo incluido y la fascinante cultura maya.
-                </p>
-                <div class="pie-tarjeta">
-                  <span class="precio-destino">$310</span>
-                  <a href="../Views/vuelos.html" class="btn-detalles text-decoration-none">Ver detalles</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="destino-item" data-categoria="internacional">
-            <div class="destinoTarjeta">
-              <div class="contenedor-foto-recorte">
-                <img
-                  src="../Assets/img/fotosDestinos/elcairo.jpg"
-                  alt="El Cairo, Egipto"
-                />
-              </div>
-              <div class="cuerpo-tarjeta">
-                <h5 class="nombre-destino">El Cairo, Egipto</h5>
-                <p class="descripcion-destino">
-                  Contempla las milenarias Pirámides de Guiza, navega por el
-                  legendario río Nilo y explora tesoros antiguos.
-                </p>
-                <div class="pie-tarjeta">
-                  <span class="precio-destino">$920</span>
-                  <a href="../Views/vuelos.html" class="btn-detalles text-decoration-none">Ver detalles</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="destino-item" data-categoria="internacional">
-            <div class="destinoTarjeta">
-              <div class="contenedor-foto-recorte">
-                <img
-                  src="../Assets/img/fotosDestinos/sidney.jpg"
-                  alt="Sídney, Australia"
-                />
-              </div>
-              <div class="cuerpo-tarjeta">
-                <h5 class="nombre-destino">Sídney, Australia</h5>
-                <p class="descripcion-destino">
-                  Admira la emblemática Ópera de Sídney, explora su espectacular
-                  bahía y vive una aventura inolvidable.
-                </p>
-                <div class="pie-tarjeta">
-                  <span class="precio-destino">$1,150</span>
-                  <a href="../Views/vuelos.html" class="btn-detalles text-decoration-none">Ver detalles</a> <!--Al hacer click en ver detalles lo envia a vuelos.html-->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <!-- Contenedor de destinos manejado por el controlador-->
+    <div class="grilla-destinos" id="grillaDestinos"></div>
+    </div>
     </main>
     <!--sección de footer-->
     <footer class="footerDeSucursales">
@@ -456,7 +191,9 @@
             </section>
         </div>        
     </footer>
+    <!--Bootstrap JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script> 
-    <script src="../Assets/js/destinos.js"></script>
-  </body>
+    <!--controlador del modulo-->
+    <script type="module" src="../Controllers/controladorDestinos.js"></script>
+</body>
 </html>
