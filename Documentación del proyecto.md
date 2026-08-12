@@ -236,6 +236,54 @@ Controlador asociado:
 
 ---
 
+## Carpeta Models
+
+Descripción: contiene modelos que los controladores tomarán como información base para validaciones y acciones a eventos.
+
+---
+
+### Nombre: modeloDashboard.js
+
+Descripción:
+
+Funcionalidad:
+
+Datos que gestiona:
+
+Métodos o funciones principales:
+
+Controlador asociado:
+
+---
+
+### Nombre: modeloDestino.js
+
+Descripción:
+
+Funcionalidad:
+
+Datos que gestiona:
+
+Métodos o funciones principales:
+
+Controlador asociado:
+
+---
+
+### Nombre: modeloLogin.js
+
+Descripción:
+
+Funcionalidad:
+
+Datos que gestiona:
+
+Métodos o funciones principales:
+
+Controlador asociado:
+
+---
+
 ## Carpeta Controllers
 
 Descripción: contiene los controladores que luego tomarán los modelos para responder a eventos o peticiones realizadas en las vistas.
