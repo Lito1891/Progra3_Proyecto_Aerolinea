@@ -102,29 +102,29 @@ Carpeta Views: Páginas que el usuario ve e interactúa de primera mano
 
 ### Nombre: reservaVuelos.html
 
-- Descripción:
+- Descripción: pagina diseñada para que el usuario ingrese datos requeridos para finalizar la reservación de un vuelo, podrá visualizar precio del tiquete y el destino del mismo, si todo fluye, al final vera un mensaje de confirmación y será redirigido a la página index.html.
 
-- Secciones que contiene:
+- Secciones que contiene: barra de navegacion, formulario de pago, carrito de compras y footer.
 
-- Estilos:
+- Estilos: Uso de Bootstrap y ruta dinámica de vuelos.css y index.css.
 
-- JavaScript asociado:
+- JavaScript asociado: reservaVuelos.js, consta de 3 partes, primero la sección para obtener parámetros de la página vuelos.html, y asignarlos a una variable, para uso en sweetAlert, datos del carrito para que los muestre basado en la elección del destino, y la validación del formulario de pago, evita que queden espacios en blanco, mostrar mensaje de pago con éxito y redirigir a index.html
 
-- Controlador asociado:
+- Controlador asociado: ninguno.
 
 ---
 
 ### Nombre: vuelos.html
 
-- Descripción:
+- Descripción: Página diseñada para buscar vuelos hacia destinos previamente mostrados en las páginas anteriores, se solicita información clave para buscar un vuelo mediante un sencillo formulario, al completar los campos requeridos y darle ver vuelo, el usuario podrá ver su destino seleccionado, con diversas opciones de clases de vuelo, incluso vera las aerolíneas disponibles para dicho destino. A su vez un hermoso carrusel con imágenes de destinos ira dando paso a que el usuario siga a la sección de pago.
 
-- Secciones que contiene:
+- Secciones que contiene: barra de navegación (<header>), buscador de vuelos (<div class="buscadorDeVuelos">), aquí está el formulario para buscar vuelos, en la sección main tiene (<div class="allCountries">) aquí está un div para cada destino, que se divide en dos secciones, una parte que muestra aerolínea disponibles mediante class="modal, y otra un acordeón con opciones de vuelos <div class="accordion" id="accordionExampleFrancia">, tiene  footer.
 
-- Estilos:
+- Estilos: Uso de Bootstrap y ruta dinámica de vuelos.css y index.css.
 
-- JavaScript asociado:
+- JavaScript asociado:vuelos.js, tiene dos funciones, la primera aplica para el formulario, para que el usario no pueda escoger un dia que haya pasado, consta de una funcion que dice que fecha min tiene que ser hoy, y aplica para fecha ida, y fecha de regreso. Y la función dos es la validación del form, para que no queden espacio en blanco, y que basado en la elección del usuario muestre le acordeón del país seleccionado.
 
-- Controlador asociado:
+- Controlador asociado: ninguno.
 
 ---
 
@@ -187,9 +187,9 @@ Carpeta Views: Páginas que el usuario ve e interactúa de primera mano
 
 ### Nombre: vuelos.css
 
-- Descripción:
+- Descripción: modifica botones, ancho de imágenes y su posición de vuelos.html, controla que los acordeónes no sea visibles a menos que se seleccione un destino, y solo mostrara ese destino
 
-- Archivos HTML asociados:
+- Archivos HTML asociados: vuelos.html
 
 ---
 
@@ -207,29 +207,29 @@ Carpeta Views: Páginas que el usuario ve e interactúa de primera mano
 
 ### Nombre: reservaVuelos.js
 
-- Descripción:
+- - Descripción: archivo que obtiene parámetros de vuelos.html, que son usados para mostrar mensaje de sweetAlert, también pasa parámetros al carrito para que muestre monto y destino según la elección del usuario, un formulario de validación para evitar espacios en blanco. 
 
-- Archivos HTML asociados:
+- Archivos HTML asociados: reservaVuelos.html y vuelos.html
 
-- Funcionalidades:
+- Funcionalidades: validar y mostra datos seleccionados por el usario
 
-- Elementos que manipula:
+- Elementos que manipula: id="destino", id="precio", id="horaSalida", id="horaLlegada", id="duracion", id="escalas", id="totalCarrito", class="needs-validation", id="nombreUsuario".
 
-- Controlador asociado:
+- Controlador asociado: ninguno.
 
 ---
 
 ### Nombre: vuelos.js
 
-- Descripción:
+- Descripción: controlo el flujo de como se muestran los destinos, tambien evita enviar el formulario incompleto, impidiendo que se borren los datos o que la pagina se actualice al intentar enviar el formulario, previene seleccion de fechas pasadas.
 
-- Archivos HTML asociados:
+- Archivos HTML asociados: vuelos.html
 
-- Funcionalidades:
+- Funcionalidades: validar campos requeridos, restricción de fechas, mostrar acordeón según selección del usuario
 
-- Elementos que manipula:
+- Elementos que manipula: id="fecha",  id="fechaRegreso", id="formularioVuelos", class=.resultado-vuelo, class="activo", id="resultadoFrancia", id="resultadoTokio",id="resultadoRio", id="resultadoSanJose", id="resultadoCusco", id="resultadoGroenlandia".
 
-- Controlador asociado:
+- Controlador asociado: niguno.
 
 ---
 
