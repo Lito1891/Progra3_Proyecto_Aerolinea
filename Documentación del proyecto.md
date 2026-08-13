@@ -88,15 +88,15 @@ Carpeta Views: Páginas que el usuario ve e interactúa de primera mano
 
 ### Nombre: destinos.html
 
-- Descripción:
+- Descripción: Página creada como catálogo principal de la aerolínea para visualizar la oferta completa de destinos de viaje, permitiendo su consulta   mediante opciones de filtrado.
 
-- Secciones que contiene:
+- Secciones que contiene: Barra de navegación, título principal de la sección, botones de filtro por categoría (todos, internacionales, nacionales), contenedor/grilla para renderizado de destinos y footer (pie de página).
 
-- Estilos:
+- Estilos: Uso de Bootstrap y enlace directo a destinos.css.
 
-- JavaScript asociado:
+- JavaScript asociado: No contempla un JavaScript estático independiente (la interactividad se gestiona dinámicamente mediante el módulo controlador).
 
-- Controlador asociado:
+- Controlador asociado: Contempla el controlador controladorDestinos.js
 
 ---
 
@@ -178,9 +178,10 @@ Carpeta Views: Páginas que el usuario ve e interactúa de primera mano
 
 ### Nombre:  destinos.css
 
-- Descripción:
+- Descripción: archivo que modifica los estilos de destinos.html directamente, controlando la grilla responsive, las tarjetas dinámicas de destinos, los botones de filtrado y los elementos visuales de la página.
 
-- Archivos HTML asociados:
+
+- Archivos HTML asociados:  destinos.html
 
 ---
 
@@ -250,13 +251,13 @@ Carpeta Views: Páginas que el usuario ve e interactúa de primera mano
 
 ### Nombre: modeloDestino.js
 
-- Descripción:
+- Descripción: archivo que contiene los datos base de los destinos turísticos (nombre, descripción, precio, categoría e imagen) para su renderizado y filtrado por medio del controlador controladorDestinos.js.
 
-- Funcionalidad:
+- Funcionalidad: almacenar el arreglo de destinos y proveer la lógica para consultar y filtrar los datos según la categoría seleccionada.
 
-- Métodos o funciones principales:
+- Métodos o funciones principales: obtenerDestinos(categoria) (función exportada que retorna la lista completa de destinos o un arreglo filtrado por categoría).
 
-- Controlador asociado:
+- Controlador asociado: controladorDestinos.js.
 
 ---
 
@@ -300,15 +301,20 @@ Modelo asociado: modeloDashboard.js
 
 ### Nombre: controladorDestino.js
 
-Descripción:
+Descripción: controlador encargado de gestionar la carga dinámica de las tarjetas de destinos y la lógica de filtrado por categoría en destinos.html tomando como base los datos obtenidos desde modeloDestinos.js.
 
-Archivos HTML asociados:
+Archivos HTML asociados: destinos.html
 
-Funcionalidades:
+Funcionalidades: Carga inicial de la totalidad de los destinos al ingresar a la página mediante la consulta al módulo modeloDestinos.js.
+Renderiza dinámicamente en la vista las tarjetas HTML con la información correspondiente a cada destino (imagen, nombre, descripción, precio y botón de detalles).
+Gestiona los eventos de clic en los botones de filtro para alternar la clase activa (boton-activo) y filtrar los destinos según la categoría seleccionada.
 
 Elementos que manipula:
+- grillaDestinos: id ubicado en destinos.html, se utiliza para limpiar e inyectar dinámicamente la estructura HTML de las tarjetas de destinos.
+- .btn-filtrar: clase aplicada a los botones en destinos.html, se utiliza para escuchar el evento de filtrado, extraer el atributo data-filtro y cambiar el estado visual activo.
 
-Modelo asociado:
+
+Modelo asociado: modeloDestinos.js
 
 ---
 

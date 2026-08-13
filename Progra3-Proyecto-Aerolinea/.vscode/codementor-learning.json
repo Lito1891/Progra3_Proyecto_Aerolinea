@@ -28,11 +28,11 @@
     "last_seen": "2026-07-13T04:58:24.940Z"
   },
   "CC-004": {
-    "occurrences": 47,
+    "occurrences": 49,
     "confidence": 1,
     "mastered_explicitly": false,
     "first_seen": "2026-08-10T03:09:31.404Z",
-    "last_seen": "2026-08-12T04:12:25.772Z"
+    "last_seen": "2026-08-12T04:57:21.724Z"
   },
   "SEC-004": {
     "occurrences": 41,
