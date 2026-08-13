@@ -14,7 +14,7 @@ $(document).ready(function () {
         //para indicarle el tipo de dato que se va a recibir
 
         success: function(respuesta){
-        //al tener éxito la petición jQuery entrega dos datos del json en objeto js
+        //al tener éxito la petición se entregan los dos datos del json en objeto js
 
             const millasFaltantes = respuesta.datosMillas.millasTotales - respuesta.datosMillas.millasAcumuladas;
              // constante para representar lo que falta para el premio

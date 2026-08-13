@@ -243,9 +243,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <!--Librería para poder usar el chart -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
 
-<!--enlace para poder usar los modelos para el dashboard -->
-<script src="../Models/modeloDashboard.js"></script>
-
 <!--Librería para poder usar el chart -->
 <script src="../Controllers/controladorDashboard.js"></script>
 
