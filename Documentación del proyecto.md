@@ -278,15 +278,23 @@ Descripción: contiene los controladores que luego tomarán los modelos para res
 
 ### Nombre: controladorDashboard.js
 
-Descripción:
+Descripción: controlador encargado de generar el gráfico y métricas representadas en dashboard.php tomando como base los datos ubicados en modeloDashboard.js.
 
-Archivos HTML asociados:
+Archivos HTML asociados: dashboard.php
 
 Funcionalidades:
 
+- Calcula la cantidad de millas faltantes para obtener un premio mediante restar las millas acumuladas a las millas totales tomando los datos desde el controlador modeloDashboard.js.
+- Genera el gráfico mediante su renderización en la vista dashboard.php y los datos respectivos los obtiene desde el controlador modeloDashboard.js.
+- Actualiza y reescribe el progreso de millas acumuladas y monto ahorrado desde que se adquirió la membresía premium en campos específicos.
+
 Elementos que manipula:
 
-Modelo asociado:
+- graficoMillas: id ubicado en dashboard.php, se usa para apuntar a su canvas y poder generar el gráfico.
+- textoMillas: id ubicado en dashboard.php, se usa para reemplazar su contenido con la representación de millas acumuladas.
+- textoAhorro: id ubicado en dashboard.php, se usa para reemplazar su contenido con el monto ahorrado el cual se obtiene desde el controlador llamado modeloDashboard.js.
+
+Modelo asociado: modeloDashboard.js
 
 ---
 
@@ -306,14 +314,23 @@ Modelo asociado:
 
 ### Nombre: controladorLogin.js
 
-Descripción:
+Descripción: controlador encargado de manejar el envío del formulario de inicio de sesión, validar las credenciales ingresadas y verificar espacios vacíos.
 
-Archivos HTML asociados:
+Archivos HTML asociados: login.html
 
 Funcionalidades:
 
+- Capturar el evento submit generado al enviar el formulario de id "formLogin" evitando que se envíe de forma predeterminada mediante event.preventDefault().
+- Limpieza y filtro de espacios vacíos mediante el uso de trim() en los inputs de usuario y contraseña, además de implementar una alerta con sweetalert en caso de detectarse.
+- Validar que el nombre de usuario y contraseña ingresados sean idénticos a los datos almacenados en el modelo modeloLogin.js.
+- Al validar todo lo anterior arroja una alerta indicando que los datos son correctos y redirije a la vista dashboard.php.
+
 Elementos que manipula:
 
-Modelo asociado:
+- usuario, id ubicado en la vista login.html y lo emplea para leer el valor ingresado en el input de nombre de usuario.
+- contrasena, id ubicado en la vista login.html y lo emplea para leer el valor ingresado en el input de contraseña.
+- formLogin, id ubicado en la vista login.html y lo emplea para escuchar el evento submit para interceptar el envío.
+
+Modelo asociado: modeloLogin.js
 
 ---
