@@ -1,4 +1,4 @@
-# Proyecto aerolinea
+# Proyecto Aerolínea
 
 ## Descripción del proyecto
 
@@ -6,11 +6,9 @@ El presente proyecto consta de la construcción de una página web enfocada en s
 
 ### Grupo 01 - Integrantes:
 
-Jorge Solano
-
-Cristofer Madrigal
-
-Herlyn Espinoza
+- Jorge Solano
+- Cristofer Madrigal
+- Herlyn Espinoza
 
 
 
@@ -19,8 +17,10 @@ Herlyn Espinoza
 ### Requisitos previos
 
 1. Tener instalado XAMPP
-2. Descargar el archivo comprimido desde el repositorio de GitHub o bien empleando el comando:
-        "git clone https://github.com/Lito1891/Progra3_Proyecto_Aerolinea.git"
+2. Descargar el archivo comprimido desde el repositorio de GitHub o bien empleando el comando en la terminal de git:
+```bash
+   git clone https://github.com/Lito1891/Progra3_Proyecto_Aerolinea.git
+```
 
 ## Estructura del proyecto
 
@@ -42,7 +42,7 @@ Carpeta Views: Páginas que el usuario ve e interactúa de primera mano
 
 ## Carpeta Views
 
-Descripción: contiene las vistas creadas para que los usuarios manipulen de primera mano e interactuden y desplacen sobre la página.
+Descripción: contiene las vistas creadas para que los usuarios manipulen de primera mano e interactúan y desplacen sobre la página.
 
 ---
 
@@ -60,7 +60,7 @@ Controlador asociado: no contempla un controlador asociado.
 
 ---
 
-### Nombre: SucursalesContacto.html
+### Nombre: sucursalesContacto.html
 
 Descripción: página creada como punto de ayuda para saber dónde están las ubicaciones físicas y sus datos de contacto específicos por cada una
 
@@ -142,7 +142,7 @@ JavaScript asociado: Para el correcto funcionamiento se maneja por varios docume
 
 ## Carpeta Assets
 
-Descripción: contiene los elementos estáticos del proyecto como estilos, funcionalidades en JavaScript e imágenes empleaas en las diversas páginas.
+Descripción: contiene los elementos estáticos del proyecto como estilos, funcionalidades en JavaScript e imágenes empleadas en las diversas páginas.
 
 ---
 
@@ -156,7 +156,7 @@ Descripción: contiene los estilos que modifican algunas características técni
 
 Descripción: archivo que modifica los estilos de Index.html directamente.
 
-Archivos HTML asociados: Inde.html
+Archivos HTML asociados: Index.html
 
 ---
 
@@ -168,7 +168,7 @@ Archivos HTML asociados: login.html
 
 ---
 
-### Nombre: sucursalesContaco.css
+### Nombre: sucursalesContacto.css
 
 Descripción: archivo que modifica los estilos de sucursalesContacto.html directamente.
 
@@ -194,7 +194,7 @@ Archivos HTML asociados:
 
 ### Sub carpeta img
 
-Descripción: contiene imágenes empleadas durante el proyecto, dentro de la misma se encuentra dotosDestinos, dotosIndez, fotosSucursalesContacto, fotosVuelos, de esta carpeta salen las imagenes para todo el proyecto a excepción del dashboard que tiene sus propios recursos dentro de la carpeta Views.
+Descripción: contiene imágenes empleadas durante el proyecto, dentro de la misma se encuentra fotosDestinos, fotosIndex, fotosSucursalesContacto, fotosVuelos, de esta carpeta salen las imagenes para todo el proyecto a excepción del dashboard que tiene sus propios recursos dentro de la carpeta Views.
 
 ---
 
