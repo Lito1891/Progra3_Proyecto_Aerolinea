@@ -5,14 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Búsqueda de Vuelos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="../Assets/css/index.css">
-    <link rel="stylesheet" href="../Assets/css/vuelos.css">
-    <!-- los styles de abajo son para identificar yo poder ubicarme mejor en la pagina -->
-    <style>
-        
-    </style>
+    <link rel="stylesheet" href="../Assets/css/index.css"><!--estilos css ruta dinamica index-->
+    <link rel="stylesheet" href="../Assets/css/vuelos.css"><!--estilos css ruta dinamica vuelos-->
 </head>
-<!-- INICIA BODY 2533-->
+
 <body>
     <!-- Inicia Header para navegacion rapida entre las diferentes ventanas de la pagina web -->
     <header>
@@ -80,7 +76,7 @@
                 </div><!--aqui se termina de ingresar la cuidad de origen-->
 
                 <div class="col-md-3"><!--aqui se ingresa la cuidad de destino mediante un select con cuidades ya definidas-->
-                    <label for="validarDestino" class="form-label">Cuidad de destino</label>
+                    <label for="destino" class="form-label">Cuidad de destino</label>
                     <select class="form-select" id="destino" required>
                         <option selected disabled value="">Seleccione...</option>
                         <option value="paris">París, Francia</option>
@@ -181,7 +177,8 @@
                                 <img class="col imgHorarios" src="../Assets/img/fotosVuelos/madrugada.png" alt="madrugada">
                                 <span class="col">Madrugada 00:00 - 05:59</span></button></div>
         <!-- Modal -->
-                        <div class="modal fade" id="staticBackdropFrancia" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabelFrancia" aria-hidden="true">
+                        <div class="modal fade" id="staticBackdropFrancia" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" 
+                        aria-labelledby="staticBackdropLabelFrancia" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
@@ -204,6 +201,37 @@
                                                 <button type="button" class="btn btn-primary" data-bs-dismiss="modal"><a href="#accordionExampleFrancia">Ver vuelos</a></button>
                                             </div>
                                         </div>
+                                    <!--============================================================================================================================================================================-->
+                                    <!--=                                                      INICIA DOCUMENTACIÓN DE LA SECCIÓN "MODAL"                                                                          =-->
+                                    <!--============================================================================================================================================================================-->
+                                    <!--= row funciona como una fila mediante bootstrap                                                                                                                            =-->
+                                    <!--= justify-content-center centra los elementos horizontalmente dentro de un contenedor                                                                                      =-->
+                                    <!--= col-4 ocupa 4 columnas                                                                                                                                                   =-->
+                                    <!--= col se usa para distribuir el espacio disponible forma automaticamente                                                                                                   =-->
+                                    <!--= data-bs-toggle="modal" elemento que controla el modal                                                                                                                    =-->
+                                    <!--= data-bs-target="#staticBackdrop" es para indicar que modal tiene que abrir                                                                                               =-->
+                                    <!--= id sirve para darle un nombre unico dentro del código                                                                                                                    =-->
+                                    <!--= fade es para que no aparezca de forma inmediata al dispararse el modal                                                                                                   =-->
+                                    <!--= data-bs-backdrop="static" evita que el modal se cierre por un clic fuera del area, se requiere cerrar mediante la X                                                      =-->
+                                    <!--= data-bs-keyboard="false" para evitar que modal se cierre mediante tecla ESC                                                                                              =-->
+                                    <!--= tabindex="-1" es el foco que se puede generar con la tecla tab                                                                                                           =-->
+                                    <!--= aria-labelledby="staticBackdropLabel" son para los que utilizan lectores de pantalla, de esta manera el lector puede identificar correctamente el titulo del modal       =-->
+                                    <!--= modal-dialog clase de bootstrap para crear y posicionar la caja principal del modal                                                                                      =-->
+                                    <!--= modal-content es la caja visible donde realmente va el contenido                                                                                                         =-->
+                                    <!--= modal-header clase de Bootstrap que se utiliza para crear la parte superior o encabezado de un modal                                                                     =-->
+                                    <!--= modal-title para indicar que ese elemento contiene el título del modal                                                                                                   =-->
+                                    <!--= btn btn-primary  btn es button y btn-primary es para ponerle color                                                                                                       =-->
+                                    <!--= button es un botón normal                                                                                                                                                =-->
+                                    <!--= class="btn-close" clase Bootstrap que crea visualmente el botónde cerrar "X"                                                                                             =-->
+                                    <!--= data-bs-dismiss="modal" da la instrucción de cerrar el modal una vez se de clic en la "X"                                                                                =-->
+                                    <!--= aria-label="Close" para indicarle a lector de pantalla que ese botón sirve para cerrar                                                                                   =-->
+                                    <!--= class="spinner-grow" clase Bootstrap qu crea una animación de tipo crecimiento                                                                                           =-->
+                                    <!--= text-light establece color de texto con tono claro                                                                                                                       =-->
+                                    <!--= role="status" es para los lectores de pantalla, representa un estado o proceso                                                                                           =-->
+                                    <!--= src le pide al navegador que busque la ubicación de la imagen                                                                                                            =-->
+                                    <!--============================================================================================================================================================================-->
+                                    <!--=                                                       TERMINA DOCUMENTACIÓN DE LA SECCIÓN "MODAL"                                                                        =-->
+                                    <!--============================================================================================================================================================================-->
                                 </div>
                             </div>
                         </div>
@@ -231,7 +259,7 @@
                         </div>
                     </div><!-- hasta aqui -->
                 </div>
-            </section><!-- termina secciona francia con iconos -->
+            </section><!-- termina sección de francia con iconos -->
             
         <!-- inicia seccion del acordeón -->
             <section class="col-7">
@@ -245,10 +273,44 @@
         <!--Inicia acordeón clase economica DESDE AQUI-->
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneFrancia" aria-expanded="false" aria-controls="collapseOneFrancia">Clase económica</button>
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneFrancia" 
+                            aria-expanded="false" aria-controls="collapseOneFrancia">Clase económica</button>
                         </h2>
                         <div id="collapseOneFrancia" class="accordion-collapse collapse" data-bs-parent="#accordionExampleFrancia">
                             <div class="accordion-body">
+                                <!--============================================================================================================================================================================-->
+                                    <!--=                                                      INICIA DOCUMENTACIÓN DE LA SECCIÓN "ACORDEÓN"                                                                       =-->
+                                    <!--============================================================================================================================================================================-->
+                                    <!--= row funciona como una fila mediante bootstrap                                                                                                                            =-->
+                                    <!--= justify-content-center centra los elementos horizontalmente dentro de un contenedor                                                                                      =-->
+                                    <!--= col-7 ocupa 7 columnas                                                                                                                                                   =-->
+                                    <!--= col se usa para distribuir el espacio disponible forma automaticamente                                                                                                   =-->
+                                    <!--= class="accordion" clase de Bootstrap  para crear un componente tipo acordeón                                                                                             =-->
+                                    <!--= accordion-item representa una sección individual del acordeón                                                                                                            =-->
+                                    <!--= accordion-header es la parte superior de esa sección, donde normalmente está el botón que permite abrir o cerrar el contenido                                            =-->
+                                    <!--= class="accordion-button collapsed" este botón pertenece al acordeón y será el botón que abre/cierra su contenido, collapsed indica que el botón esta contraído           =-->
+                                    <!--= data-bs-toggle="collapse" controla un elemento que se puede expandir y contraer                                                                                          =-->
+                                    <!--= data-bs-target="#collapseOneFrancia" significa que está buscando un elemento mediante su id                                                                              =-->
+                                    <!--= data-bs-parent="#accordionExampleFrancia" atributo que indica cuál es contenedor padre que controla las secciones                                                        =-->
+                                    <!--= aria-expanded="false" actualmente está cerrado                                                                                                                           =-->
+                                    <!--= aria-controls="collapseOneFrancia" este botón controla ese elemento                                                                                                      =-->
+                                    <!--= accordion-body clase de Bootstrap que representa el contenido que aparece dentro de una sección del acordeón cuando se abre                                              =-->
+                                    <!--= id sirve para darle un nombre unico dentro del código                                                                                                                    =-->
+                                    <!--= align-items-center sirven para alinear elementos, agregar un borde inferior y añadir espacio vertical                                                                    =-->
+                                    <!--= border-bottom agrega un borde en la parte inferior del elemento                                                                                                          =-->
+                                    <!--= py-3 es una clase de Bootstrap para agregar padding vertical                                                                                                             =-->
+                                    <!--= col-md-3 ocupa 3 columnas desde tamaño mediano                                                                                                                           =-->
+                                    <!--= fw-bold texto en negrita                                                                                                                                                 =-->
+                                    <!--= text-center centra el texto                                                                                                                                              =-->
+                                    <!--= text-body-secondary texto con color secundario/gris                                                                                                                      =-->
+                                    <!--= fs-5 tamaño de fuente 5                                                                                                                                                  =-->
+                                    <!--=  mt-2 margen superior nivel 2                                                                                                                                            =-->
+                                    <!--= btn btn-primary  btn es button y btn-primary es para ponerle color                                                                                                       =-->
+                                    <!--= button es un botón normal                                                                                                                                                =-->
+                                    <!--= href es para indicar donde llevará el enlance                                                                                                                            =-->
+                                    <!--============================================================================================================================================================================-->
+                                    <!--=                                                       TERMINA DOCUMENTACIÓN DE LA SECCIÓN "ACORDEÓN"                                                                     =-->
+                                    <!--============================================================================================================================================================================-->
         <!-- Vuelo 1 -->
                                 <div class="row align-items-center border-bottom py-3">
         <!-- Salida -->
@@ -269,7 +331,8 @@
         <!-- Precio y botón -->
                                     <div class="col-md-4 text-center">
                                         <div class="fs-5 fw-bold">$410.99</div>
-                                        <a href="../Views/reservaVuelos.html?destino=París&precio=410.99&horaSalida=14:50&horaLlegada=17:20&duracion=2h30m&escalas=0" class="btn btn-primary mt-2">Ver detalles</a>
+                                        <a href="../Views/reservaVuelos.html?destino=París&precio=410.99&horaSalida=14:50&horaLlegada=17:20&duracion=2h30m&escalas=0" 
+                                        class="btn btn-primary mt-2">Ver detalles</a>
                                     </div>
                                 </div>
         <!-- Vuelo 2 -->
@@ -292,7 +355,8 @@
         <!-- Precio y botón -->
                                     <div class="col-md-4 text-center">
                                         <div class="fs-5 fw-bold">$400.99</div>
-                                        <a href="../Views/reservaVuelos.html?destino=París&precio=400.99&horaSalida=08:00&horaLlegada=11:10&duracion=3h10m&escalas=3" class="btn btn-primary mt-2">Ver detalles</a>
+                                        <a href="../Views/reservaVuelos.html?destino=París&precio=400.99&horaSalida=08:00&horaLlegada=11:10&duracion=3h10m&escalas=3"
+                                        class="btn btn-primary mt-2">Ver detalles</a>
                                     </div>
                                 </div>
                             </div>
@@ -302,7 +366,8 @@
         <!-- inicia acordeón clase turista -->
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoFrancia" aria-expanded="false" aria-controls="collapseTwoFrancia">Clase turista</button>
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoFrancia" aria-expanded="false" 
+                            aria-controls="collapseTwoFrancia">Clase turista</button>
                         </h2>
                         <div id="collapseTwoFrancia" class="accordion-collapse collapse" data-bs-parent="#accordionExampleFrancia">
                             <div class="accordion-body">
@@ -326,7 +391,8 @@
         <!-- Precio y botón -->
                                     <div class="col-md-4 text-center">
                                         <div class="fs-5 fw-bold">$410.99</div>
-                                        <a href="../Views/reservaVuelos.html?destino=París&precio=410.99&horaSalida=14:50&horaLlegada=17:20&duracion=2h30m&escalas=0" class="btn btn-primary mt-2">Ver detalles</a>
+                                        <a href="../Views/reservaVuelos.html?destino=París&precio=410.99&horaSalida=14:50&horaLlegada=17:20&duracion=2h30m&escalas=0"
+                                        class="btn btn-primary mt-2">Ver detalles</a>
                                     </div>
                                 </div>
         <!-- Vuelo 2 -->
@@ -349,7 +415,8 @@
         <!-- Precio y botón -->
                                     <div class="col-md-4 text-center">
                                         <div class="fs-5 fw-bold">$400.99</div>
-                                        <a href="../Views/reservaVuelos.html?destino=París&precio=400.99&horaSalida=08:00&horaLlegada=11:10&duracion=3h10m&escalas=3" class="btn btn-primary mt-2">Ver detalles</a>
+                                        <a href="../Views/reservaVuelos.html?destino=París&precio=400.99&horaSalida=08:00&horaLlegada=11:10&duracion=3h10m&escalas=3" 
+                                        class="btn btn-primary mt-2">Ver detalles</a>
                                     </div>
                                 </div>
                             </div>
@@ -359,7 +426,8 @@
         <!-- inicia acordeón primera clase -->
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeFrancia" aria-expanded="false" aria-controls="collapseThreeFrancia">Primera Clase</button>
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeFrancia" aria-expanded="false" 
+                            aria-controls="collapseThreeFrancia">Primera clase</button>
                         </h2>
                         <div id="collapseThreeFrancia" class="accordion-collapse collapse" data-bs-parent="#accordionExampleFrancia">
                             <div class="accordion-body">
@@ -383,7 +451,8 @@
         <!-- Precio y botón -->
                                     <div class="col-md-4 text-center">
                                         <div class="fs-5 fw-bold">$410.99</div>
-                                        <a href="../Views/reservaVuelos.html?destino=París&precio=410.99&horaSalida=14:50&horaLlegada=17:20&duracion=2h30m&escalas=0" class="btn btn-primary mt-2">Ver detalles</a>
+                                        <a href="../Views/reservaVuelos.html?destino=París&precio=410.99&horaSalida=14:50&horaLlegada=17:20&duracion=2h30m&escalas=0"
+                                        class="btn btn-primary mt-2">Ver detalles</a>
                                     </div>
                                 </div>
         <!-- Vuelo 2 -->
@@ -406,7 +475,8 @@
         <!-- Precio y botón -->
                                     <div class="col-md-4 text-center">
                                         <div class="fs-5 fw-bold">$400.99</div>
-                                        <a href="../Views/reservaVuelos.html?destino=París&precio=400.99&horaSalida=08:00&horaLlegada=11:10&duracion=3h10m&escalas=3" class="btn btn-primary mt-2">Ver detalles</a>
+                                        <a href="../Views/reservaVuelos.html?destino=París&precio=400.99&horaSalida=08:00&horaLlegada=11:10&duracion=3h10m&escalas=3"
+                                        class="btn btn-primary mt-2">Ver detalles</a>
                                     </div>
                                 </div>
                             </div>
@@ -416,7 +486,8 @@
         <!-- inicia acordeón clase ejecutiva -->
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourFrancia" aria-expanded="false" aria-controls="collapseFourFrancia">Clase ejecutiva</button>
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourFrancia" aria-expanded="false" 
+                            aria-controls="collapseFourFrancia">Clase ejecutiva</button>
                         </h2>
                         <div id="collapseFourFrancia" class="accordion-collapse collapse" data-bs-parent="#accordionExampleFrancia">
                             <div class="accordion-body">
@@ -440,7 +511,8 @@
         <!-- Precio y botón -->
                                     <div class="col-md-4 text-center">
                                         <div class="fs-5 fw-bold">$410.99</div>
-                                        <a href="../Views/reservaVuelos.html?destino=París&precio=410.99&horaSalida=14:50&horaLlegada=17:20&duracion=2h30m&escalas=0" class="btn btn-primary mt-2">Ver detalles</a>
+                                        <a href="../Views/reservaVuelos.html?destino=París&precio=410.99&horaSalida=14:50&horaLlegada=17:20&duracion=2h30m&escalas=0"
+                                        class="btn btn-primary mt-2">Ver detalles</a>
                                     </div>
                                 </div>
         <!-- Vuelo 2 -->
@@ -463,7 +535,8 @@
         <!-- Precio y botón -->
                                     <div class="col-md-4 text-center">
                                         <div class="fs-5 fw-bold">$400.99</div>
-                                        <a href="../Views/reservaVuelos.html?destino=París&precio=400.99&horaSalida=08:00&horaLlegada=11:10&duracion=3h10m&escalas=3" class="btn btn-primary mt-2">Ver detalles</a>
+                                        <a href="../Views/reservaVuelos.html?destino=París&precio=400.99&horaSalida=08:00&horaLlegada=11:10&duracion=3h10m&escalas=3"
+                                        class="btn btn-primary mt-2">Ver detalles</a>
                                     </div>
                                 </div>
                             </div>
@@ -703,7 +776,7 @@
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseThreeJapon" aria-expanded="false"
-                                        aria-controls="collapseThreeJapon">Primera Clase</button>
+                                        aria-controls="collapseThreeJapon">Primera clase</button>
                                 </h2>
                                 <div id="collapseThreeJapon" class="accordion-collapse collapse"
                                     data-bs-parent="#accordionExampleJapon">
@@ -845,7 +918,8 @@
                             <img class="col imgHorarios" src="../Assets/img/fotosVuelos/madrugada.png" alt="madrugada">
                             <span class="col">Madrugada 00:00 - 05:59</span></button></div>
     <!-- Modal -->
-                    <div class="modal fade" id="staticBackdropBrasil" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabelBrasil" aria-hidden="true">
+                    <div class="modal fade" id="staticBackdropBrasil" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" 
+                    aria-labelledby="staticBackdropLabelBrasil" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -906,7 +980,8 @@
                 <!--Inicia acordeón clase economica DESDE AQUI-->
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneBrasil" aria-expanded="false" aria-controls="collapseOneBrasil">Clase económica</button>
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneBrasil" aria-expanded="false" 
+                            aria-controls="collapseOneBrasil">Clase económica</button>
                         </h2>
                         <div id="collapseOneBrasil" class="accordion-collapse collapse" data-bs-parent="#accordionExampleBrasil">
                             <div class="accordion-body">
@@ -930,7 +1005,8 @@
         <!-- Precio y botón -->
                                     <div class="col-md-4 text-center">
                                         <div class="fs-5 fw-bold">$410.99</div>
-                                        <a href="../Views/reservaVuelos.html?destino=Río de Janeiro&precio=410.99&horaSalida=14:50&horaLlegada=17:20&duracion=2h30m&escalas=0" class="btn btn-primary mt-2">Ver detalles</a>
+                                        <a href="../Views/reservaVuelos.html?destino=Río de Janeiro&precio=410.99&horaSalida=14:50&horaLlegada=17:20&duracion=2h30m&escalas=0"
+                                        class="btn btn-primary mt-2">Ver detalles</a>
                                     </div>
                                 </div>
         <!-- Vuelo 2 -->
@@ -953,7 +1029,8 @@
         <!-- Precio y botón -->
                                     <div class="col-md-4 text-center">
                                         <div class="fs-5 fw-bold">$400.99</div>
-                                        <a href="../Views/reservaVuelos.html?destino=Río de Janeiro&precio=400.99&horaSalida=08:00&horaLlegada=11:10&duracion=3h10m&escalas=3" class="btn btn-primary mt-2">Ver detalles</a>
+                                        <a href="../Views/reservaVuelos.html?destino=Río de Janeiro&precio=400.99&horaSalida=08:00&horaLlegada=11:10&duracion=3h10m&escalas=3"
+                                        class="btn btn-primary mt-2">Ver detalles</a>
                                     </div>
                                 </div>
                             </div>
@@ -963,7 +1040,8 @@
         <!-- inicia acordeón clase turista -->
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoBrasil" aria-expanded="false" aria-controls="collapseTwoBrasil">Clase turista</button>
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoBrasil" aria-expanded="false" 
+                            aria-controls="collapseTwoBrasil">Clase turista</button>
                         </h2>
                         <div id="collapseTwoBrasil" class="accordion-collapse collapse" data-bs-parent="#accordionExampleBrasil">
                             <div class="accordion-body">
@@ -987,7 +1065,8 @@
         <!-- Precio y botón -->
                                     <div class="col-md-4 text-center">
                                         <div class="fs-5 fw-bold">$410.99</div>
-                                        <a href="../Views/reservaVuelos.html?destino=Río de Janeiro&precio=410.99&horaSalida=14:50&horaLlegada=17:20&duracion=2h30m&escalas=0" class="btn btn-primary mt-2">Ver detalles</a>
+                                        <a href="../Views/reservaVuelos.html?destino=Río de Janeiro&precio=410.99&horaSalida=14:50&horaLlegada=17:20&duracion=2h30m&escalas=0"
+                                        class="btn btn-primary mt-2">Ver detalles</a>
                                     </div>
                                 </div>
         <!-- Vuelo 2 -->
@@ -1010,7 +1089,8 @@
         <!-- Precio y botón -->
                                     <div class="col-md-4 text-center">
                                         <div class="fs-5 fw-bold">$400.99</div>
-                                        <a href="../Views/reservaVuelos.html?destino=Río de Janeiro&precio=400.99&horaSalida=08:00&horaLlegada=11:10&duracion=3h10m&escalas=3" class="btn btn-primary mt-2">Ver detalles</a>
+                                        <a href="../Views/reservaVuelos.html?destino=Río de Janeiro&precio=400.99&horaSalida=08:00&horaLlegada=11:10&duracion=3h10m&escalas=3"
+                                        class="btn btn-primary mt-2">Ver detalles</a>
                                     </div>
                                 </div>
                             </div>
@@ -1020,7 +1100,8 @@
         <!-- inicia acordeón primera clase -->
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeBrasil" aria-expanded="false" aria-controls="collapseThreeBrasil">Primera Clase</button>
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeBrasil" aria-expanded="false" 
+                            aria-controls="collapseThreeBrasil">Primera clase</button>
                         </h2>
                         <div id="collapseThreeBrasil" class="accordion-collapse collapse" data-bs-parent="#accordionExampleBrasil">
                             <div class="accordion-body">
@@ -1044,7 +1125,8 @@
         <!-- Precio y botón -->
                                     <div class="col-md-4 text-center">
                                         <div class="fs-5 fw-bold">$410.99</div>
-                                        <a href="../Views/reservaVuelos.html?destino=Río de Janeiro&precio=410.99&horaSalida=14:50&horaLlegada=17:20&duracion=2h30m&escalas=0" class="btn btn-primary mt-2">Ver detalles</a>
+                                        <a href="../Views/reservaVuelos.html?destino=Río de Janeiro&precio=410.99&horaSalida=14:50&horaLlegada=17:20&duracion=2h30m&escalas=0"
+                                        class="btn btn-primary mt-2">Ver detalles</a>
                                     </div>
                                 </div>
         <!-- Vuelo 2 -->
@@ -1067,7 +1149,8 @@
         <!-- Precio y botón -->
                                     <div class="col-md-4 text-center">
                                         <div class="fs-5 fw-bold">$400.99</div>
-                                        <a href="../Views/reservaVuelos.html?destino=Río de Janeiro&precio=400.99&horaSalida=08:00&horaLlegada=11:10&duracion=3h10m&escalas=3" class="btn btn-primary mt-2">Ver detalles</a>
+                                        <a href="../Views/reservaVuelos.html?destino=Río de Janeiro&precio=400.99&horaSalida=08:00&horaLlegada=11:10&duracion=3h10m&escalas=3"
+                                        class="btn btn-primary mt-2">Ver detalles</a>
                                     </div>
                                 </div>
                             </div>
@@ -1077,7 +1160,8 @@
         <!-- inicia acordeón clase ejecutiva -->
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourBrasil" aria-expanded="false" aria-controls="collapseFourBrasil">Clase ejecutiva</button>
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourBrasil" aria-expanded="false" 
+                            aria-controls="collapseFourBrasil">Clase ejecutiva</button>
                         </h2>
                         <div id="collapseFourBrasil" class="accordion-collapse collapse" data-bs-parent="#accordionExampleBrasil">
                             <div class="accordion-body">
@@ -1101,7 +1185,8 @@
         <!-- Precio y botón -->
                                     <div class="col-md-4 text-center">
                                         <div class="fs-5 fw-bold">$410.99</div>
-                                        <a href="../Views/reservaVuelos.html?destino=Río de Janeiro&precio=410.99&horaSalida=14:50&horaLlegada=17:20&duracion=2h30m&escalas=0" class="btn btn-primary mt-2">Ver detalles</a>
+                                        <a href="../Views/reservaVuelos.html?destino=Río de Janeiro&precio=410.99&horaSalida=14:50&horaLlegada=17:20&duracion=2h30m&escalas=0"
+                                        class="btn btn-primary mt-2">Ver detalles</a>
                                     </div>
                                 </div>
         <!-- Vuelo 2 -->
@@ -1124,7 +1209,8 @@
         <!-- Precio y botón -->
                                     <div class="col-md-4 text-center">
                                         <div class="fs-5 fw-bold">$400.99</div>
-                                        <a href="../Views/reservaVuelos.html?destino=Río de Janeiro&precio=400.99&horaSalida=08:00&horaLlegada=11:10&duracion=3h10m&escalas=3" class="btn btn-primary mt-2">Ver detalles</a>
+                                        <a href="../Views/reservaVuelos.html?destino=Río de Janeiro&precio=400.99&horaSalida=08:00&horaLlegada=11:10&duracion=3h10m&escalas=3"
+                                        class="btn btn-primary mt-2">Ver detalles</a>
                                     </div>
                                 </div>
                             </div>
@@ -1154,7 +1240,8 @@
                             <img class="col imgHorarios" src="../Assets/img/fotosVuelos/madrugada.png" alt="madrugada">
                             <span class="col">Madrugada 00:00 - 05:59</span></button></div>
     <!-- Modal -->
-                    <div class="modal fade" id="staticBackdropCosta" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabelCosta" aria-hidden="true">
+                    <div class="modal fade" id="staticBackdropCosta" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabelCosta" 
+                    aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -1216,7 +1303,8 @@
                 <!--Inicia acordeón clase economica DESDE AQUI-->
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneCR" aria-expanded="false" aria-controls="collapseOneCR">Clase económica</button>
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneCR" aria-expanded="false"
+                            aria-controls="collapseOneCR">Clase económica</button>
                         </h2>
                         <div id="collapseOneCR" class="accordion-collapse collapse" data-bs-parent="#accordionExampleCR">
                             <div class="accordion-body">
@@ -1240,7 +1328,8 @@
         <!-- Precio y botón -->
                                     <div class="col-md-4 text-center">
                                         <div class="fs-5 fw-bold">$410.99</div>
-                                        <a href="../Views/reservaVuelos.html?destino=San José&precio=410.99&horaSalida=14:50&horaLlegada=17:20&duracion=2h30m&escalas=0" class="btn btn-primary mt-2">Ver detalles</a>
+                                        <a href="../Views/reservaVuelos.html?destino=San José&precio=410.99&horaSalida=14:50&horaLlegada=17:20&duracion=2h30m&escalas=0"
+                                        class="btn btn-primary mt-2">Ver detalles</a>
                                     </div>
                                 </div>
         <!-- Vuelo 2 -->
@@ -1263,7 +1352,8 @@
         <!-- Precio y botón -->
                                     <div class="col-md-4 text-center">
                                         <div class="fs-5 fw-bold">$400.99</div>
-                                        <a href="../Views/reservaVuelos.html?destino=San José&precio=400.99&horaSalida=08:00&horaLlegada=11:10&duracion=3h10m&escalas=3" class="btn btn-primary mt-2">Ver detalles</a>
+                                        <a href="../Views/reservaVuelos.html?destino=San José&precio=400.99&horaSalida=08:00&horaLlegada=11:10&duracion=3h10m&escalas=3"
+                                        class="btn btn-primary mt-2">Ver detalles</a>
                                     </div>
                                 </div>
                             </div>
@@ -1273,7 +1363,8 @@
         <!-- inicia acordeón clase turista -->
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoCR" aria-expanded="false" aria-controls="collapseTwoCR">Clase turista</button>
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoCR" aria-expanded="false"
+                            aria-controls="collapseTwoCR">Clase turista</button>
                         </h2>
                         <div id="collapseTwoCR" class="accordion-collapse collapse" data-bs-parent="#accordionExampleCR">
                             <div class="accordion-body">
@@ -1297,7 +1388,8 @@
         <!-- Precio y botón -->
                                     <div class="col-md-4 text-center">
                                         <div class="fs-5 fw-bold">$410.99</div>
-                                        <a href="../Views/reservaVuelos.html?destino=San José&precio=410.99&horaSalida=14:50&horaLlegada=17:20&duracion=2h30m&escalas=0" class="btn btn-primary mt-2">Ver detalles</a>
+                                        <a href="../Views/reservaVuelos.html?destino=San José&precio=410.99&horaSalida=14:50&horaLlegada=17:20&duracion=2h30m&escalas=0"
+                                        class="btn btn-primary mt-2">Ver detalles</a>
                                     </div>
                                 </div>
         <!-- Vuelo 2 -->
@@ -1320,7 +1412,8 @@
         <!-- Precio y botón -->
                                     <div class="col-md-4 text-center">
                                         <div class="fs-5 fw-bold">$400.99</div>
-                                        <a href="../Views/reservaVuelos.html?destino=San José&precio=400.99&horaSalida=08:00&horaLlegada=11:10&duracion=3h10m&escalas=3" class="btn btn-primary mt-2">Ver detalles</a>
+                                        <a href="../Views/reservaVuelos.html?destino=San José&precio=400.99&horaSalida=08:00&horaLlegada=11:10&duracion=3h10m&escalas=3" 
+                                        class="btn btn-primary mt-2">Ver detalles</a>
                                     </div>
                                 </div>
                             </div>
@@ -1330,7 +1423,8 @@
         <!-- inicia acordeón primera clase -->
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeCR" aria-expanded="false" aria-controls="collapseThreeCR">Primera Clase</button>
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeCR" aria-expanded="false" 
+                            aria-controls="collapseThreeCR">Primera Clase</button>
                         </h2>
                         <div id="collapseThreeCR" class="accordion-collapse collapse" data-bs-parent="#accordionExampleCR">
                             <div class="accordion-body">
@@ -1354,7 +1448,8 @@
         <!-- Precio y botón -->
                                     <div class="col-md-4 text-center">
                                         <div class="fs-5 fw-bold">$410.99</div>
-                                        <a href="../Views/reservaVuelos.html?destino=San José&precio=410.99&horaSalida=14:50&horaLlegada=17:20&duracion=2h30m&escalas=0" class="btn btn-primary mt-2">Ver detalles</a>
+                                        <a href="../Views/reservaVuelos.html?destino=San José&precio=410.99&horaSalida=14:50&horaLlegada=17:20&duracion=2h30m&escalas=0"
+                                        class="btn btn-primary mt-2">Ver detalles</a>
                                     </div>
                                 </div>
         <!-- Vuelo 2 -->
@@ -1377,7 +1472,8 @@
         <!-- Precio y botón -->
                                     <div class="col-md-4 text-center">
                                         <div class="fs-5 fw-bold">$400.99</div>
-                                        <a href="../Views/reservaVuelos.html?destino=San José&precio=400.99&horaSalida=08:00&horaLlegada=11:10&duracion=3h10m&escalas=3" class="btn btn-primary mt-2">Ver detalles</a>
+                                        <a href="../Views/reservaVuelos.html?destino=San José&precio=400.99&horaSalida=08:00&horaLlegada=11:10&duracion=3h10m&escalas=3" 
+                                        class="btn btn-primary mt-2">Ver detalles</a>
                                     </div>
                                 </div>
                             </div>
@@ -1387,7 +1483,8 @@
         <!-- inicia acordeón clase ejecutiva -->
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourCR" aria-expanded="false" aria-controls="collapseFourCR">Clase ejecutiva</button>
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourCR" aria-expanded="false" 
+                            aria-controls="collapseFourCR">Clase ejecutiva</button>
                         </h2>
                         <div id="collapseFourCR" class="accordion-collapse collapse" data-bs-parent="#accordionExampleCR">
                             <div class="accordion-body">
@@ -1411,7 +1508,8 @@
         <!-- Precio y botón -->
                                     <div class="col-md-4 text-center">
                                         <div class="fs-5 fw-bold">$410.99</div>
-                                        <a href="../Views/reservaVuelos.html?destino=San José&precio=410.99&horaSalida=14:50&horaLlegada=17:20&duracion=2h30m&escalas=0" class="btn btn-primary mt-2">Ver detalles</a>
+                                        <a href="../Views/reservaVuelos.html?destino=San José&precio=410.99&horaSalida=14:50&horaLlegada=17:20&duracion=2h30m&escalas=0" 
+                                        class="btn btn-primary mt-2">Ver detalles</a>
                                     </div>
                                 </div>
         <!-- Vuelo 2 -->
@@ -1434,7 +1532,8 @@
         <!-- Precio y botón -->
                                     <div class="col-md-4 text-center">
                                         <div class="fs-5 fw-bold">$400.99</div>
-                                        <a href="../Views/reservaVuelos.html?destino=San José&precio=400.99&horaSalida=08:00&horaLlegada=11:10&duracion=3h10m&escalas=3" class="btn btn-primary mt-2">Ver detalles</a>
+                                        <a href="../Views/reservaVuelos.html?destino=San José&precio=400.99&horaSalida=08:00&horaLlegada=11:10&duracion=3h10m&escalas=3" 
+                                        class="btn btn-primary mt-2">Ver detalles</a>
                                     </div>
                                 </div>
                             </div>
@@ -1526,7 +1625,8 @@
                 <!--Inicia acordeón clase economica DESDE AQUI-->
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOnePeru" aria-expanded="false" aria-controls="collapseOnePeru">Clase económica</button>
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOnePeru" aria-expanded="false" 
+                            aria-controls="collapseOnePeru">Clase económica</button>
                         </h2>
                         <div id="collapseOnePeru" class="accordion-collapse collapse" data-bs-parent="#accordionExamplePeru">
                             <div class="accordion-body">
@@ -1550,7 +1650,8 @@
         <!-- Precio y botón -->
                                     <div class="col-md-4 text-center">
                                         <div class="fs-5 fw-bold">$410.99</div>
-                                        <a href="../Views/reservaVuelos.html?destino=Cusco&precio=410.99&horaSalida=14:50&horaLlegada=17:20&duracion=2h30m&escalas=0" class="btn btn-primary mt-2">Ver detalles</a>
+                                        <a href="../Views/reservaVuelos.html?destino=Cusco&precio=410.99&horaSalida=14:50&horaLlegada=17:20&duracion=2h30m&escalas=0" 
+                                        class="btn btn-primary mt-2">Ver detalles</a>
                                     </div>
                                 </div>
         <!-- Vuelo 2 -->
@@ -1573,7 +1674,8 @@
         <!-- Precio y botón -->
                                     <div class="col-md-4 text-center">
                                         <div class="fs-5 fw-bold">$400.99</div>
-                                        <a href="../Views/reservaVuelos.html?destino=Cusco&precio=400.99&horaSalida=08:00&horaLlegada=11:10&duracion=3h10m&escalas=3" class="btn btn-primary mt-2">Ver detalles</a>
+                                        <a href="../Views/reservaVuelos.html?destino=Cusco&precio=400.99&horaSalida=08:00&horaLlegada=11:10&duracion=3h10m&escalas=3" 
+                                        class="btn btn-primary mt-2">Ver detalles</a>
                                     </div>
                                 </div>
                             </div>
@@ -1583,7 +1685,8 @@
         <!-- inicia acordeón clase turista -->
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoPeru" aria-expanded="false" aria-controls="collapseTwoPeru">Clase turista</button>
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoPeru" aria-expanded="false" 
+                            aria-controls="collapseTwoPeru">Clase turista</button>
                         </h2>
                         <div id="collapseTwoPeru" class="accordion-collapse collapse" data-bs-parent="#accordionExamplePeru">
                             <div class="accordion-body">
@@ -1607,7 +1710,8 @@
         <!-- Precio y botón -->
                                     <div class="col-md-4 text-center">
                                         <div class="fs-5 fw-bold">$410.99</div>
-                                        <a href="../Views/reservaVuelos.html?destino=Cusco&precio=410.99&horaSalida=14:50&horaLlegada=17:20&duracion=2h30m&escalas=0" class="btn btn-primary mt-2">Ver detalles</a>
+                                        <a href="../Views/reservaVuelos.html?destino=Cusco&precio=410.99&horaSalida=14:50&horaLlegada=17:20&duracion=2h30m&escalas=0" 
+                                        class="btn btn-primary mt-2">Ver detalles</a>
                                     </div>
                                 </div>
         <!-- Vuelo 2 -->
@@ -1630,7 +1734,8 @@
         <!-- Precio y botón -->
                                     <div class="col-md-4 text-center">
                                         <div class="fs-5 fw-bold">$400.99</div>
-                                        <a href="../Views/reservaVuelos.html?destino=Cusco&precio=400.99&horaSalida=08:00&horaLlegada=11:10&duracion=3h10m&escalas=3" class="btn btn-primary mt-2">Ver detalles</a>
+                                        <a href="../Views/reservaVuelos.html?destino=Cusco&precio=400.99&horaSalida=08:00&horaLlegada=11:10&duracion=3h10m&escalas=3" 
+                                        class="btn btn-primary mt-2">Ver detalles</a>
                                     </div>
                                 </div>
                             </div>
@@ -1640,7 +1745,8 @@
         <!-- inicia acordeón primera clase -->
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreePeru" aria-expanded="false" aria-controls="collapseThreePeru">Primera Clase</button>
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreePeru" aria-expanded="false" 
+                            aria-controls="collapseThreePeru">Primera clase</button>
                         </h2>
                         <div id="collapseThreePeru" class="accordion-collapse collapse" data-bs-parent="#accordionExamplePeru">
                             <div class="accordion-body">
@@ -1664,7 +1770,8 @@
         <!-- Precio y botón -->
                                     <div class="col-md-4 text-center">
                                         <div class="fs-5 fw-bold">$410.99</div>
-                                        <a href="../Views/reservaVuelos.html?destino=Cusco&precio=410.99&horaSalida=14:50&horaLlegada=17:20&duracion=2h30m&escalas=0" class="btn btn-primary mt-2">Ver detalles</a>
+                                        <a href="../Views/reservaVuelos.html?destino=Cusco&precio=410.99&horaSalida=14:50&horaLlegada=17:20&duracion=2h30m&escalas=0" 
+                                        class="btn btn-primary mt-2">Ver detalles</a>
                                     </div>
                                 </div>
         <!-- Vuelo 2 -->
@@ -1687,7 +1794,8 @@
         <!-- Precio y botón -->
                                     <div class="col-md-4 text-center">
                                         <div class="fs-5 fw-bold">$400.99</div>
-                                        <a href="../Views/reservaVuelos.html?destino=Cusco&precio=400.99&horaSalida=08:00&horaLlegada=11:10&duracion=3h10m&escalas=3" class="btn btn-primary mt-2">Ver detalles</a>
+                                        <a href="../Views/reservaVuelos.html?destino=Cusco&precio=400.99&horaSalida=08:00&horaLlegada=11:10&duracion=3h10m&escalas=3" 
+                                        class="btn btn-primary mt-2">Ver detalles</a>
                                     </div>
                                 </div>
                             </div>
@@ -1697,7 +1805,8 @@
         <!-- inicia acordeón clase ejecutiva -->
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourPeru" aria-expanded="false" aria-controls="collapseFourPeru">Clase ejecutiva</button>
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourPeru" aria-expanded="false" 
+                            aria-controls="collapseFourPeru">Clase ejecutiva</button>
                         </h2>
                         <div id="collapseFourPeru" class="accordion-collapse collapse" data-bs-parent="#accordionExamplePeru">
                             <div class="accordion-body">
@@ -1721,7 +1830,8 @@
         <!-- Precio y botón -->
                                     <div class="col-md-4 text-center">
                                         <div class="fs-5 fw-bold">$410.99</div>
-                                        <a href="../Views/reservaVuelos.html?destino=Cusco&precio=410.99&horaSalida=14:50&horaLlegada=17:20&duracion=2h30m&escalas=0" class="btn btn-primary mt-2">Ver detalles</a>
+                                        <a href="../Views/reservaVuelos.html?destino=Cusco&precio=410.99&horaSalida=14:50&horaLlegada=17:20&duracion=2h30m&escalas=0" 
+                                        class="btn btn-primary mt-2">Ver detalles</a>
                                     </div>
                                 </div>
         <!-- Vuelo 2 -->
@@ -1744,7 +1854,8 @@
         <!-- Precio y botón -->
                                     <div class="col-md-4 text-center">
                                         <div class="fs-5 fw-bold">$400.99</div>
-                                        <a href="../Views/reservaVuelos.html?destino=Cusco&precio=400.99&horaSalida=08:00&horaLlegada=11:10&duracion=3h10m&escalas=3" class="btn btn-primary mt-2">Ver detalles</a>
+                                        <a href="../Views/reservaVuelos.html?destino=Cusco&precio=400.99&horaSalida=08:00&horaLlegada=11:10&duracion=3h10m&escalas=3" 
+                                        class="btn btn-primary mt-2">Ver detalles</a>
                                     </div>
                                 </div>
                             </div>
@@ -1774,7 +1885,8 @@
                             <img class="col imgHorarios" src="../Assets/img/fotosVuelos/madrugada.png" alt="madrugada">
                             <span class="col">Madrugada 00:00 - 05:59</span></button></div>
     <!-- Modal -->
-                    <div class="modal fade" id="staticBackdropGroenlandia" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabelGroenlandia" aria-hidden="true">
+                    <div class="modal fade" id="staticBackdropGroenlandia" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabelGroenlandia" 
+                    aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -1836,7 +1948,8 @@
                 <!--Inicia acordeón clase economica DESDE AQUI-->
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneGroenlandia" aria-expanded="false" aria-controls="collapseOneGroenlandia">Clase económica</button>
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneGroenlandia" aria-expanded="false" 
+                            aria-controls="collapseOneGroenlandia">Clase económica</button>
                         </h2>
                         <div id="collapseOneGroenlandia" class="accordion-collapse collapse" data-bs-parent="#accordionExampleGroenlandia">
                             <div class="accordion-body">
@@ -1860,7 +1973,8 @@
         <!-- Precio y botón -->
                                     <div class="col-md-4 text-center">
                                         <div class="fs-5 fw-bold">$410.99</div>
-                                        <a href="../Views/reservaVuelos.html?destino=Ilulissat&precio=410.99&horaSalida=14:50&horaLlegada=17:20&duracion=2h30m&escalas=0" class="btn btn-primary mt-2">Ver detalles</a>
+                                        <a href="../Views/reservaVuelos.html?destino=Ilulissat&precio=410.99&horaSalida=14:50&horaLlegada=17:20&duracion=2h30m&escalas=0" 
+                                        class="btn btn-primary mt-2">Ver detalles</a>
                                     </div>
                                 </div>
         <!-- Vuelo 2 -->
@@ -1883,7 +1997,8 @@
         <!-- Precio y botón -->
                                     <div class="col-md-4 text-center">
                                         <div class="fs-5 fw-bold">$400.99</div>
-                                        <a href="../Views/reservaVuelos.html?destino=Ilulissat&precio=400.99&horaSalida=08:00&horaLlegada=11:10&duracion=3h10m&escalas=3" class="btn btn-primary mt-2">Ver detalles</a>
+                                        <a href="../Views/reservaVuelos.html?destino=Ilulissat&precio=400.99&horaSalida=08:00&horaLlegada=11:10&duracion=3h10m&escalas=3" 
+                                        class="btn btn-primary mt-2">Ver detalles</a>
                                     </div>
                                 </div>
                             </div>
@@ -1893,7 +2008,8 @@
         <!-- inicia acordeón clase turista -->
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoGroenlandia" aria-expanded="false" aria-controls="collapseTwoGroenlandia">Clase turista</button>
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoGroenlandia" aria-expanded="false" 
+                            aria-controls="collapseTwoGroenlandia">Clase turista</button>
                         </h2>
                         <div id="collapseTwoGroenlandia" class="accordion-collapse collapse" data-bs-parent="#accordionExampleGroenlandia">
                             <div class="accordion-body">
@@ -1917,7 +2033,8 @@
         <!-- Precio y botón -->
                                     <div class="col-md-4 text-center">
                                         <div class="fs-5 fw-bold">$410.99</div>
-                                        <a href="../Views/reservaVuelos.html?destino=Ilulissat&precio=410.99&horaSalida=14:50&horaLlegada=17:20&duracion=2h30m&escalas=0" class="btn btn-primary mt-2">Ver detalles</a>
+                                        <a href="../Views/reservaVuelos.html?destino=Ilulissat&precio=410.99&horaSalida=14:50&horaLlegada=17:20&duracion=2h30m&escalas=0" 
+                                        class="btn btn-primary mt-2">Ver detalles</a>
                                     </div>
                                 </div>
         <!-- Vuelo 2 -->
@@ -1940,7 +2057,8 @@
         <!-- Precio y botón -->
                                     <div class="col-md-4 text-center">
                                         <div class="fs-5 fw-bold">$400.99</div>
-                                        <a href="../Views/reservaVuelos.html?destino=Ilulissat&precio=400.99&horaSalida=08:00&horaLlegada=11:10&duracion=3h10m&escalas=3" class="btn btn-primary mt-2">Ver detalles</a>
+                                        <a href="../Views/reservaVuelos.html?destino=Ilulissat&precio=400.99&horaSalida=08:00&horaLlegada=11:10&duracion=3h10m&escalas=3" 
+                                        class="btn btn-primary mt-2">Ver detalles</a>
                                     </div>
                                 </div>
                             </div>
@@ -1950,7 +2068,8 @@
         <!-- inicia acordeón primera clase -->
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeGroenlandia" aria-expanded="false" aria-controls="collapseThreeGroenlandia">Primera Clase</button>
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeGroenlandia" aria-expanded="false" 
+                            aria-controls="collapseThreeGroenlandia">Primera clase</button>
                         </h2>
                         <div id="collapseThreeGroenlandia" class="accordion-collapse collapse" data-bs-parent="#accordionExampleGroenlandia">
                             <div class="accordion-body">
@@ -1974,7 +2093,8 @@
         <!-- Precio y botón -->
                                     <div class="col-md-4 text-center">
                                         <div class="fs-5 fw-bold">$410.99</div>
-                                        <a href="../Views/reservaVuelos.html?destino=Ilulissat&precio=410.99&horaSalida=14:50&horaLlegada=17:20&duracion=2h30m&escalas=0" class="btn btn-primary mt-2">Ver detalles</a>
+                                        <a href="../Views/reservaVuelos.html?destino=Ilulissat&precio=410.99&horaSalida=14:50&horaLlegada=17:20&duracion=2h30m&escalas=0" 
+                                        class="btn btn-primary mt-2">Ver detalles</a>
                                     </div>
                                 </div>
         <!-- Vuelo 2 -->
@@ -1997,7 +2117,8 @@
         <!-- Precio y botón -->
                                     <div class="col-md-4 text-center">
                                         <div class="fs-5 fw-bold">$400.99</div>
-                                        <a href="../Views/reservaVuelos.html?destino=Ilulissat&precio=400.99&horaSalida=08:00&horaLlegada=11:10&duracion=3h10m&escalas=3" class="btn btn-primary mt-2">Ver detalles</a>
+                                        <a href="../Views/reservaVuelos.html?destino=Ilulissat&precio=400.99&horaSalida=08:00&horaLlegada=11:10&duracion=3h10m&escalas=3" 
+                                        class="btn btn-primary mt-2">Ver detalles</a>
                                     </div>
                                 </div>
                             </div>
@@ -2007,7 +2128,8 @@
         <!-- inicia acordeón clase ejecutiva -->
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourGroenlandia" aria-expanded="false" aria-controls="collapseFourGroenlandia">Clase ejecutiva</button>
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourGroenlandia" aria-expanded="false" 
+                            aria-controls="collapseFourGroenlandia">Clase ejecutiva</button>
                         </h2>
                         <div id="collapseFourGroenlandia" class="accordion-collapse collapse" data-bs-parent="#accordionExampleGroenlandia">
                             <div class="accordion-body">
@@ -2031,7 +2153,8 @@
         <!-- Precio y botón -->
                                     <div class="col-md-4 text-center">
                                         <div class="fs-5 fw-bold">$410.99</div>
-                                        <a href="../Views/reservaVuelos.html?destino=Ilulissat&precio=410.99&horaSalida=14:50&horaLlegada=17:20&duracion=2h30m&escalas=0" class="btn btn-primary mt-2">Ver detalles</a>
+                                        <a href="../Views/reservaVuelos.html?destino=Ilulissat&precio=410.99&horaSalida=14:50&horaLlegada=17:20&duracion=2h30m&escalas=0" 
+                                        class="btn btn-primary mt-2">Ver detalles</a>
                                     </div>
                                 </div>
         <!-- Vuelo 2 -->
@@ -2054,7 +2177,8 @@
         <!-- Precio y botón -->
                                     <div class="col-md-4 text-center">
                                         <div class="fs-5 fw-bold">$400.99</div>
-                                        <a href="../Views/reservaVuelos.html?destino=Ilulissat&precio=400.99&horaSalida=08:00&horaLlegada=11:10&duracion=3h10m&escalas=3" class="btn btn-primary mt-2">Ver detalles</a>
+                                        <a href="../Views/reservaVuelos.html?destino=Ilulissat&precio=400.99&horaSalida=08:00&horaLlegada=11:10&duracion=3h10m&escalas=3" 
+                                        class="btn btn-primary mt-2">Ver detalles</a>
                                     </div>
                                 </div>
                             </div>
@@ -2066,74 +2190,75 @@
         </div>
         </div><!-- TERMINA Groenlandia -->
     </div><!-- finaliza div allCountries -->
-        <!--============================================================================================================================================================================-->
-        <!--=                                                      INICIA DOCUMENTACIÓN DE LA SECCIÓN "MODAL"                                                                          =-->
-        <!--============================================================================================================================================================================-->
-        <!--= row funciona como una fila mediante bootstrap                                                                                                                            =-->
-        <!--= justify-content-center centra los elementos horizontalmente dentro de un contenedor                                                                                      =-->
-        <!--= col-4 ocupa 4 columnas                                                                                                                                                   =-->
-        <!--= col se usa para distribuir el espacio disponible forma automaticamente                                                                                                   =-->
-        <!--= data-bs-toggle="modal" elemento que controla el modal                                                                                                                    =-->
-        <!--= data-bs-target="#staticBackdrop" es para indicar que modal tiene que abrir                                                                                               =-->
-        <!--= id sirve para darle un nombre unico dentro del código                                                                                                                    =-->
-        <!--= fade es para que no aparezca de forma inmediata al dispararse el modal                                                                                                   =-->
-        <!--= data-bs-backdrop="static" evita que el modal se cierre por un clic fuera del area, se requiere cerrar mediante la X                                                      =-->
-        <!--= data-bs-keyboard="false" para evitar que modal se cierre mediante tecla ESC                                                                                              =-->
-        <!--= tabindex="-1" es el foco que se puede generar con la tecla tab                                                                                                           =-->
-        <!--= aria-labelledby="staticBackdropLabel" son para los que utilizan lectores de pantalla, de esta manera el lector puede identificar correctamente el titulo del modal       =-->
-        <!--= modal-dialog clase de bootstrap para crear y posicionar la caja principal del modal                                                                                      =-->
-        <!--= modal-content es la caja visible donde realmente va el contenido                                                                                                         =-->
-        <!--= modal-header clase de Bootstrap que se utiliza para crear la parte superior o encabezado de un modal                                                                     =-->
-        <!--= modal-title para indicar que ese elemento contiene el título del modal                                                                                                   =-->
-        <!--= btn btn-primary  btn es button y btn-primary es para ponerle color                                                                                                       =-->
-        <!--= button es un botón normal                                                                                                                                                =-->
-        <!--= class="btn-close" clase Bootstrap que crea visualmente el botónde cerrar "X"                                                                                             =-->
-        <!--= data-bs-dismiss="modal" da la instrucción de cerrar el modal una vez se de clic en la "X"                                                                                =-->
-        <!--= aria-label="Close" para indicarle a lector de pantalla que ese botón sirve para cerrar                                                                                   =-->
-        <!--= class="spinner-grow" clase Bootstrap qu crea una animación de tipo crecimiento                                                                                           =-->
-        <!--= text-light establece color de texto con tono claro                                                                                                                       =-->
-        <!--= role="status" es para los lectores de pantalla, representa un estado o proceso                                                                                           =-->
-        <!--= src le pide al navegador que busque la ubicación de la imagen                                                                                                            =-->
-        <!--============================================================================================================================================================================-->
-        <!--=                                                       TERMINA DOCUMENTACIÓN DE LA SECCIÓN "MODAL"                                                                        =-->
-        <!--============================================================================================================================================================================-->
-        
-        <!--============================================================================================================================================================================-->
-        <!--=                                                      INICIA DOCUMENTACIÓN DE LA SECCIÓN "ACORDEÓN"                                                                       =-->
-        <!--============================================================================================================================================================================-->
-        <!--= row funciona como una fila mediante bootstrap                                                                                                                            =-->
-        <!--= justify-content-center centra los elementos horizontalmente dentro de un contenedor                                                                                      =-->
-        <!--= col-7 ocupa 7 columnas                                                                                                                                                   =-->
-        <!--= col se usa para distribuir el espacio disponible forma automaticamente                                                                                                   =-->
-        <!--= class="accordion" clase de Bootstrap  para crear un componente tipo acordeón                                                                                             =-->
-        <!--= accordion-item representa una sección individual del acordeón                                                                                                            =-->
-        <!--= accordion-header es la parte superior de esa sección, donde normalmente está el botón que permite abrir o cerrar el contenido                                            =-->
-        <!--= class="accordion-button collapsed" este botón pertenece al acordeón y será el botón que abre/cierra su contenido, collapsed indica que el botón esta contraído           =-->
-        <!--= data-bs-toggle="collapse" controla un elemento que se puede expandir y contraer                                                                                          =-->
-        <!--= data-bs-target="#collapseOneFrancia" significa que está buscando un elemento mediante su id                                                                              =-->
-        <!--= data-bs-parent="#accordionExampleFrancia" atributo que indica cuál es contenedor padre que controla las secciones                                                        =-->
-        <!--= aria-expanded="false" actualmente está cerrado                                                                                                                           =-->
-        <!--= aria-controls="collapseOneFrancia" este botón controla ese elemento                                                                                                      =-->
-        <!--= accordion-body clase de Bootstrap que representa el contenido que aparece dentro de una sección del acordeón cuando se abre                                              =-->
-        <!--= id sirve para darle un nombre unico dentro del código                                                                                                                    =-->
-        <!--= align-items-center sirven para alinear elementos, agregar un borde inferior y añadir espacio vertical                                                                    =-->
-        <!--= border-bottom agrega un borde en la parte inferior del elemento                                                                                                          =-->
-        <!--= py-3 es una clase de Bootstrap para agregar padding vertical                                                                                                             =-->
-        <!--= col-md-3 ocupa 3 columnas desde tamaño mediano                                                                                                                           =-->
-        <!--= fw-bold texto en negrita                                                                                                                                                 =-->
-        <!--= text-center centra el texto                                                                                                                                              =-->
-        <!--= text-body-secondary texto con color secundario/gris                                                                                                                      =-->
-        <!--= fs-5 tamaño de fuente 5                                                                                                                                                  =-->
-        <!--=  mt-2 margen superior nivel 2                                                                                                                                            =-->
-        <!--= btn btn-primary  btn es button y btn-primary es para ponerle color                                                                                                       =-->
-        <!--= button es un botón normal                                                                                                                                                =-->
-        <!--= href es para indicar donde llevará el enlance                                                                                                                            =-->
-        <!--============================================================================================================================================================================-->
-        <!--=                                                       TERMINA DOCUMENTACIÓN DE LA SECCIÓN "ACORDEÓN"                                                                     =-->
-        <!--============================================================================================================================================================================-->
+                                    <!--============================================================================================================================================================================-->
+                                    <!--=                                                      INICIA DOCUMENTACIÓN DE LA SECCIÓN "MODAL"                                                                          =-->
+                                    <!--============================================================================================================================================================================-->
+                                    <!--= row funciona como una fila mediante bootstrap                                                                                                                            =-->
+                                    <!--= justify-content-center centra los elementos horizontalmente dentro de un contenedor                                                                                      =-->
+                                    <!--= col-4 ocupa 4 columnas                                                                                                                                                   =-->
+                                    <!--= col se usa para distribuir el espacio disponible forma automaticamente                                                                                                   =-->
+                                    <!--= data-bs-toggle="modal" elemento que controla el modal                                                                                                                    =-->
+                                    <!--= data-bs-target="#staticBackdrop" es para indicar que modal tiene que abrir                                                                                               =-->
+                                    <!--= id sirve para darle un nombre unico dentro del código                                                                                                                    =-->
+                                    <!--= fade es para que no aparezca de forma inmediata al dispararse el modal                                                                                                   =-->
+                                    <!--= data-bs-backdrop="static" evita que el modal se cierre por un clic fuera del area, se requiere cerrar mediante la X                                                      =-->
+                                    <!--= data-bs-keyboard="false" para evitar que modal se cierre mediante tecla ESC                                                                                              =-->
+                                    <!--= tabindex="-1" es el foco que se puede generar con la tecla tab                                                                                                           =-->
+                                    <!--= aria-labelledby="staticBackdropLabel" son para los que utilizan lectores de pantalla, de esta manera el lector puede identificar correctamente el titulo del modal       =-->
+                                    <!--= modal-dialog clase de bootstrap para crear y posicionar la caja principal del modal                                                                                      =-->
+                                    <!--= modal-content es la caja visible donde realmente va el contenido                                                                                                         =-->
+                                    <!--= modal-header clase de Bootstrap que se utiliza para crear la parte superior o encabezado de un modal                                                                     =-->
+                                    <!--= modal-title para indicar que ese elemento contiene el título del modal                                                                                                   =-->
+                                    <!--= btn btn-primary  btn es button y btn-primary es para ponerle color                                                                                                       =-->
+                                    <!--= button es un botón normal                                                                                                                                                =-->
+                                    <!--= class="btn-close" clase Bootstrap que crea visualmente el botónde cerrar "X"                                                                                             =-->
+                                    <!--= data-bs-dismiss="modal" da la instrucción de cerrar el modal una vez se de clic en la "X"                                                                                =-->
+                                    <!--= aria-label="Close" para indicarle a lector de pantalla que ese botón sirve para cerrar                                                                                   =-->
+                                    <!--= class="spinner-grow" clase Bootstrap qu crea una animación de tipo crecimiento                                                                                           =-->
+                                    <!--= text-light establece color de texto con tono claro                                                                                                                       =-->
+                                    <!--= role="status" es para los lectores de pantalla, representa un estado o proceso                                                                                           =-->
+                                    <!--= src le pide al navegador que busque la ubicación de la imagen                                                                                                            =-->
+                                    <!--============================================================================================================================================================================-->
+                                    <!--=                                                       TERMINA DOCUMENTACIÓN DE LA SECCIÓN "MODAL"                                                                        =-->
+                                    <!--============================================================================================================================================================================-->
+                                    
+                                    <!--============================================================================================================================================================================-->
+                                    <!--=                                                      INICIA DOCUMENTACIÓN DE LA SECCIÓN "ACORDEÓN"                                                                       =-->
+                                    <!--============================================================================================================================================================================-->
+                                    <!--= row funciona como una fila mediante bootstrap                                                                                                                            =-->
+                                    <!--= justify-content-center centra los elementos horizontalmente dentro de un contenedor                                                                                      =-->
+                                    <!--= col-7 ocupa 7 columnas                                                                                                                                                   =-->
+                                    <!--= col se usa para distribuir el espacio disponible forma automaticamente                                                                                                   =-->
+                                    <!--= class="accordion" clase de Bootstrap  para crear un componente tipo acordeón                                                                                             =-->
+                                    <!--= accordion-item representa una sección individual del acordeón                                                                                                            =-->
+                                    <!--= accordion-header es la parte superior de esa sección, donde normalmente está el botón que permite abrir o cerrar el contenido                                            =-->
+                                    <!--= class="accordion-button collapsed" este botón pertenece al acordeón y será el botón que abre/cierra su contenido, collapsed indica que el botón esta contraído           =-->
+                                    <!--= data-bs-toggle="collapse" controla un elemento que se puede expandir y contraer                                                                                          =-->
+                                    <!--= data-bs-target="#collapseOneFrancia" significa que está buscando un elemento mediante su id                                                                              =-->
+                                    <!--= data-bs-parent="#accordionExampleFrancia" atributo que indica cuál es contenedor padre que controla las secciones                                                        =-->
+                                    <!--= aria-expanded="false" actualmente está cerrado                                                                                                                           =-->
+                                    <!--= aria-controls="collapseOneFrancia" este botón controla ese elemento                                                                                                      =-->
+                                    <!--= accordion-body clase de Bootstrap que representa el contenido que aparece dentro de una sección del acordeón cuando se abre                                              =-->
+                                    <!--= id sirve para darle un nombre unico dentro del código                                                                                                                    =-->
+                                    <!--= align-items-center sirven para alinear elementos, agregar un borde inferior y añadir espacio vertical                                                                    =-->
+                                    <!--= border-bottom agrega un borde en la parte inferior del elemento                                                                                                          =-->
+                                    <!--= py-3 es una clase de Bootstrap para agregar padding vertical                                                                                                             =-->
+                                    <!--= col-md-3 ocupa 3 columnas desde tamaño mediano                                                                                                                           =-->
+                                    <!--= fw-bold texto en negrita                                                                                                                                                 =-->
+                                    <!--= text-center centra el texto                                                                                                                                              =-->
+                                    <!--= text-body-secondary texto con color secundario/gris                                                                                                                      =-->
+                                    <!--= fs-5 tamaño de fuente 5                                                                                                                                                  =-->
+                                    <!--=  mt-2 margen superior nivel 2                                                                                                                                            =-->
+                                    <!--= btn btn-primary  btn es button y btn-primary es para ponerle color                                                                                                       =-->
+                                    <!--= button es un botón normal                                                                                                                                                =-->
+                                    <!--= href es para indicar donde llevará el enlance                                                                                                                            =-->
+                                    <!--============================================================================================================================================================================-->
+                                    <!--=                                                       TERMINA DOCUMENTACIÓN DE LA SECCIÓN "ACORDEÓN"                                                                     =-->
+                                    <!--============================================================================================================================================================================-->
 
-        <!--carrusel prueba inicio-->
-        <!--w-50 50% de ancho de contenedor y mx-auto coloca el carrusel centrado horizontalmente-->
+                                <!--==========================================-->
+                                <!--         Inicia Carrusel                  -->
+                                <!--==========================================-->
         <div id="carouselExampleAutoplaying" class="carousel slide w-50 mx-auto" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -2154,8 +2279,24 @@
                 <div class="carousel-item">
                     <img src="../Assets/img/fotosVuelos/groeCarrusel.webp" class="d-block w-100" alt="...">
                 </div>
-        
-            </div>
+                    <!-- carousel-item ==> Bootstrap representa una diapositiva individual-->
+                    <!-- active ==> Bootstrap indica cuál diapositiva se muestra primero-->
+                    <!-- carousel ==> Bootstrap indica que el elemento es un carrusel-->
+                    <!-- slide ==> Bootstrap agrega la animación de deslizamiento entre las imágenes-->
+                    <!-- w-50 ==> Bootstrap hace que el elemento tenga un 50% de ancho-->
+                    <!-- mx-auto ==> Bootstrap centra horizontalmente el elemento-->
+                    <!-- data-bs-ride="carousel" ==> Bootstrap le indica a Bootstrap que el carrusel puede iniciarse automáticamente. html o bootstrap-->
+                    <!-- carousel-inner ==> Bootstrap es el contenedor que contiene todas las diapositivas.-->
+                    <!-- d-block ==> Bootstrap hace que la imagen sea display: block-->
+                    <!-- id ==> HTML Sirve para darle un identificador único a un elemento-->
+                    <!-- class ==> HTML sirve para asignarle una o varias clases a un elemento-->
+                    <!-- src ==> HTML indica la ruta de la imagen-->
+                    <!-- alt ==> HTML texto alternativo de una imagen-->
+            </div><!-- termina carrusel imagenes-->
+
+                                <!--==========================================-->
+                                <!--        Inicia botones del Carrusel       -->
+                                <!--==========================================-->
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -2166,7 +2307,14 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
-        </div><br><br><!--carrusel prueba fin-->
+                    <!-- carousel-control-prev ==> Bootstrap Botón para ir a la diapositiva anterior-->
+                    <!-- data-bs-target ==> HTML + Bootstrap Indica qué carrusel debe controlar el botón-->
+                    <!-- data-bs-slide ==> HTML + Bootstrap Indica si debe avanzar (next) o retroceder (prev)-->
+                    <!-- carousel-control-prev-icon ==> Bootstrap Muestra el ícono/flecha para retroceder.-->
+                    <!-- visually-hidden ==> Bootstrap Oculta visualmente un elemento, pero permite que los lectores de pantalla lo detecten-->
+                    <!-- aria-hidden ==> HTML + Bootstrap Indica que un elemento debe ser ignorado por lectores de pantalla-->
+                    <!-- class ==> HTML sirve para asignarle una o varias clases a un elemento-->
+        </div><br><br><!-- termina carrusel -->
 
     </main><!-- termina MAIN -->
 
@@ -2237,9 +2385,10 @@
         <!--============================================================================================================================================================================-->
         <!--=                                                       TERMINA DOCUMENTACIÓN DEL FOOTER                                                                                   =-->
         <!--============================================================================================================================================================================-->
-
+        
+        <!--BOOTSTRAP-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+        <!--script js de vuelos.js mediante ruta dinamica-->
+        <script src="../Assets/js/vuelos.js"></script>
 </body><!-- termina body -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-<script src="../Assets/js/vuelos.js"></script>
-
 </html>
