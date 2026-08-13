@@ -1,0 +1,10 @@
+{
+    "datosMillas": {
+        "millasAcumuladas": 2500,
+        "millasTotales": 3000
+    },
+    "datosAhorro": {
+        "montoAhorrado": 1450,
+        "moneda": "$"
+    }
+}

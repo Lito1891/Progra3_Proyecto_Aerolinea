@@ -301,11 +301,11 @@ Modelo asociado: modeloDashboard.js
 
 ### Nombre: controladorDestino.js
 
-Descripción: controlador encargado de gestionar la carga dinámica de las tarjetas de destinos y la lógica de filtrado por categoría en destinos.html tomando como base los datos obtenidos desde modeloDestinos.js.
+- Descripción: controlador encargado de gestionar la carga dinámica de las tarjetas de destinos y la lógica de filtrado por categoría en destinos.html tomando como base los datos obtenidos desde modeloDestinos.js.
 
-Archivos HTML asociados: destinos.html
+- Archivos HTML asociados: destinos.html
 
-Funcionalidades: Carga inicial de la totalidad de los destinos al ingresar a la página mediante la consulta al módulo modeloDestinos.js.
+- Funcionalidades: Carga inicial de la totalidad de los destinos al ingresar a la página mediante la consulta al módulo modeloDestinos.js.
 Renderiza dinámicamente en la vista las tarjetas HTML con la información correspondiente a cada destino (imagen, nombre, descripción, precio y botón de detalles).
 Gestiona los eventos de clic en los botones de filtro para alternar la clase activa (boton-activo) y filtrar los destinos según la categoría seleccionada.
 

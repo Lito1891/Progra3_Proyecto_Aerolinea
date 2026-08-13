@@ -1,45 +1,60 @@
 //controladores para genetar los gráficos en dashboard
 
+//controladores para generar los gráficos en dashboard
+$(document).ready(function () {
 
-document.addEventListener("DOMContentLoaded", function () {
+    //petición AJAX para traer los datos del dashboard desde el JSON
+    $.ajax({
+        url: "../Models/modeloDashboard.json",
+        // para indicarle de dónde debe traer los datos
+        type: "GET",
+        //para indica el tipo de método
 
-    //Gráfico de millas acumuladas usando datosMillas del modelo para el dashboard
-    
-    const millasFaltantes = datosMillas.millasTotales - datosMillas.millasAcumuladas;
-    // constante para representar lo que falta para el premio
+        dataType: "json",
+        //para indicarle el tipo de dato que se va a recibir
 
-    const contextoGrafico = document.getElementById("graficoMillas");
-    // constante para buscar en el html el id de graficoMillas para pasarlo luego como contexto del canvas al chart para que sepa donde debe dibujarse
+        success: function(respuesta){
+        //al tener éxito la petición jQuery entrega dos datos del json en objeto js
 
-    new Chart(contextoGrafico, {
-        type: "doughnut", // gráfico de tipo dona
-        data: {
-            labels: ["Millas acumuladas", "Millas faltantes"],
-            datasets: [{
-                label: 'Millas acumuladas para premio',  
-                data: [datosMillas.millasAcumuladas, millasFaltantes],
-                //datos en orden para aparecer
+            const millasFaltantes = respuesta.datosMillas.millasTotales - respuesta.datosMillas.millasAcumuladas;
+             // constante para representar lo que falta para el premio
+            
+            const contextoGrafico = document.getElementById("graficoMillas");
+            // constante para buscar en el html el id de graficoMillas para pasarlo luego como contexto del canvas al chart para que sepa donde debe dibujarlo
 
-                backgroundColor: ["#007bff", "#e9ecef"],
-                borderWidth: 1
-            }]
-        },
-        options: {
-            responsive: false,
-            cutout: "75%",
-            scales: {
-                y: {
-                    beginAtZero: true
+            new Chart(contextoGrafico, {
+                type: "doughnut", // gráfico de tipo dona
+                data: {
+                    labels: ["Millas acumuladas", "Millas faltantes"],
+                    datasets: [{
+                        label: 'Millas acumuladas para premio',
+                        data: [respuesta.datosMillas.millasAcumuladas, millasFaltantes],
+                        //datos en orden para aparecer
+
+                        backgroundColor: ["#007bff", "#e9ecef"],
+                        //colores del gráfico
+
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: false,
+                    cutout: "75%",
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
                 }
-            }
+            });
+
+            //título para el gráfico de millas
+            $("#textoMillas").text(respuesta.datosMillas.millasAcumuladas + " / " + respuesta.datosMillas.millasTotales + " millas");
+            // busca en el html el id textoMillas y lo llena con los datos recibidos por AJAX
+
+            //segunda métrica a mostrar sobre ahorro por membresía
+            $("#textoAhorro").text(respuesta.datosAhorro.moneda + respuesta.datosAhorro.montoAhorrado);
+            // busca el elemento con el id textoAhorro y lo reemplaza con los datos recibidos por AJAX
         }
     });
-
-    //título para el gráfico de millas
-    document.getElementById("textoMillas").textContent = datosMillas.millasAcumuladas + " / " + datosMillas.millasTotales + " millas";
-    // constante parabuscar en el html el id textoMillas
-
-    // segundas métricas a mostrar sobre ahorro por membresía
-    document.getElementById("textoAhorro").textContent = datosAhorro.moneda + datosAhorro.montoAhorrado;
-    // busca el elemento con el id textoAhorro y lo reemplaza con los datos del controlador que son el símbolo de la moneda y el monto ahorrado
 });
