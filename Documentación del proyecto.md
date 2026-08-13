@@ -42,257 +42,257 @@ Carpeta Views: Páginas que el usuario ve e interactúa de primera mano
 
 ## Carpeta Views
 
-Descripción: contiene las vistas creadas para que los usuarios manipulen de primera mano e interactúan y desplacen sobre la página.
+- Descripción: contiene las vistas creadas para que los usuarios manipulen de primera mano e interactúan y desplacen sobre la página.
 
 ---
 
 ### Nombre: Index.html
 
-Descripción: página creada como portal de inicio de la aerolínea que se abre al iniciar el proyecto de forma automática.
+- Descripción: página creada como portal de inicio de la aerolínea que se abre al iniciar el proyecto de forma automática.
 
-Secciones que contiene: barra de navegación, banner de aerolínea, principales destinos de la aerolínea, footer.
+- Secciones que contiene: barra de navegación, banner de aerolínea, principales destinos de la aerolínea, footer.
 
-Estilos: uso de Bootstrap y enlace directo a index.css
+- Estilos: uso de Bootstrap y enlace directo a index.css
 
-JavaScript asociado: no contempla un JavaScript asociado.
+- JavaScript asociado: no contempla un JavaScript asociado.
 
-Controlador asociado: no contempla un controlador asociado.
+- Controlador asociado: no contempla un controlador asociado.
 
 ---
 
 ### Nombre: sucursalesContacto.html
 
-Descripción: página creada como punto de ayuda para saber dónde están las ubicaciones físicas y sus datos de contacto específicos por cada una
+- Descripción: página creada como punto de ayuda para saber dónde están las ubicaciones físicas y sus datos de contacto específicos por cada una
 
-Secciones que contiene: barra de navegación, contenido principal de información de sucursales, footer.
+- Secciones que contiene: barra de navegación, contenido principal de información de sucursales, footer.
 
-Estilos: uso de Bootstrap y enlace directo a sucursalesContacto.css
+- Estilos: uso de Bootstrap y enlace directo a sucursalesContacto.css
 
-JavaScript asociado: no contempla un JavaScript asociado.
+- JavaScript asociado: no contempla un JavaScript asociado.
 
-Controlador asociado: no contempla un controlador asociado.
+- Controlador asociado: no contempla un controlador asociado.
 
 ---
 
 ### Nombre: login.html
 
-Descripción: página creada como punto de acceso para el dashboard de métricas para los usuarios.
+- Descripción: página creada como punto de acceso para el dashboard de métricas para los usuarios.
 
-Secciones que contiene: barra de navegación, contenido central que abarca el formulario del login, footer.
+- Secciones que contiene: barra de navegación, contenido central que abarca el formulario del login, footer.
 
-Estilos: Bootstrap y enlace directo a login.css.
+- Estilos: Bootstrap y enlace directo a login.css.
 
-Controlador asociado: enlazado directamente a controladorLogin.js quien se encarga de realizar las validaciones correspondientes para redireccionar al dashboard.
+- Controlador asociado: enlazado directamente a controladorLogin.js quien se encarga de realizar las validaciones correspondientes para redireccionar al dashboard.
 
 ---
 
 ### Nombre: destinos.html
 
-Descripción:
+- Descripción:
 
-Secciones que contiene:
+- Secciones que contiene:
 
-Estilos:
+- Estilos:
 
-JavaScript asociado:
+- JavaScript asociado:
 
-Controlador asociado:
+- Controlador asociado:
 
 ---
 
 ### Nombre: reservaVuelos.html
 
-Descripción:
+- Descripción:
 
-Secciones que contiene:
+- Secciones que contiene:
 
-Estilos:
+- Estilos:
 
-JavaScript asociado:
+- JavaScript asociado:
 
-Controlador asociado:
+- Controlador asociado:
 
 ---
 
 ### Nombre: vuelos.html
 
-Descripción:
+- Descripción:
 
-Secciones que contiene:
+- Secciones que contiene:
 
-Estilos:
+- Estilos:
 
-JavaScript asociado:
+- JavaScript asociado:
 
-Controlador asociado:
+- Controlador asociado:
 
 ---
 
 ### Nombre: dashboard.php
 
-Descripción: vista que genera gráficos de métricas obtenidas por el usuario al usar los servicios de la aerolínea.
+- Descripción: vista que genera gráficos de métricas obtenidas por el usuario al usar los servicios de la aerolínea.
 
-Secciones que contiene: resalta su barra de navegación, contenido de generación de gráficos, footer.
+- Secciones que contiene: resalta su barra de navegación, contenido de generación de gráficos, footer.
 
-Estilos: Bootstrap y para el correcto funcionamiento se maneja por varios documentos dentro de la carpeta "dist" ubicada en la carpeta Views.
+- Estilos: Bootstrap y para el correcto funcionamiento se maneja por varios documentos dentro de la carpeta "dist" ubicada en la carpeta Views.
 
-JavaScript asociado: Para el correcto funcionamiento se maneja por varios documentos dentro de la carpeta "plugins" ubicada en la carpeta Views.
+- JavaScript asociado: Para el correcto funcionamiento se maneja por varios documentos dentro de la carpeta "plugins" ubicada en la carpeta Views.
 
 ---
 
 ## Carpeta Assets
 
-Descripción: contiene los elementos estáticos del proyecto como estilos, funcionalidades en JavaScript e imágenes empleadas en las diversas páginas.
+- Descripción: contiene los elementos estáticos del proyecto como estilos, funcionalidades en JavaScript e imágenes empleadas en las diversas páginas.
 
 ---
 
 ### Sub carpeta css
 
-Descripción: contiene los estilos que modifican algunas características técnicas de las vistas del proyecto.
+- Descripción: contiene los estilos que modifican algunas características técnicas de las vistas del proyecto.
 
 ---
 
 ### Nombre: index.css
 
-Descripción: archivo que modifica los estilos de Index.html directamente.
+- Descripción: archivo que modifica los estilos de Index.html directamente.
 
-Archivos HTML asociados: Index.html
+- Archivos HTML asociados: Index.html
 
 ---
 
 ### Nombre: login.css
 
-Descripción: archivo que modifica los estilos de login.html directamente.
+- Descripción: archivo que modifica los estilos de login.html directamente.
 
-Archivos HTML asociados: login.html
+- Archivos HTML asociados: login.html
 
 ---
 
 ### Nombre: sucursalesContacto.css
 
-Descripción: archivo que modifica los estilos de sucursalesContacto.html directamente.
+- Descripción: archivo que modifica los estilos de sucursalesContacto.html directamente.
 
-Archivos HTML asociados: sucursalesContacto.html
+- Archivos HTML asociados: sucursalesContacto.html
 
 ---
 
 ### Nombre:  destinos.css
 
-Descripción:
+- Descripción:
 
-Archivos HTML asociados:
+- Archivos HTML asociados:
 
 ---
 
 ### Nombre: vuelos.css
 
-Descripción:
+- Descripción:
 
-Archivos HTML asociados:
+- Archivos HTML asociados:
 
 ---
 
 ### Sub carpeta img
 
-Descripción: contiene imágenes empleadas durante el proyecto, dentro de la misma se encuentra fotosDestinos, fotosIndex, fotosSucursalesContacto, fotosVuelos, de esta carpeta salen las imagenes para todo el proyecto a excepción del dashboard que tiene sus propios recursos dentro de la carpeta Views.
+- Descripción: contiene imágenes empleadas durante el proyecto, dentro de la misma se encuentra fotosDestinos, fotosIndex, fotosSucursalesContacto, fotosVuelos, de esta carpeta salen las imagenes para todo el proyecto a excepción del dashboard que tiene sus propios recursos dentro de la carpeta Views.
 
 ---
 
 ### Sub carpeta js
 
-Descripción: contiene los elementos js que no sean catalogados como controladores o como modelos.
+- Descripción: contiene los elementos js que no sean catalogados como controladores o como modelos.
 
 ---
 
 ### Nombre: reservaVuelos.js
 
-Descripción:
+- Descripción:
 
-Archivos HTML asociados:
+- Archivos HTML asociados:
 
-Funcionalidades:
+- Funcionalidades:
 
-Elementos que manipula:
+- Elementos que manipula:
 
-Controlador asociado:
+- Controlador asociado:
 
 ---
 
 ### Nombre: vuelos.js
 
-Descripción:
+- Descripción:
 
-Archivos HTML asociados:
+- Archivos HTML asociados:
 
-Funcionalidades:
+- Funcionalidades:
 
-Elementos que manipula:
+- Elementos que manipula:
 
-Controlador asociado:
+- Controlador asociado:
 
 ---
 
 ## Carpeta Models
 
-Descripción: contiene modelos que los controladores tomarán como información base para validaciones y acciones a eventos.
+- Descripción: contiene modelos que los controladores tomarán como información base para validaciones y acciones a eventos.
 
 ---
 
 ### Nombre: modeloDashboard.js
 
-Descripción: archivo que contiene los datos base para la correcta generación de gráficos y métricas en el dashboard por medio del controlador controladorDashboard.js.
+- Descripción: archivo que contiene los datos base para la correcta generación de gráficos y métricas en el dashboard por medio del controlador controladorDashboard.js.
 
-Funcionalidad: almacenar datos base para generación de métricas y gráfico.
+- Funcionalidad: almacenar datos base para generación de métricas y gráfico.
 
-Controlador asociado: controladorDashboard.js.
+- Controlador asociado: controladorDashboard.js.
 
 ---
 
 ### Nombre: modeloDestino.js
 
-Descripción:
+- Descripción:
 
-Funcionalidad:
+- Funcionalidad:
 
-Métodos o funciones principales:
+- Métodos o funciones principales:
 
-Controlador asociado:
+- Controlador asociado:
 
 ---
 
 ### Nombre: modeloLogin.js
 
-Descripción: archivo que contiene los datos base para el correcto acceso al dashboard por medio de controladorLogin.js.
+- Descripción: archivo que contiene los datos base para el correcto acceso al dashboard por medio de controladorLogin.js.
 
-Funcionalidad: almacenar los datos de usuario y contraseña para el inicio de sesión en la vista login.
+- Funcionalidad: almacenar los datos de usuario y contraseña para el inicio de sesión en la vista login.
 
-Controlador asociado: controladorLogin.js
+- Controlador asociado: controladorLogin.js
 
 ---
 
 ## Carpeta Controllers
 
-Descripción: contiene los controladores que luego tomarán los modelos para responder a eventos o peticiones realizadas en las vistas.
+- Descripción: contiene los controladores que luego tomarán los modelos para responder a eventos o peticiones realizadas en las vistas.
 
 ---
 
 ### Nombre: controladorDashboard.js
 
-Descripción: controlador encargado de generar el gráfico y métricas representadas en dashboard.php tomando como base los datos ubicados en modeloDashboard.js.
+- Descripción: controlador encargado de generar el gráfico y métricas representadas en dashboard.php tomando como base los datos ubicados en modeloDashboard.js.
 
-Archivos HTML asociados: dashboard.php
+- Archivos HTML asociados: dashboard.php
 
-Funcionalidades:
+- Funcionalidades:
 
-- Calcula la cantidad de millas faltantes para obtener un premio mediante restar las millas acumuladas a las millas totales tomando los datos desde el controlador modeloDashboard.js.
-- Genera el gráfico mediante su renderización en la vista dashboard.php y los datos respectivos los obtiene desde el controlador modeloDashboard.js.
-- Actualiza y reescribe el progreso de millas acumuladas y monto ahorrado desde que se adquirió la membresía premium en campos específicos.
+   - Calcula la cantidad de millas faltantes para obtener un premio mediante restar las millas acumuladas a las millas totales tomando los datos desde el controlador modeloDashboard.js.
+   - Genera el gráfico mediante su renderización en la vista dashboard.php y los datos respectivos los obtiene desde el controlador modeloDashboard.js.
+   - Actualiza y reescribe el progreso de millas acumuladas y monto ahorrado desde que se adquirió la membresía premium en campos específicos.
 
-Elementos que manipula:
+- Elementos que manipula:
 
-- graficoMillas: id ubicado en dashboard.php, se usa para apuntar a su canvas y poder generar el gráfico.
-- textoMillas: id ubicado en dashboard.php, se usa para reemplazar su contenido con la representación de millas acumuladas.
-- textoAhorro: id ubicado en dashboard.php, se usa para reemplazar su contenido con el monto ahorrado el cual se obtiene desde el controlador llamado modeloDashboard.js.
+   - graficoMillas: id ubicado en dashboard.php, se usa para apuntar a su canvas y poder generar el gráfico.
+   - textoMillas: id ubicado en dashboard.php, se usa para reemplazar su contenido con la representación de millas acumuladas.
+   - textoAhorro: id ubicado en dashboard.php, se usa para reemplazar su contenido con el monto ahorrado el cual se obtiene desde el controlador llamado modeloDashboard.js.
 
 Modelo asociado: modeloDashboard.js
 
@@ -314,22 +314,22 @@ Modelo asociado:
 
 ### Nombre: controladorLogin.js
 
-Descripción: controlador encargado de manejar el envío del formulario de inicio de sesión, validar las credenciales ingresadas y verificar espacios vacíos.
+- Descripción: controlador encargado de manejar el envío del formulario de inicio de sesión, validar las credenciales ingresadas y verificar espacios vacíos.
 
-Archivos HTML asociados: login.html
+- Archivos HTML asociados: login.html
 
-Funcionalidades:
+- Funcionalidades:
 
-- Capturar el evento submit generado al enviar el formulario de id "formLogin" evitando que se envíe de forma predeterminada mediante event.preventDefault().
-- Limpieza y filtro de espacios vacíos mediante el uso de trim() en los inputs de usuario y contraseña, además de implementar una alerta con sweetalert en caso de detectarse.
-- Validar que el nombre de usuario y contraseña ingresados sean idénticos a los datos almacenados en el modelo modeloLogin.js.
-- Al validar todo lo anterior arroja una alerta indicando que los datos son correctos y redirije a la vista dashboard.php.
+   - Capturar el evento submit generado al enviar el formulario de id "formLogin" evitando que se envíe de forma predeterminada mediante event.preventDefault().
+   - Limpieza y filtro de espacios vacíos mediante el uso de trim() en los inputs de usuario y contraseña, además de implementar una alerta con sweetalert en caso de detectarse.
+   - Validar que el nombre de usuario y contraseña ingresados sean idénticos a los datos almacenados en el modelo modeloLogin.js.
+   - Al validar todo lo anterior arroja una alerta indicando que los datos son correctos y redirije a la vista dashboard.php.
 
-Elementos que manipula:
+- Elementos que manipula:
 
-- usuario, id ubicado en la vista login.html y lo emplea para leer el valor ingresado en el input de nombre de usuario.
-- contrasena, id ubicado en la vista login.html y lo emplea para leer el valor ingresado en el input de contraseña.
-- formLogin, id ubicado en la vista login.html y lo emplea para escuchar el evento submit para interceptar el envío.
+   - usuario, id ubicado en la vista login.html y lo emplea para leer el valor ingresado en el input de nombre de usuario.
+   - contrasena, id ubicado en la vista login.html y lo emplea para leer el valor ingresado en el input de contraseña.
+   - formLogin, id ubicado en la vista login.html y lo emplea para escuchar el evento submit para interceptar el envío.
 
 Modelo asociado: modeloLogin.js
 
