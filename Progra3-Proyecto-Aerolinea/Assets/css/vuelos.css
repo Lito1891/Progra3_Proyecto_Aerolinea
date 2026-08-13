@@ -1,32 +1,138 @@
 /*-----------------------------------------------------------------------------------------------------*/
-/*Estilos del body*/
+/* Estilos generales del body                                                                          */
 /*-----------------------------------------------------------------------------------------------------*/
-body {font-family: Arial, sans-serif; background-color: #ffffff;
-}
-/*-----------------------------------------------------------------------------------------------------*/
-/*Estilos del header buscador de vuelos*/
-/*-----------------------------------------------------------------------------------------------------*/
-.titulo {text-align: center; padding: 20px;}
-.btnViajar{color: #58b6b3; border: 1px solid #58b6b3; background: transparent; border-radius: 50px;
-        font-weight: bold; cursor: pointer; transition: all 0.3s ease;}
-.btnViajar:hover{background-color: rgb(255, 158, 41); border-color: rgb(255, 158, 41); color: white;}
-.btnViajar{margin: 0px 0px 5px 30px;}
-.checkIda{margin: 0px 10px 0px 0px;}
+body {
+    /* Define la fuente principal de toda la página */
+    font-family: Arial, sans-serif;
+
+    /* Establece el color de fondo de la página en blanco */
+    background-color: #ffffff;}
 
 
 /*-----------------------------------------------------------------------------------------------------*/
-/*Estilos de seccion horarios y precios de los vuelos*/
+/* Estilos del header / buscador de vuelos                                                             */
 /*-----------------------------------------------------------------------------------------------------*/
-.imgPais{width: 70px; height: 40px;}
-.imgHorarios{ width: 30px; height: 30px;}
-.pais{gap: 10px; margin: 5px;}
-.imgFrancia{width: 90px;  margin: 0px 0px 10px 0px;}
-.imagenFrancia{ display: flex; flex-direction: column; align-items: center;}
-section{ display: flex; align-content: space-evenly;}
-img{border: 1px solid transparent; border-radius: 8px;}
+
+/* Estilos para el título */
+.titulo {
+    /* Centra horizontalmente el texto */
+    text-align: center;
+
+    /* Agrega 20px de espacio interno alrededor del contenido */
+    padding: 20px;}
+
+/* Estilos para el botón "Viajar" */
+.btn {
+    /* Define el color del texto */
+    color: #58b6b3;
+
+    /* Crea un borde de 1px de grosor */
+    border: 1px solid #58b6b3;
+
+    /* Hace que el fondo sea transparente */
+    background: transparent;
+
+    /* Redondea las esquinas del botón */
+    border-radius: 50px;
+
+    /* Hace que el texto aparezca en negrita */
+    font-weight: bold;
+
+    /* Cambia el cursor a una mano cuando pasa sobre el botón */
+    cursor: pointer;
+
+    /* Permite realizar una transición suave en los cambios de estilo */
+    transition: all 0.3s ease;}
+
+/* Estilos del botón cuando el cursor pasa sobre él */
+.btn:hover {
+    /* Cambia el color de fondo a naranja */
+    background-color: rgb(255, 158, 41);
+
+    /* Cambia el color del borde a naranja */
+    border-color: rgb(255, 158, 41);
+
+    /* Cambia el color del texto a blanco */
+    color: white;}
+
+
 
 /*-----------------------------------------------------------------------------------------------------*/
-/*Estilos para ocultar las secciones de vuelo*/
+/* Estilos de la sección de horarios y precios de los vuelos                                          */
 /*-----------------------------------------------------------------------------------------------------*/
-.resultado-vuelo{display: none;}
-.resultado-vuelo.activo{display: block;}
+
+/* Estilos para las imágenes de los países */
+.imgPais {
+    /* Define el ancho de la imagen */
+    width: 70px;
+
+    /* Define la altura de la imagen */
+    height: 40px;}
+
+/* Estilos para las imágenes utilizadas en los horarios */
+.imgHorarios {
+    /* Define el ancho de la imagen */
+    width: 30px;
+
+    /* Define la altura de la imagen */
+    height: 30px;}
+
+/* Estilos para los elementos que contienen información del país */
+.pais {
+    /* Agrega 10px de separación entre los elementos */
+    gap: 10px;
+
+    /* Agrega 5px de margen alrededor del elemento */
+    margin: 5px;}
+
+/* Estilos específicos para la imagen de Francia */
+.imgFrancia {
+    /* Define el ancho de la imagen */
+    width: 90px;
+
+    /*
+       margin:
+       arriba = 0px
+       derecha = 0px
+       abajo = 10px
+       izquierda = 0px
+    */
+    margin: 0px 0px 10px 0px;}
+
+/* Contenedor de la imagen de Francia */
+.imagenFrancia {
+    /* Convierte el contenedor en un Flexbox */
+    display: flex;
+
+    /* Coloca los elementos uno debajo del otro */
+    flex-direction: column;
+
+    /* Centra los elementos horizontalmente */
+    align-items: center;}
+
+/* Estilos generales para todas las etiquetas section */
+section {
+    /* Convierte las secciones en contenedores Flexbox */
+    display: flex;
+
+    /* Distribuye el contenido en el eje transversal */
+    align-content: space-evenly;}
+
+/* Estilos generales para todas las imágenes */
+img {
+    /* Agrega un borde transparente de 1px */
+    border: 1px solid transparent;
+
+    /* Redondea las esquinas de las imágenes */
+border-radius: 8px;}
+
+
+/*-----------------------------------------------------------------------------------------------------*/
+/* Estilos para ocultar y mostrar las secciones de vuelos                                              */
+/*-----------------------------------------------------------------------------------------------------*/
+
+/* Oculta los resultados de vuelos inicialmente */
+.resultado-vuelo {display: none;}
+
+/* Cuando el elemento .resultado-vuelo también tiene la clase .activo, se muestra como un elemento de tipo block.*/
+.resultado-vuelo.activo {display: block;}
