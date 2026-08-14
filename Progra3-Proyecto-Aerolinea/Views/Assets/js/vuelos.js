@@ -80,6 +80,12 @@ formularioVuelos.addEventListener('submit', event => {//dispara evento de enviar
     // obtener la sección correspondiente a cada elemento
     // esta línea busca automáticamente la sección HTML que corresponde al destino que seleccionó el usuario
     const seccion = document.getElementById(secciones[destino]);
+    const ciudadOrigen = document.getElementById("validarOrigen").value;// se asigna variable para almacenar parametro del lable ciudad de origen
+
+    //recorre todas las clases con "origenVuelo" y pasa el parametro
+    document.querySelectorAll(".origenVuelo").forEach(function(elemento){
+        elemento.textContent = ciudadOrigen;
+    });
 
     // mostrar el resultado únicamente si el formulario es válido
     // aqui decimos que si seccion existe agregale la clase activo classList.add("activo")
