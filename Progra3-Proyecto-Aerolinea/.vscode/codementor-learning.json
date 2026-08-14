@@ -1,17 +1,17 @@
 {
   "CSS-002": {
-    "occurrences": 314,
+    "occurrences": 315,
     "confidence": 1,
     "mastered_explicitly": false,
     "first_seen": "2026-07-04T01:19:32.705Z",
-    "last_seen": "2026-08-12T03:58:45.852Z"
+    "last_seen": "2026-08-14T03:34:10.260Z"
   },
   "HTML-002": {
-    "occurrences": 169,
+    "occurrences": 174,
     "confidence": 1,
     "mastered_explicitly": false,
     "first_seen": "2026-07-04T03:27:56.944Z",
-    "last_seen": "2026-08-12T03:55:32.576Z"
+    "last_seen": "2026-08-14T22:19:35.097Z"
   },
   "CSS-001": {
     "occurrences": 57,
@@ -28,17 +28,17 @@
     "last_seen": "2026-07-13T04:58:24.940Z"
   },
   "CC-004": {
-    "occurrences": 51,
+    "occurrences": 58,
     "confidence": 1,
     "mastered_explicitly": false,
     "first_seen": "2026-08-10T03:09:31.404Z",
-    "last_seen": "2026-08-13T02:24:48.530Z"
+    "last_seen": "2026-08-14T23:11:19.711Z"
   },
   "SEC-004": {
-    "occurrences": 41,
+    "occurrences": 43,
     "confidence": 1,
     "mastered_explicitly": false,
     "first_seen": "2026-08-12T03:30:00.714Z",
-    "last_seen": "2026-08-12T04:12:25.771Z"
+    "last_seen": "2026-08-14T23:11:19.710Z"
   }
 }
