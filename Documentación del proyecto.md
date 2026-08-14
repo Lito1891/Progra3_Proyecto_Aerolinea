@@ -2,7 +2,7 @@
 
 ## Descripción del proyecto
 
-El presente proyecto consta de la construcción de una página web enfocada en servir como portal de una aerolínea comercial, respetando siempre el modelo vista controlador (MVC). La misma emplea archivos con extensión HTML, PHP, CSS y Js enlazados mediante rutas dinámicas omitiendo la mala práctica del uso de direcciones estáticas que pudiesen afectar al funcionamiento del proyecto.
+El presente proyecto consta de la construcción de una página web enfocada en servir como portal de una aerolínea comercial, respetando siempre el modelo vista controlador (MVC). La misma emplea archivos con extensión HTML, PHP, CSS, Json y Js enlazados mediante rutas dinámicas omitiendo la mala práctica del uso de direcciones estáticas que pudiesen afectar al funcionamiento del proyecto.
 
 ### Grupo 01 - Integrantes:
 
