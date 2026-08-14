@@ -6,7 +6,7 @@ $(document).ready(function () {
     obtenerDatosDashboard().done(function(respuesta){
         //le pide los datos al modelo
 
-        const millasFaltantes = calcularMillasFaltantes(respuesta.datosMillas)
+        const millasFaltantes = calcularMillasFaltantes(respuesta.datosMillas);
             // constante para representar lo que falta para el premio
         
         const contextoGrafico = document.getElementById("graficoMillas");
@@ -17,7 +17,7 @@ $(document).ready(function () {
             data: {
                 labels: ["Millas acumuladas", "Millas faltantes"],
                 datasets: [{
-                    label: 'Millas acumuladas para premio',
+                    label: '',
                     data: [respuesta.datosMillas.millasAcumuladas, millasFaltantes],
                     //datos en orden para aparecer
 

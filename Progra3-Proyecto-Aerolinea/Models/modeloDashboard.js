@@ -16,6 +16,6 @@ function obtenerDatosDashboard(){
 }
 
 //función para calcular las millas que faltan para el premio
-function calcularMillasFaltantes(datosMillas){
-    return datosMillas.millasTotales - datosMillas.millasAcumuladas;
+function calcularMillasFaltantes(datosMillasRecibidasDelControlador){
+    return datosMillasRecibidasDelControlador.millasTotales - datosMillasRecibidasDelControlador.millasAcumuladas;
 }

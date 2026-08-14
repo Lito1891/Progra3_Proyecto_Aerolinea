@@ -16,7 +16,7 @@ function obtenerDatosLogin(){
 }
 
 //función que recibe los datos traídos del json y lo que el usuario ingresó en el formulario de login
-function validarCredenciales(datos, usuarioIngresado, contrasenaIngresada){
+function validarCredenciales(datosRecibidosDelControlador, usuarioIngresadoRecibidoDelControlador, contrasenaIngresadaRecibidaDelControlador){
     
-    return usuarioIngresado === datos.usuarioLogin[0] && contrasenaIngresada === datos.contraLogin[0];
+    return usuarioIngresadoRecibidoDelControlador === datosRecibidosDelControlador.usuarioLogin[0] && contrasenaIngresadaRecibidaDelControlador === datosRecibidosDelControlador.contraLogin[0];
 }
