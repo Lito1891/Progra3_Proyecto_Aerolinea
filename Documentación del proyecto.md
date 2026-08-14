@@ -140,6 +140,23 @@ El presente proyecto consta de la construcción de una página web enfocada en s
 
 ---
 
+### Nombre: carpeta dist
+
+- Descripción: contiene elementos necesarios para el funcionamiento del dashboard.
+
+- Archivo PHP asociado: dashboard.php
+
+
+---
+
+### Nombre: carpeta plugins
+
+- Descripción: contiene elementos necesarios para el funcionamiento del dashboard.
+
+- Archivo PHP asociado: dashboard.php
+
+---
+
 ## Carpeta Assets
 
 - Descripción: contiene los elementos estáticos del proyecto como estilos, funcionalidades en JavaScript e imágenes empleadas en las diversas páginas.
