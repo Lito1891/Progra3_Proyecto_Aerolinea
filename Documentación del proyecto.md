@@ -24,19 +24,19 @@ El presente proyecto consta de la construcción de una página web enfocada en s
 
 ## Estructura del proyecto
 
-Carpeta raíz: contiene todo el proyecto organizado por carpetas y archivos según el modelo vista controlador (MVC)
+- Carpeta raíz: contiene todo el proyecto organizado por carpetas y archivos según el modelo vista controlador (MVC)
 
-Carpeta Assets: Recursos estáticos del frontend
+- Carpeta Controllers: Lógica de control para manejar peticiones y usar los modelos
 
-- Sub carpeta css: Hojas de estilo usadas para modificación visual de archivos html
-- Sub carpeta img: Imágenes del sitio (fotosIndex, iconos, logos)
-- Sub carpeta js: Scripts propios del cliente (JS)
+- Carpeta Models: Lógica de datos tomados como base o información en los controladores
 
-Carpeta Controllers: Lógica de control para manejar peticiones y usar los modelos
+- Carpeta Views: Páginas que el usuario ve e interactúa de primera mano
+  
+   - Sub carpeta Assets: Recursos estáticos del frontend
 
-Carpeta Models: Lógica de datos tomados como base o información en los controladores
-
-Carpeta Views: Páginas que el usuario ve e interactúa de primera mano
+        - Sub sub carpeta css: Hojas de estilo usadas para modificación visual de archivos html
+        - Sub sub carpeta img: Imágenes del sitio (fotosIndex, iconos, logos)
+        - Sub sub carpeta js: Scripts estáticos de apoyo a vistas
 
 ---
 
@@ -201,7 +201,7 @@ Carpeta Views: Páginas que el usuario ve e interactúa de primera mano
 
 ### Sub carpeta js
 
-- Descripción: contiene los elementos js que no sean catalogados como controladores o como modelos.
+- Descripción: contiene los elementos js que no sean catalogados como controladores o como modelos pero que de igual forma sirven a las vistas.
 
 ---
 
@@ -239,11 +239,21 @@ Carpeta Views: Páginas que el usuario ve e interactúa de primera mano
 
 ---
 
-### Nombre: modeloDashboard.js
+### Nombre: modeloDashboard.json
 
-- Descripción: archivo que contiene los datos base para la correcta generación de gráficos y métricas en el dashboard por medio del controlador controladorDashboard.js.
+- Descripción: archivo que contiene los datos base para la correcta generación de gráficos y son llevados al controlador por medio del modelo modeloDashboard.js.
 
 - Funcionalidad: almacenar datos base para generación de métricas y gráfico.
+
+- Modelo asociado: modeloDashboard.js
+
+---
+
+### Nombre: modeloDashboard.js
+
+- Descripción: archivo que transporta los datos base para el dashboard y métricas desde el modelo modeloDashboard.json hasta el controlador controladorDashboars.js.
+
+- Funcionalidad: solicitar los datos para el dashboard y calcular las métricas.
 
 - Controlador asociado: controladorDashboard.js.
 
@@ -261,13 +271,23 @@ Carpeta Views: Páginas que el usuario ve e interactúa de primera mano
 
 ---
 
+### Nombre: modeloLogin.json
+
+- Descripción: archivo que contiene los datos base para la validación del login del usaurio y son llevados al controlador por medio del modelo modeloLogin.js.
+
+- Funcionalidad: almacenar datos base para la validación del login.
+
+- Modelo asociado: modeloLogin.js
+
+---
+
 ### Nombre: modeloLogin.js
 
-- Descripción: archivo que contiene los datos base para el correcto acceso al dashboard por medio de controladorLogin.js.
+- Descripción: archivo que transporta los datos base para la validación de credenciales en el login desde el modelo modeloLogin.json hasta el controlador controladorLogin.js.
 
-- Funcionalidad: almacenar los datos de usuario y contraseña para el inicio de sesión en la vista login.
+- Funcionalidad: solicitar los datos para la validación del login.
 
-- Controlador asociado: controladorLogin.js
+- Controlador asociado: controladorLogin.js.
 
 ---
 
@@ -279,14 +299,13 @@ Carpeta Views: Páginas que el usuario ve e interactúa de primera mano
 
 ### Nombre: controladorDashboard.js
 
-- Descripción: controlador encargado de generar el gráfico y métricas representadas en dashboard.php tomando como base los datos ubicados en modeloDashboard.js.
+- Descripción: recibe los datos que ya se han pedido en el modelo controladorDashboard.js desde el modelo controladorDashboard.json y genera los gráficos.
 
 - Archivos HTML asociados: dashboard.php
 
 - Funcionalidades:
 
-   - Calcula la cantidad de millas faltantes para obtener un premio mediante restar las millas acumuladas a las millas totales tomando los datos desde el controlador modeloDashboard.js.
-   - Genera el gráfico mediante su renderización en la vista dashboard.php y los datos respectivos los obtiene desde el controlador modeloDashboard.js.
+   - Genera el gráfico mediante su renderización en la vista dashboard.php y los datos respectivos los obtiene desde el modelo modeloDashboard.js.
    - Actualiza y reescribe el progreso de millas acumuladas y monto ahorrado desde que se adquirió la membresía premium en campos específicos.
 
 - Elementos que manipula:
@@ -320,7 +339,7 @@ Modelo asociado: modeloDestinos.js
 
 ### Nombre: controladorLogin.js
 
-- Descripción: controlador encargado de manejar el envío del formulario de inicio de sesión, validar las credenciales ingresadas y verificar espacios vacíos.
+- Descripción: recibe los datos que ya se han pedido en el modelo controladorLogin.js desde el modelo controladorLogin.json y procede a ejecutar activar alertas y redirigir según sea el caso
 
 - Archivos HTML asociados: login.html
 
@@ -328,7 +347,6 @@ Modelo asociado: modeloDestinos.js
 
    - Capturar el evento submit generado al enviar el formulario de id "formLogin" evitando que se envíe de forma predeterminada mediante event.preventDefault().
    - Limpieza y filtro de espacios vacíos mediante el uso de trim() en los inputs de usuario y contraseña, además de implementar una alerta con sweetalert en caso de detectarse.
-   - Validar que el nombre de usuario y contraseña ingresados sean idénticos a los datos almacenados en el modelo modeloLogin.js.
    - Al validar todo lo anterior arroja una alerta indicando que los datos son correctos y redirije a la vista dashboard.php.
 
 - Elementos que manipula:
