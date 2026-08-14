@@ -26,7 +26,7 @@ El presente proyecto consta de la construcción de una página web enfocada en s
 
 ### Requisitos previos
 
-1. Tener instalado XAMPP
+1. Tener instalado XAMPP para poder tener activo el servidor web de Apache.
 2. Descargar el archivo comprimido desde el repositorio de GitHub o bien empleando el comando en la terminal de git:
 ```bash
    git clone https://github.com/Lito1891/Progra3_Proyecto_Aerolinea.git
