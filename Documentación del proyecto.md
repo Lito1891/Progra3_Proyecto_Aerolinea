@@ -10,7 +10,18 @@ El presente proyecto consta de la construcción de una página web enfocada en s
 - Cristofer Madrigal
 - Herlyn Espinoza
 
+## Tabla de contenidos
 
+- [¿Cómo iniciar?](#cómo-iniciar)
+- [Estructura del proyecto](#estructura-del-proyecto)
+- [Carpeta Views](#carpeta-views)
+- [Carpeta Assets](#carpeta-assets)
+  - [Sub carpeta css](#sub-carpeta-css)
+  - [Nombre: index.css](#nombre-indexcss)
+  - [Sub carpeta img](#sub-carpeta-img)
+  - [Sub carpeta js](#sub-carpeta-js)
+- [Carpeta Models](#carpeta-models)
+- [Carpeta Controllers](#carpeta-controllers)
 
 ## ¿Cómo iniciar?
 
@@ -146,7 +157,6 @@ El presente proyecto consta de la construcción de una página web enfocada en s
 
 - Archivo PHP asociado: dashboard.php
 
-
 ---
 
 ### Nombre: carpeta plugins
@@ -193,7 +203,7 @@ El presente proyecto consta de la construcción de una página web enfocada en s
 
 ---
 
-### Nombre:  destinos.css
+### Nombre: destinos.css
 
 - Descripción: archivo que modifica los estilos de destinos.html directamente, controlando la grilla responsive, las tarjetas dinámicas de destinos, los botones de filtrado y los elementos visuales de la página.
 
