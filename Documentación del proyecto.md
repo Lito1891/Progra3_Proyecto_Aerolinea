@@ -221,13 +221,13 @@ Carpeta Views: Páginas que el usuario ve e interactúa de primera mano
 
 ### Nombre: vuelos.js
 
-- Descripción: controlo el flujo de como se muestran los destinos, tambien evita enviar el formulario incompleto, impidiendo que se borren los datos o que la pagina se actualice al intentar enviar el formulario, previene seleccion de fechas pasadas.
+- Descripción: controlo el flujo de como se muestran los destinos, tambien evita enviar el formulario incompleto, impidiendo que se borren los datos o que la pagina se actualice al intentar enviar el formulario, previene seleccion de fechas pasadas, ontiene párametro ciudad de origen, para mostrarlo en los acordeónes.
 
 - Archivos HTML asociados: vuelos.html
 
 - Funcionalidades: validar campos requeridos, restricción de fechas, mostrar acordeón según selección del usuario
 
-- Elementos que manipula: id="fecha",  id="fechaRegreso", id="formularioVuelos", class=.resultado-vuelo, class="activo", id="resultadoFrancia", id="resultadoTokio",id="resultadoRio", id="resultadoSanJose", id="resultadoCusco", id="resultadoGroenlandia".
+- Elementos que manipula: id="fecha",  id="fechaRegreso", id="formularioVuelos", class=.resultado-vuelo, class="activo", id="resultadoFrancia", id="resultadoTokio",id="resultadoRio", id="resultadoSanJose", id="resultadoCusco", id="resultadoGroenlandia", class="validarOrigen".
 
 - Controlador asociado: niguno.
 
