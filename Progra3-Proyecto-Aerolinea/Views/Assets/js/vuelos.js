@@ -82,7 +82,7 @@ formularioVuelos.addEventListener('submit', event => {//dispara evento de enviar
     const seccion = document.getElementById(secciones[destino]);
     const ciudadOrigen = document.getElementById("validarOrigen").value;// se asigna variable para almacenar parametro del lable ciudad de origen
 
-    //recorre todas las clases con "origenVuelo" y pasa el parametro
+    //recorre todas las clases con "origenVuelo" y pasa el parametro a cuidadOrigen
     document.querySelectorAll(".origenVuelo").forEach(function(elemento){
         elemento.textContent = ciudadOrigen;
     });
