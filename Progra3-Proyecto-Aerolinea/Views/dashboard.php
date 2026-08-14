@@ -246,5 +246,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <!--Librería para poder usar el chart -->
 <script src="../Controllers/controladorDashboard.js"></script>
 
+<!--enlace al modelo -->
+<script src="../Models/modeloDashboard.js"></script>
+
+<!-- enlace al controlador -->
+<script src="../Controllers/controladorDashboard.js"></script>
+
 </body>
 </html>
